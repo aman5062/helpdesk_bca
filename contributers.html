@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Helpdesk</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css?v=1" />
+<link rel="stylesheet" type="text/css" href="conto.css" />
+<script src="script.js"></script>
+<script
+	src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+	integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+	crossorigin="anonymous"
+>
+
+
+
+</script>
+
+<style>
+  *{
+      padding: 0;
+  }
+  #all{
+      
+      padding: 5px;
+
+  }
+  .box{
+      /* border: 1px black solid; */
+      padding: 2px;
+      margin: 5px;
+      border-radius: 10px;
+  }
+  #body{
+    position: relative;
+  }
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"/>
+  </div>
+</div>
+<script>function onloading(){
+    var cookieString = document. cookie;
+    var cookies = cookieString. split(';');
+    var len = cookies. length;
+    var foundActiveUser = false;
+    for(i=0; i<len; i++){
+        var n = cookies[i].split("=");
+        for(j=0; j<2; j++){
+
+        if(n[j]===" name"){
+         //   alert("Welcome Back "+n[1]);
+            wishme(n[1]);
+        break;
+        }}
+       
+    }
+   }
+   function wishme(name){
+        document.getElementById("wishing_part").innerHTML="<b>Welcome Back "+ name+"</b>";
+       
+      
+        
+   }
+</script>
+<body onload="onloading()">  
+   
+      <header class="navbar navbar-expand-md d-flex flex-wrap justify-content-center p-3 mb-2 border-bottom">
+        <div class="container-fluid">
+          <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="logo.png" id="imglogo">
+            <span class="fs-4 mr-5 lo"><h2 class="bold-text">Helpdesk</h2></span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="nav nav-pills navbar-nav ms-auto" id="myNav">
+              <!-- Sem1 -->
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Semister 1</a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link dropdown-item" href="c_language.html">C-Language</a></li>
+                                 
+                 </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Semister 2</a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link dropdown-item" href="data_structure.html">Data Structure</a></li>
+                    </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Semister 3</a>
+                <ul class="dropdown-menu">
+                  <!-- Add subjects for Sem1 here -->
+                  <li><a class="nav-link dropdown-item" href="dbms.html">DBMS</a></li>
+                  <li><a class="nav-link dropdown-item" href="mech_updated.html">Mechanics</a></li>
+                  <li><a class="nav-link dropdown-item" href="object_updated.html">OOPS Code</a></li>
+                  <li><a class="nav-link dropdown-item" href="daa_updated.html">DAA</a></li>
+                </ul>
+              </li>
+              <!-- Sem2 -->
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Semister 4</a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link dropdown-item" href="python.html">Python</a></li>
+                    <li><a class="nav-link dropdown-item" href="os.html">OS</a></li>
+                    <li><a class="nav-link dropdown-item" href="web_tech.html">Web Technologies</a></li>
+                    <li><a class="nav-link dropdown-item" href="archi.html">Comp. Architecture</a></li>
+                    <li><a class="nav-link dropdown-item" href="math.html">Mathematics</a></li>     
+                    <li><a class="nav-link dropdown-item" href="archi_lab.html">Comp. Architecture Lab</a></li>
+                    <li><a class="nav-link dropdown-item" href="web_tech_lab.html">Web Technologies Lab</a></li>
+                    <li><a class="nav-link dropdown-item" href="os_lab.html">OS Lab</a></li>     
+                </ul>
+                <li><a class="nav-link dropdown-item" href="contributers.html"><center>Our Valuable Contributers</center></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      
+      
+      
+
+</div>
+<body>
+    <script>
+       
+
+        fetch("contributers.json")
+        .then(function(response) { 
+            if (!response.ok) {
+                throw new Error("Network response was not ok");
+            }
+            return response.json();
+        })
+        .then(function(datas) {
+            let thedata = document.querySelector(".container1");
+            let out = "";
+            for (let data of datas) {
+                out += `
+                <div class="border_sq">
+                    <div class="pic"><img src="${data.image}"></div>
+                        <h2 class="name">${data.name}</h2>
+                        <h2 class="proj">${data.dept}</h2>
+                </div>
+                `;
+            }
+            thedata.innerHTML = out;
+        })
+        .catch(function(error) {
+            console.error('Error during fetch:', error);
+        });
+      </script>
+    <body><center>
+        <h1 class="header">* CONTRIBUTERS *</h1>
+        <div class="container1">
+            
+            
+          
+        </div>
+        <footer>
+            <p>Copyright © 2024 Debuggers. All rights reserved.</p>
+         </footer>
+        </center>
+        </body>
+
+</div>
+
+
+</head>
+
+
+</body>
+</html>
