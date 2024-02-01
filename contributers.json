@@ -1,7 +1,12 @@
 [
     {
-        "image" : "contributers_image/demo.jpg",
-       "name" : "Demo man",
-       "dept" : "Demo"
+        "image" : "contributers_image/biraj.jpeg",
+       "name" : "Biraj Kuwar",
+       "dept" : ""
+    },
+{
+        "image" : "contributers_image/suraj.jpg",
+       "name" : "Suraj kant kushwaha",
+       "dept" : ""
     }
 ]
