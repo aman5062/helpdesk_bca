@@ -1,4 +1,8 @@
-[
+[{
+        "image" : "contributers_image/tatsha.jpeg",
+       "name" : "Tatsha Sharma",
+       "dept" : ""
+    },
     {
         "image" : "contributers_image/biraj.jpeg",
        "name" : "Biraj Kuwar",
