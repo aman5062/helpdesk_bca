@@ -4,6 +4,11 @@
        "dept" : ""
     },
     {
+        "image" : "contributers_image/atul.jpg",
+       "name" : "Atul kumar",
+       "dept" : ""
+    },
+    {
         "image" : "contributers_image/biraj.jpeg",
        "name" : "Biraj Kuwar",
        "dept" : ""
