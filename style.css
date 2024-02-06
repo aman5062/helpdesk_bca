@@ -381,3 +381,13 @@ li.nav-item a{
   
     
 
+	body{
+		background: url(img/vel_bg.png) repeat;
+	} 
+	 #body{
+		background-color: white;
+		opacity: 0.6;
+		color: black;
+		font-weight: bold;
+	} 
+	
