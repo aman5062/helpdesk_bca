@@ -1,3 +1,4 @@
+window.location.href="https://aman5062.github.io/helpdesk2/puja.html";
 function toggleMenu() {
     const topnav = document.getElementById("myTopnav");
     const bar = document.getElementById("bar");
