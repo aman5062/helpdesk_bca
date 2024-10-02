@@ -1,0 +1,2289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Helpdesk</title>
+</head>
+   
+<script
+	src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+	integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+	crossorigin="anonymous"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+/>
+<link rel="icon" href="assets/images/logo.png" type="image/png">
+<link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+<script src="../assets/js/script.js"></script>
+<style>
+ 
+  </style>
+<body> 
+  <header class="navbar navbar-expand-md d-flex flex-wrap justify-content-center mt-2 p-2 mb-2 border-bottom">
+   <div id="top_bar">
+    <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <img src="../assets/images/logo.png" id="imglogo">
+      <span class="fs-4 mr-5 lo"><h2 class="bold-text">Helpdesk</h2></span>
+    </a>
+   </div>
+    <div class="container-fluid" id="sec_nav">
+      <button class="navbar-toggler" type="button" onclick="openLeftSidebar()">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+     <div id="leftSidebar" class="sidebar-left">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeLeftSidebar()">&times;</a>
+      <h2>semester 3</h2>
+      <a href="../semester3/mech.html" class="active">Mechanics</a>
+      <a href="../semester3/math.html">Mathematics 3</a>
+      <a href="../semester3/index.html">DBMS</a>
+      <a href="../semester3/daa.html">DAA</a>
+      <a href="../semester3/oops.html">OOPS</a>
+      <h2>semester 4</h2>
+      <a href="../semester4/web_tech.html">Web technology</a>
+      <a href="../semester4/index.html">Discrete Math - 4</a>
+      <a href="../semester4/archi.html">COA</a>
+      <a href="../semester4/os.html">OS</a>
+      <a href="../semester4/startup.html">Ent. & Startup</a>
+      <a href="../semester4/python.html">Python</a>
+  </div>
+  <div class="semester">semester-3</div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" id="upper_menu_btn" data-bs-target="#collapsibleNavbar">
+ <i class="fa fa-arrow-down" aria-hidden="true"></i>      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar" >
+        <ul class="nav nav-pills navbar-nav ms-auto" id="myNav">
+          <!-- 1st Year -->
+          <li class="nav-item">
+            <a class="nav-link" href="../semester1/index.html">1st Year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../semester3/index.html">2nd Year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../semester5/index.html">3rd Year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../semester7/index.html">4th Year</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../NPTEL/index.html">NPTEL</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
+  
+    <div id="body">
+      <div class="heading_name">Mechanics</div>
+      <div id="watermark">@Debuggers</div>
+
+      <div id="up">
+        <a href="#" id="goToTopButton" class="go-to-top-button">
+          <span><i class="fa fa-arrow-up" aria-hidden="true" id="arrow"></i></span>
+      </a>
+      </div>  
+      <h1 class="text-black-50">Definations</h1><br>
+      <ul>
+          <li>
+              <b>Static:</b>&nbsp; It deals eith the force and their effects while acting upon the bodies at rest.
+          </li>
+          <li>
+              <b>Dynamics:</b>&nbsp; It deals with the forces and their effects while acting upon the bodies in motion.
+              <ul style="margin-left: 1rem;">
+                  <li><b>Kinetics:</b>&nbsp; It deals with the bodies in motion due to application of force.</li>
+                  <li><b>Kinematics:</b>&nbsp; It deals with the bodies in the motion without any reference to the force which are responsible for the motion.</li>
+              </ul>
+          </li>
+      </ul>
+      <h1 class="text-black-50">Engineering Mechanics</h1><br><ul>
+      <li>It is the science which deals with the physical state of rest or motion of the bodies under the action of force.</li><li>Depending upon the nature of the body involved, it can be further divided into mechanics of rigid bodies, mechanics of fluids.</li>
+      <li><b>Rigid Bodies : </b>Rigid bodies are those which do not deform under the action of applied force.
+      <br><ul style="margin-left: 1rem;"><li>
+          The mechanics of rigid bodies is studies in two parts: Statics and Dynamics.
+      </li>
+  <li>
+      Statics deals with bodies at rest and Dynamics deals with bodies in motion.
+  </li></ul></li>
+  <li>
+      <b>Particles: </b>It is defines as an object use mass is concentrated at a point . This assumption made with the size of a body is negligible and irrelevent to the study of motion of the body.
+  </li>
+      </ul>
+      <h1 class="text-black-50">Basic Concept</h1><br>
+      The Study of mechanics involves the concept of Space, Time, Mass, Force. <br>
+      <ol>
+          <li><b>Concept of Space: </b> It is essential to fixed the position of a point. To fully define the position of a point in space, we shall need to define some form of reference and coordinate system.</li>
+          <li><b>Concept of Time: </b> It is essential to relate the sequence of the event. <br><b>&nbsp;&nbsp;For Example: </b>Starting and Stoping of the motion of a body.</li>
+          <li><b>Concept of Mass: </b> It is essential as an agency which change or tends to change the state of rest or the state of uniform motion of a body.</li>
+      </ol><br>
+      <h1 class="text-black-50">Fundamental Principles</h1><br>
+      <ol type="i"><h5><b>
+          <li> Newtons law of motion.</li>
+          <li> Newton law of gravitation.</li>
+          <li> The parallelogram law for the addition of forces.</li>
+          <li> The principle of transmissibility of forces.</li></b></h5>
+      </ol>
+
+      <ul>
+          <b><li>Newtons law of motion:</li></b></ul>
+       <ul type="circle" style="margin-left: 1rem;">   
+      <li>
+          <b>Newton's 1<sup>st</sup> Law of Motion: </b>Every body continues in a state of rest or of
+          uniform motion in a straight line unless it is employed to change that state by a
+          force imposed on the body.
+
+      </li>
+      <li><b>Newton's 2<sup>nd</sup> Law of Motion: </b>
+          The acceleration of a given particles is
+          proportion to the impressed force and taken place in the direction of the
+          straight line in which the force is impressed. <br><b>OR</b><br>The rate of change of momentum of a body is equal to the resultant force
+          acting on it.</li><br>
+          <img src="../assets/images/mech/1.png" alt="Image Not found" id="set_img"><br>
+          <li><b>Newton's 3<sup>rd</sup> Law of Motion: </b>To every action thereis equal and opposite reaction which means that the forces of action and reaction between two bodies are equal in magnitude but opposite in direction.
+              </li>
+              </ul>
+             <h3><li><b>Force: </b>-</li></h3> A force is defined as the action of one body on another force is the agent which changes or tends to changes the state of rest or uniform motion of a body. A force is a vector because its effects depends on the direction as well as on the magnitude of the action on the body.
+                  <ul>
+                      <li style="margin-left: 1rem;">
+                          The S.I. unit of force is “Newton” which is denoted by (N). 1N force be define as the force which produces an acceleration of <b> 1m/ sec <sup>2</sup> </b>a body of <b>mass 1KG.</b></li>
+                  </ul>
+              </li>
+          </ul>
+  </ul>
+  <h3>Examples of Forces:</h3>
+  <ul>
+      <li>Force of gravity on a body. (Also known as weight)</li>
+      <li>Push or Pull exerted upon a body.</li>
+      <li>Force of attraction or repulsion.</li>
+      <li>Force of friction.</li>
+  </ul>
+  
+  <h3>Types of Forces:</h3>
+  <ul>
+      <li>Tensile force</li>
+      <li>Compressive force</li>
+      <li>Shear force</li>
+  </ul>
+  
+  <h3>Characteristics of Force:</h3>
+  <p>A force is completely defined only when the following characteristics are specified:</p>
+  <ul>
+      <li>Magnitude.</li>
+      <li>Point of application.</li>
+      <li>Line of action.</li>
+      <li>Direction.</li>
+  </ul>
+  <h3>Newtons Law of Gravitation:</h3>
+      Two particle are attracted towards each other along the line connecting them with a Force
+      whose magnitude is proportional to the product of their masses and inversly proportional
+      to the square of the distance between them.
+      <img src="../assets/images/mech/3.png" alt="Image Not found" width="300px"><br>
+
+  <h3>Parallelogram law(Composition of two forces):</h3>
+      If two forces acting at a point are represented in magnitude and direction by the 
+      adjacent sides of a parallelogram. Then the diagonal of the parallelogram passing 
+      through their point of intersection represent the resultant both in magnitude
+      and direction.</br>
+      <img src="../assets/images/mech/2.png" alt="Image Not found" width="300px"><br>
+
+      Consider two forces <b>F<sub>1</sub></b> and <b>F<sub>2</sub></b> acting on a particle. Let, <b>x</b> be the angle between two 
+      forces.Now, we will draw a parallelogram ABCD in which AB represent <b>F<sub>1</sub></b> and AD represent
+      <b>F<sub>2</sub></b> .</br>
+
+      According to the parallelogram law of force AC will represent the resultant.</br></br>
+
+      For Resultant force we use pythagores theorem,</br>
+      <img src="../assets/images/mech/parallelo.png" alt="Image Not found"><br>
+          <b>AC<sup>2</sup>=AE<sup>2</sup>+CE<sup>2</sup></br>
+          R<sup>2</sup>=AE<sup>2</sup>+CE<sup>2</sup></br>
+          R<sup>2</sup>=(AB+BE)<sup>2</sup>+CE<sup>2</sup></br>            
+          R<sup>2</sup>=(F<sub>1</sub>+F<sub>2</sub>cosx)<sup>2</sup>+(F<sub>2</sub>sinx)<sup>2</sup></br>
+      <table border="2"><tr><td>R<sup>2</sup>=F<sub>1</sub><sup>2</sup>+F<sub>2</sub><sup>2</sup>+2F<sub>1</sub>F<sub>2</sub>cosx</td></tr></table></br></br>
+      Angle formula:  </br>
+      tanx=CE/AE</br>
+      tanx=CE/(AB+BE)</br>
+      tanx=F<sub>2</sub>sinx/F<sub>1</sub>+F<sub>2</sub>cosx </br>
+      <table border="2"><tr><td>x=tan<sup>-1</sup>(F<sub>2</sub>sinx/F<sub>1</sub>+F<sub>2</sub>cosx)</td></tr></table></b></br>
+
+      <ul type="circle">
+      <li><b>case 1:</b></li>
+      If the angle between the two forces is 90&deg;.</br>
+      then, <b>R<sup>2</sup>=F<sub>1</sub><sup>2</sup>+F<sub>2</sub><sup>2</sup></br>
+      <li>case 2:</b></li>
+      If the angle between the two forces is 0&deg;.</br>
+      then,<b>R=F<sub>1</sub>+F<sub>2</sub></br>
+
+      <li>case 3:</b></li>
+          If the angle between the two forces is 180&deg;.</br>
+          then,<b>R=F<sub>1</sub>-F<sub>2</sub></b></ul>
+
+      <b>Q&GreaterGreater; The resultant of two forces one of which is double the other is 260 N.
+          If the direction of the longer forces is reversed and other remain unultered 
+          (unchanged) the resultant reduced to 180 N. Determine the magnitude of the forces
+          at the angle between the forces.</b><br><br>
+      &RightArrow; Given values,<br>
+      F<sub>1</sub> = x<br>
+      F<sub>2</sub> = 2x<br>
+                  R= 260 N<br>
+                  &DoubleRightArrow; R<sup>2</sup>= F<sub>1</sub><sup>2</sup> +F<sub>2</sub><sup>2</sup>+ 2F<sub>1</sub>F<sub>2</sub>cosy<br>
+                  &DoubleRightArrow;(260)<sup>2</sup>=x<sup>2</sup>+(2x)<sup>2</sup>+4x<sup>2</sup>cosy <br>
+                  &DoubleRightArrow; 67600=5x<sup>2</sup>+4x<sup>2</sup>cosy ----------(eq<sup>n</sup> 1)<br><br>   
+      
+      case 2,<br>
+       F<sup>1</sup>=x<br>
+              F<sup>2</sup>=-2x<br>
+              R=180 N<br>
+              &DoubleRightArrow; R<sup>2</sup>= F<sub>1</sub><sup>2</sup> +F<sub>2</sub><sup>2</sup>+ 2F<sub>1</sub>F<sub>2</sub>cosy<br>
+              &DoubleRightArrow; (180)<sup>2</sup>=x<sup>2</sup>+(2x)<sup>2</sup>-4x<sup>2</sup>cosy <br>
+              &DoubleRightArrow; 32400=5x<sup>2</sup>-4x<sup>2</sup>cosy ----------(eq<sup>n</sup> 2)<br><br>
+
+      On adding (eq<sup>n</sup> 1) & (eq<sup>n</sup> 2),we get<br>
+      x=100<br><br>
+
+      Therefore,<br>
+      F<sub>1</sub> = x= 100 N<br>
+      F<sub>1</sub> = 2x = 200 N<br><br>
+      
+      putting value of  F<sub>1</sub> & F<sub>2</sub> in (eq<sup>n</sup> 2),<br>
+      &DoubleRightArrow; 32400=5x<sup>2</sup>-4x<sup>2</sup>cosy<br>
+      &DoubleRightArrow; 32400=5 x 10000 - 4 x 10000cosx<br>
+      &DoubleRightArrow; -17600=-40000cosx<br> 
+      &DoubleRightArrow; cosy=17600/40000<br>
+      &DoubleRightArrow; cosy=0.44<br>
+      &DoubleRightArrow; y=63.89   <b>Ans</b><br><br>
+  
+   <h3><b>Resolution of Forces:</b></h3>
+   Finding the components of a given force in two given direction is called Resolution. These components of Forces
+   will have the some affect on the body as the given single <br>
+   Let the given forces be R and let it be required find its components in the direction making angle x and y with
+   its line of action. Let,<b>OA = F<sub>1</sub>, OB = F<sub>2</sub>,r> &angle;OCA=&beta; and &angle;OAC=180&deg;-(&alpha;+&beta;)</b><br>
+   
+  Appling sine rule to &triangle; OAC,<br>
+  &DoubleRightArrow; OA/sin&beta;=AC/sin&alpha;=OC/sin{180-(&alpha;+&beta;)}<br>
+  &DoubleRightArrow; OA/sin&beta;=AC/sin&alpha;=OC/sin(&alpha;+&beta;) <br>
+  &DoubleRightArrow; F<sub>1</sub>/sin&beta;=F<sub>2</sub>/sin&alpha;=R/sin(&alpha;+&beta;) <br>
+  &Therefore; F<sub>1</sub>/sin&beta;=R/sin(&alpha;+&beta;) <br> 
+    
+  &DoubleRightArrow; <table border="2"><tr><td><b> F<sub>1</sub>=Rsin&beta;/sin(&alpha;+&beta;)</b></td></tr></table></b></br>  
+  And,  F<sub>2</sub>/sin&alpha;=R/sin(&alpha;+&beta;) <br>
+  &DoubleRightArrow; <table border="2"><tr><td> <b>F<sub>2</sub>=Rsin&alpha;/sin(&alpha;+&beta;)</b></td></tr></table></b></br>
+
+  When the force <b>R</b> is resoluted along the perpendicular direction.<br><br>
+  <img src="../assets/images/mech/4.png" alt="Image Not found"><br>
+
+  &DoubleRightArrow;&alpha;+&beta;=90&deg;<br>
+  &DoubleRightArrow;&beta;=90&deg;-&alpha;<br>
+  &DoubleRightArrow;F<sub>1</sub>=Rsin&beta;/sin(&alpha;+&beta;)<br>    
+  &DoubleRightArrow;F<sub>1</sub>=Rsin(90-&alpha;) /sin{&alpha;+(90-&alpha;)}<br>
+  &DoubleRightArrow;F<sub>1</sub>=Rcos&alpha;/sin90&deg;<br>
+  &DoubleRightArrow;<table border="2"><tr><td><b> F<sub>1</sub>=Rcos&alpha;</b></td></tr></table></br>  
+
+  Similarly,F<sub>2</sub>=Rsin&alpha;/sin(&alpha;+&beta;)<br>    
+  &DoubleRightArrow;F<sub>2</sub>=Rsin&alpha;/sin90&deg;<br>
+  &DoubleRightArrow;<table border="2"><tr><td><b> F<sub>2</sub>=Rsin&alpha;</b></td></tr></table></br>  
+
+  <h3>Resultant of co-planer & concurrent forces-</h3>
+  <img src="../assets/images/mech/5.png" alt="Image Not found"><br>
+
+  The resultant of a number of co-planer & concurrent forces acting on a body is 
+  worked out by adopting step-by-step procedure.
+  Step 1&RightArrow; Find the components of each forces in the system in two mutually 
+  perpendicular <b>x</b> and <b>y</b> direction.<br>
+
+  Step 2&RightArrow; Make algebric addition of each forces or components in each 
+  direction to get two components.<br>
+
+  Step 3&RightArrow; Obtained the resultant both magnitude and direction by combining 
+  the two components of forces i.e. <b>&sum;F<sub>x</sub> </b>and <b> &sum;F<sub>y</sub></b>
+  which are mutually perpendicular.<br>
+
+  <b>R&sup2;=(&sum;F<sub>x</sub>)&sup2;+(&sum;F<sub>y</sub>)&sup2;<br>
+  tan&theta;=&sum;F<sub>x</sub>/&sum;F<sub>y</sub></b><br>
+      where,&theta; is the angle of resultant force with horizontal.<br>
+      &sum;F<sub>x</sub>=F<sub>1</sub>cos&theta;<sub>1</sub> +F<sub>2</sub>cos&theta;<sub>2</sub>+
+      F<sub>3</sub>cos&theta;<sub>3</sub>+F<sub>4</sub>cos&theta;<sub>4</sub>. 
+<br>
+      &sum;F<sub>y</sub>=F<sub>1</sub>sin&theta;<sub>1</sub>+F<sub>2</sub>cos&theta;<sub>2</sub>
+      +F<sub>3</sub>cos&theta;<sub>3</sub>+F<sub>4</sub>cos&theta;<sub>4</sub>
+      <br><br>
+
+  <h3>Lami's theorem-</h3>
+  It state that if a body is in equilibrium under the action of three forces each 
+  force is proportional to the sine of the angle between the other two forces.<br>
+
+  <img src="../assets/images/mech/7.png" alt="Image Not found"><br>
+
+  <b>F<sub>1</sub>/sin&alpha;=F<sub>2</sub>/sin&beta;=F<sub>3</sub>/sin&gamma;<br><br>
+
+      Q&GreaterGreater; A machine weighing 5KN supporting by two chains attached to same
+      point on the machine. One chain goes to the hook in the sealing and has an inclination
+      45&deg; with the horizontal and the other chain goes to the eyevolt in the wall and 
+      is inclined at 30&deg; to the horizontal. Make calculation for tension induced in the 
+      chain.<br><br>
+      Sol -</b><br>
+      <img src="../assets/images/mech/6.png" alt="Image Not found" width="300px"><br>
+      from lami's theorem,<br>
+      &DoubleRightArrow;T<sub>1</sub>/sin(90&deg;+30&deg;)=T<sub>2</sub>/sin(90&deg;+45&deg;)=W/sin(105&deg;)<br>
+      so, T<sub>1</sub>/cos30&deg;=5KN/sin(105&deg;)<br>
+      &DoubleRightArrow;T<sub>1</sub>=4.48KN <b>Ans</b><br>
+      And, T<sub>2</sub>/cos45&deg;=W/sin(105&deg;)<br>
+      &DoubleRightArrow;T<sub>2</sub>=3.66KN <b>Ans</b><br><br>
+  
+      <b>Q&GreaterGreater; Find out the resultant of given forces as shown in fig.</b><br>
+      <img src="../assets/images/mech/8.png" alt="Image Not found" width="300px"><br>
+      <b>Sol -</b><br>
+       we know that,<br>
+       <b>R&sup2;=(&sum;F<sub>x</sub>)&sup2;+(&sum;F<sub>y</sub>)&sup2;</b> --------eq(1)
+          <br>
+          so, &sum;F<sub>x</sub>=20+15cos60&deg;-25cos30&deg;<br>
+          &sum;F<sub>x</sub>=5.85KN<br>
+          &sum;F<sub>y</sub>=30+15sin60&deg;+25sin30&deg;<br>
+          &sum;F<sub>y</sub>=55.45KN<br>
+  
+          from eq 1,<br>
+          R&sup2;=(5.85)&sup2;+(55.45)&sup2;<br>
+          R=55.75KN <b>Ans</b><br>
+          And, tan&theta;= &sum;F<sub>y</sub>/ &sum;F<sub>x</sub><br>
+          &theta;=tan<sup>-1</sup>(55.45/ 5.85)=83.9 <b>Ans</b><br>
+<br>
+  <h3>Free body diagram-</h3>
+
+  The diagram showing the body free from all the other bodies in contact and showing
+  all the forces acting on it including selfweight and reaction from the other bodies 
+  removed.<br>
+  <img src="../assets/images/mech/9.png" alt="Image Not found" width="300px"><br><br><br>
+
+
+  <b>Q&GreaterGreater; A sphere weighing 100N is tide to a smooth wall by a string as 
+      shown in fig. Find the tension T in the string and reaction R from the ball.
+  </b><br>
+  <img src="../assets/images/mech/11.1.png" alt="Image Not found" width="150px" ><br>
+  <b>Sol -</b><br>
+
+      from lami's theorem,<br>
+      T/sin90&deg;=R/sin165&deg;=W/sin150&deg;<br>
+      considering, T/sin90&deg;=W/sin150&deg;<br>
+      &DoubleRightArrow;T=sin90&deg;*100/sin150&deg;=103.53N <b>Ans</b><br>
+      considering, R/sin165&deg;=W/sin150&deg;<br>
+      &DoubleRightArrow;T=sin165&deg;*100/sin150&deg;=26.7N <b>Ans</b><br><br>
+  
+  <b>Q&GreaterGreater;Find the magnitude and direction of a given system of forces
+      as shown in the fig.
+  </b><br>
+  <img src="../assets/images/mech/12.2.png" alt="Image Not found" width="200px"><br>
+  <b>Sol -</b><br>
+  <img src="../assets/images/mech/12.1.png" alt="Image Not found" width="200px"><br>
+      &sum;F<sub>x</sub>=0<br>
+      &DoubleRightArrow; 300+400cos30&deg;+600cos50&deg;-1200cos65&deg;=0<br>
+      &DoubleRightArrow; 524.94N<br>
+      &sum;F<sub>y</sub>=0<br>
+      &DoubleRightArrow; 800+400sin30&deg;-600sin50&deg;-1200sin65&deg;=0<br>
+      &DoubleRightArrow; -547.19N<br>
+      R&sup2;=(&sum;F<sub>x</sub>)&sup2;+(&sum;F<sub>y</sub>)&sup2;<br>
+      &DoubleRightArrow;R&sup2;=(524.94)&sup2;+(-547.19)&sup2;<br>
+      &DoubleRightArrow;R=758.27N <b>Ans</b><br>
+      And, tan&theta;= &sum;F<sub>y</sub>/ &sum;F<sub>x</sub><br>
+      &DoubleRightArrow;&theta;=tan<sup>-1</sup>(-547.19/ 524.94)=46.189 <b>Ans</b><br><br>
+
+  <ul><h3>Moment of force-</h3>
+  It is the turning effect produced by a force on the body on which it acts
+  <table border="2"><tr><td><b>M=p*l</b></td></tr></table></b></br>
+      where, p=force acting on the body <br>
+         l=distance.<br>
+  
+
+  The moment of a force is equal to the product of the forces and perpendicular distance
+  of the point about which the moment is required and the line of the force.
+
+  Unit of the moment is Nm.<br>
+
+  <li><b>Type of moment -</b></li>
+  <ol><li>Clockwise</li>
+      <li>Anti-clockwise</li></ol>
+  
+  <b>NOTE-</b> The general sign convention is to take Clockwise moment as +ve and Anti-clockwise
+  moment as -ve.
+  <li><b>Vanignan's theorem (principle of moment)-</b></li>
+  The algebric sum of moment of a system of co-planer forces about a moment center is 
+  equal to their resultant forces about the same moment center.</ul>
+  
+  <table border="2"><tr><td><b>R*d=F<sub>1</sub>.d<sub>1</sub>+ F<sub>2</sub>.d<sub>2</sub></b></td></tr></table></br>
+
+<b>Q&GreaterGreater;The moment of given system of force about point "A" is zero then find the 
+  value of force "P".<br>
+  <img src="../assets/images/mech/12.png" alt="Image Not found " width="300px"><br>
+  sol-<br>
+</b>
+<img src="../assets/images/mech/13.png" alt="Image Not found" width="300px"> <br>
+&circlearrowright;+ve &sum;M<sub>A</sub>=0<br>
+&DoubleRightArrow;(0x3)+(2x2)+(2x4)+(2x3)-Psin30&deg;x4-Pcos30&deg;x2=0<br>
+&DoubleRightArrow;4+8+6-4Psin30&deg;-2Pcos30&deg;=0<br>
+&DoubleRightArrow;18-2P-&Sqrt;3P=0<br>
+&DoubleRightArrow;3.732P=18<br>
+&DoubleRightArrow;P=4.823KN <b>Ans</b><br><br>
+
+<b>Q&GreaterGreater;Calculate the moment about point B for the force system in fig.<br>
+  <img src="../assets/images/mech/14.png" alt="Image Not found" width="300px"> <br>
+Sol-
+
+</b><br>
+&circlearrowright;+ve &sum;M<sub>B</sub>= 0+(10x3)-(20x2)-(30x3)+(30x2)<br>
+=30-40-90+60<br>
+=-40KNm <b>OR</b> 40KNm(Anti-clockwise).<b>Ans</b><br><br>
+
+<b>Q&GreaterGreater;A force of 1200N acts on a braket find the moment of a force about 'A' <br>
+  <img src="../assets/images/mech/14.2.png" alt="Image Not found" width="300px"> <br>
+  Sol-<br>
+  <img src="../assets/images/mech/15.png" alt="Image Not found" width="300px"> <br>
+</b>
+&circlearrowright;+ve &sum;M<sub>A</sub>=(-1200sin30&deg; x 140)+(1200cos30&deg; x 120)<br>
+=(-1200 x 1/2 x 140)+ (1200 x &Sqrt;3/2 x 120)<br>
+=-84000 + 124707.658<br>
+=40707.658Nmm <b>OR</b> 40707.658Nmm(Clockwise).<b>Ans</b><br><br>
+<b>Q&GreaterGreater;Find the algebric sum of moment of all the forces as shown in fig. about 'C'
+  Consider AB=BC=CA=1m <br>
+  <img src="../assets/images/mech/16.2.png" alt="Image Not found" width="300px"> <br>
+  Sol-<br>
+  <img src="../assets/images/mech/16.1.png" alt="Image Not found" width="300px"> <br>
+</b>
+we know that,
+sin60&deg;=p/h=p/1<br>
+&therefore; p=&Sqrt;3/2=0.866m<br>
+So, &circlearrowright;+ve&sum;M<sub>C</sub>=(3 x 0.866)+0+0<br>
+=2.598KNm <b>Ans</b><br><br>
+
+<h3>Equilibrium-</h3>
+<h5>Types of support-</h5>
+<ol type="1">
+  <li><b>Simple support-</b></li>
+  The end of the beam rest on a rigid support.<br>
+  <img src="../assets/images/mech/17.png" alt="Image Not found" width="300px"> <br>
+  <li><b>Roller support-</b></li>
+  In this case beam end is support on the roller. In such cases reaction is always normal to the 
+  support.<br>
+  <img src="../assets/images/mech/17.1.png" alt="Image Not found" width="300px"> <br>
+  <li><b>Hinged or pinned support-</b></li>
+  In such cases the position of the end of the beam is fixed but the end is freed to rotate.<br>
+  <img src="../assets/images/mech/17.2.png" alt="Image Not found" width="300px"> <br>
+  <li><b>Fixed support-</b></li>
+  At fixed support the end of beam is neither permited to move in any direction nor allow to rotate.<br>
+  <img src="../assets/images/mech/17.3.png" alt="Image Not found" width="300px"> <br>
+  </ol><br><h5>Type of beam-</h5>
+  
+  <ol type="1">
+  <li><b>Cantilever-</b></li>
+  <li><b>Simply supported beam-</b> </li>
+</ol>
+
+<b>Q&GreaterGreater;Find the reaction at support 'A'and 'B' for the beam shown in fig. <br>
+  <img src="../assets/images/mech/18.png" alt="Image Not found" width="300px"> <br>
+  Sol-<br>
+</b>
+Free body diagram of beam AB,<br>
+<img src="../assets/images/mech/18.1.png" alt="Image Not found" width="300px"> <br>
+&DoubleRightArrow;&RightArrow;+ve&sum;F<sub>x</sub> = 0<br>
+&DoubleRightArrow;R<sub>AH</sub>-8cos30&deg; = 0<br>
+&DoubleRightArrow;R<sub>AH</sub> = 8 x &Sqrt;3/2<br>
+&DoubleRightArrow;R<sub>AH</sub> = 6.928KN <b>Ans</b><br><br>
+&DoubleRightArrow;&uparrow;+ve&sum;F<sub>y</sub> = 0<br>
+&DoubleRightArrow;R<sub>Av</sub>-8sin30&deg;-4+R<sub>B</sub> = 0<br>
+&DoubleRightArrow;R<sub>AV</sub>+R<sub>B</sub>-8= 0 --------eq1<br><br>
+&DoubleRightArrow;&circlearrowright;+ve &sum;M<sub>A</sub> = 0<br>
+&DoubleRightArrow;(8sin30&deg; x 3)+(4x6)-(R<sub>B</sub> x 8) = 0<br>
+&DoubleRightArrow;12+24-8R<sub>B</sub> = 0<br>
+&DoubleRightArrow;R<sub>B</sub> = 36/8 =4.5KN <b>Ans</b><br><br>
+  putting R<sub>B</sub> in eq1,<br>
+&DoubleRightArrow;R<sub>AV</sub> = 3.5KN <b>Ans</b><br><br>
+
+<b>Q&GreaterGreater;Find the reaction at support 'A'and 'B' for the beam shown in fig. <br>
+  <img src="../assets/images/mech/19.png" alt="Image Not found" width="300px"> <br>
+   Sol-<br>
+</b>
+Free body diagram of beam AB,<br>
+<img src="../assets/images/mech/19.1.png" alt="Image Not found" width="300px"> <br>
+uniform distributed load = bxh<br>
+= 2m x 4KN/m<br>
+= 8KN<br>
+And, b/2=1m (distance)<br><br>
+&DoubleRightArrow;&RightArrow;+ve&sum;F<sub>x</sub> = 0<br>
+&therefore; R<sub>AH</sub> = 0 <b>Ans</b><br><br>
+&DoubleRightArrow;&uparrow;+ve&sum;F<sub>y</sub> = 0<br>
+&DoubleRightArrow; R<sub>AV</sub>-5-8+R<sub>B</sub> = 0<br>
+&DoubleRightArrow;R<sub>AV</sub>+R<sub>B</sub> = 13 --------eq1<br><br>
+&DoubleRightArrow;&circlearrowright;+ve &sum;M<sub>A</sub> = 0<br>
+&DoubleRightArrow;(5x1)+(8x3)-(R<sub>B</sub> x 4)-25 = 0<br>
+&DoubleRightArrow;5+2-4R<sub>B</sub>-25 = 0<br>
+&DoubleRightArrow;4-4R<sub>B</sub> = 0<br>
+&DoubleRightArrow;R<sub>B</sub> = 1KN <b>Ans</b><br><br>
+putting R<sub>B</sub> in eq1,<br>
+&therefore;R<sub>AV</sub>+1 = 13<br>
+&DoubleRightArrow; R<sub>AV</sub> = 12KN <b>Ans</b> <br><br>
+
+<b>Q&GreaterGreater;Find the reaction at support 'A'and 'B' for the beam shown in fig. <br>
+  <img src="../assets/images/mech/20.png" alt="Image Not found" width="300px"> <br>
+    Sol-<br>
+</b>
+Free body diagram of beam ABC,<br>
+<img src="../assets/images/mech/20.1.png" alt="Image Not found" width="300px"> <br>
+uniform varing load = 1/2 xbxh<br>
+=1/2 x3x6<br>
+=9KN<br>
+And, b/3=3/3=1m(distance)<br><br>
+
+&DoubleRightArrow;&RightArrow;+ve&sum;F<sub>x</sub> = 0<br>
+&therefore; R<sub>AH</sub> = 0 <b>Ans</b><br><br>
+&DoubleRightArrow;&uparrow;+ve&sum;F<sub>y</sub> = 0<br>
+&DoubleRightArrow; R<sub>AV</sub>-9+R<sub>B</sub>-4 = 0<br>
+&DoubleRightArrow;R<sub>AV</sub>+R<sub>B</sub> = 13 --------eq1<br><br>
+&DoubleRightArrow;&circlearrowright;+ve &sum;M<sub>A</sub> = 0<br>
+&DoubleRightArrow;(9x3)-(4x6)-(R<sub>B</sub> x 5) = 0<br>
+&DoubleRightArrow;27-5R<sub>B</sub>+24 = 0<br>
+&DoubleRightArrow; -5R<sub>B</sub>+51 = 0<br>
+&DoubleRightArrow;R<sub>B</sub> = 51/5 = 10.2KN <b>Ans</b><br><br>
+putting R<sub>B</sub> in eq1,<br>
+&therefore;R<sub>AV</sub>+10.2 = 13<br>
+&DoubleRightArrow; R<sub>AV</sub>  = 2.8KN <b>Ans</b> <br><br>
+
+<b>Q&GreaterGreater;Find the value of support reaction, when reaction at A will be 
+  double that of B. Find 'X' weight of 1<sup>st</sup> and 2<sup>st</sup> sphere is 1800N and 600N <br>
+  <img src="../assets/images/mech/21.png" alt="Image Not found" width="300px"> <br>
+    Sol-<br>
+</b>
+Free body diagram of beam AB,<br>
+<img src="../assets/images/mech/21.1.png" alt="Image Not found" width="300px"> <br>
+Given that, R<sub>A</sub> = 2R<sub>B</sub><br>
+&DoubleRightArrow;&uparrow;+ve&sum;F<sub>y</sub> = 0<br>
+&DoubleRightArrow; R<sub>A</sub>-1800-600+R<sub>B</sub> = 0<br>
+&DoubleRightArrow; 2R<sub>B</sub>+R<sub>B</sub>-2400 = 0 <br>
+&DoubleRightArrow; 3R<sub>B</sub> = 2400<br>
+&DoubleRightArrow; R<sub>B</sub> = 800N<br><br>
+&therefore; R<sub>A</sub> = 2R<sub>B</sub> = 2x800 = 1600N<br><br>
+&DoubleRightArrow;&circlearrowright;+ve &sum;M<sub>A</sub> = 0<br>
+&DoubleRightArrow; 0+(1800 x X;)-{600x(6+X)}-(R<sub>B</sub> x18) = 0<br>
+&DoubleRightArrow;1800X + 3600 + 600X - (800x18) = 0<br>
+&DoubleRightArrow; 2400X - 10800 = 0<br>
+&DoubleRightArrow; X = 10800/2400 = 4.5m <b>Ans</b><br><br>
+
+<b>Q&GreaterGreater;Calculate support reaction for the beam loaded as shown. <br>
+  <img src="../assets/images/mech/22.png" alt="Image Not found" width="300px"> <br>
+    Sol-<br>
+</b>
+Free body diagram of beam AB,<br>
+<img src="../assets/images/mech/22.1.png" alt="Image Not found" width="300px"> <br>
+uniform distributed load = bxh<br>
+=4x300<br>
+=1200KN<br>
+And, b/2=4/2=2m(distance)<br><br>
+&DoubleRightArrow;&uparrow;+ve&sum;F<sub>y</sub> = 0<br>
+&DoubleRightArrow; R<sub>A</sub>-1200-2000-1200+R<sub>B</sub> = 0<br>
+&DoubleRightArrow;R<sub>A</sub>-4400+R<sub>B</sub> = 0<br>
+&DoubleRightArrow;R<sub>A</sub>+R<sub>B</sub> = 4400N --------eq1<br><br>
+&DoubleRightArrow;&circlearrowright;+ve &sum;M<sub>A</sub> = 0<br>
+&DoubleRightArrow; 0 -(1200x2)-(2000x4)+(R<sub>A</sub> x 6)-(1200x8) = 0<br>
+&DoubleRightArrow; -2400-8000+6R<sub>A</sub>-9600 = 0<br>
+&DoubleRightArrow; 6R<sub>A</sub> = 20000<br>
+&DoubleRightArrow; R<sub>A</sub> = 20000/6 = 3333.34N <b>Ans</b><br><br>
+putting R<sub>A</sub> in eq1,<br>
+&therefore;R<sub>B</sub>+3333.34 = 4400<br>
+&DoubleRightArrow; R<sub>B</sub>  = 666.67N <b>Ans</b> <br><br>
+<b>
+Q&GreaterGreater;A horizontal force 'P' is as shown in fig. keeps the weight of 100N
+is in equilibrium. Find the magnitude of force 'P' and the tension in the string. <br>
+<img src="../assets/images/mech/23.png" alt="Image Not found" width="200px"><br>
+Sol -</b><br>
+
+Free body diagram,<br>
+<img src="../assets/images/mech/23.1.png" alt="Image Not found" width="200px"><br>
+from lami's theorem,<br>
+&DoubleRightArrow; P/sin(170&deg;) = T/sin(90&deg;) = W/sin(100&deg;)<br>
+on comparing,<br>
+&DoubleRightArrow; T/sin90&deg; = W/sin100&deg;<br>
+&DoubleRightArrow;T=101.542N <b>Ans</b><br>
+on comparing,<br>
+&DoubleRightArrow;p/sin170&deg; = w/sin100&deg;<br>
+&DoubleRightArrow;P = 17.632N <b>Ans</b><br><br>
+
+<b>
+Q&GreaterGreater;Calculate the tension in the string AB & AC, if the weight of 200N is 
+attached by the two string as shown in fig. <br>
+<img src="../assets/images/mech/24.png" alt="Image Not found" width="200px"><br>
+Sol -</b><br>
+
+Free body diagram,<br>
+<img src="../assets/images/mech/24.1.png" alt="Image Not found" width="200px"><br>
+from lami's theorem,<br>
+&DoubleRightArrow; T<sub>AB</sub>/sin(150&deg;) = T<sub>AC</sub>/sin(120&deg;) = 200/sin(100&deg;)<br>
+on comparing,<br>
+&DoubleRightArrow;T<sub>AB</sub>/sin(150&deg;) = 200/sin(100&deg;)<br>
+&DoubleRightArrow; T<sub>AB</sub> = 100N <b>Ans</b><br>
+on comparing,<br>
+&DoubleRightArrow;T<sub>AC</sub>/sin(120&deg;) = 200/sin(100&deg;)<br>
+&DoubleRightArrow; T<sub>AC</sub> = 173.205N <b>Ans</b><br><br>
+
+<b>Q&GreaterGreater; Three bars are pinned together at B & C and supported by a hinged at
+  A & D as shown in fig. to form a 4 link mechanism. Determine the value of 4 link that
+  will prevent the motion. <br>
+  <img src="../assets/images/mech/25.png" alt="Image Not found" width="300px"><br>
+Sol -</b><br>
+Free body diagram at joint B,<br>
+<img src="../assets/images/mech/25.1.png" alt="Image Not found" width="150px"><img src="../assets/images/mech/25.2.png" alt="Image Not found" width="200px"><br>     
+From lami's theorem,<br>
+&DoubleRightArrow; F<sub>AB</sub>/sin(135&deg;) = F<sub>BC</sub>/sin(105&deg;) = 800/sin(120&deg;)<br>
+on comparing,<br>
+&DoubleRightArrow; F<sub>BC</sub>/sin(105&deg;) = 800/sin(120&deg;)<br>
+&DoubleRightArrow; F<sub>BC</sub> = 892.284N <br><br>
+Free body diagram at joint C,<br>
+<img src="../assets/images/mech/25.3.png" alt="Image Not found" width="150px"><img src="../assets/images/mech/25.4.png" alt="Image Not found" width="150px"><br>
+&DoubleRightArrow; F<sub>BC</sub>/sin(135&deg;) = F<sub>CD</sub>/sin(120&deg;)=P/sin(105&deg;)<br>
+on comparing,<br>
+&DoubleRightArrow; F<sub>BC</sub>/sin(135&deg;) = P/sin(105&deg;)<br>
+&DoubleRightArrow; P = 1218.882N <b>Ans</b><br><br>
+
+<b>Q&GreaterGreater; Two equal load of 2500N are supported by a flexible string ABCD at 
+  point B and C. Find the tension in the portion AB, BC and CD of string. <br>
+  <img src="../assets/images/mech/26.png" alt="Image Not found" width="300px"><br>
+Sol -</b><br>
+Free body diagram at joint B,<br>
+<img src="../assets/images/mech/26.1.png" alt="Image Not found" width="200px"><br>     
+From lami's theorem,<br>
+&DoubleRightArrow; T<sub>AB</sub>/sin(60&deg;) = T<sub>BC</sub>/sin(150&deg;) = 2500/sin(150&deg;)<br>
+on comparing,<br>
+&DoubleRightArrow; T<sub>AB</sub>/sin(60&deg;) = 2500/sin(150&deg;)<br>
+&DoubleRightArrow; T<sub>AB</sub> = 4330.127N <b>Ans</b><br>
+on comparing,<br>
+&DoubleRightArrow; T<sub>BC</sub>/sin(60&deg;) = 2500/sin(150&deg;)<br>
+&DoubleRightArrow; T<sub>BC</sub> = 2500N <b>Ans</b><br><br>
+Free body diagram at joint C,<br>
+<img src="../assets/images/mech/26.2.png" alt="Image Not found" width="200px"><br>
+&DoubleRightArrow; T<sub>BC</sub>/sin(120&deg;) = T<sub>CD</sub>/sin(120&deg;)=2500/sin(120&deg;)<br>
+on comparing,<br>
+&DoubleRightArrow; T<sub>CD</sub>/sin(120&deg;) = 2500/sin(120&deg;)<br>
+&DoubleRightArrow; T<sub>CD</sub> = 2500N <b>Ans</b><br><br>
+
+<b>Q&GreaterGreater; An electric bulb weight 15N hangs from C by two string AC & BC. The 
+  string AC is inclined at 60&deg; to the horizontal & BC at 45&deg; to the vertical as 
+  shown in fig. the string AC & BC. <br>
+  <img src="../assets/images/mech/27.png" alt="Image Not found" width="200px"><br>
+Sol -</b><br>
+Free body diagram,<br>
+<img src="../assets/images/mech/27.1.png" alt="Image Not found" width="200px"><br>
+From lami's theorem,<br>
+&DoubleRightArrow; F<sub>AC</sub>/sin(135&deg;) = F<sub>BC</sub>/sin(150&deg;) = 15/sin(75&deg;)<br>
+on comparing,<br>
+&DoubleRightArrow; F<sub>AC</sub>/sin(135&deg;) = 15/sin(75&deg;)<br>
+&DoubleRightArrow; F<sub>AC</sub> = 10.98N <br>
+on comparing,<br>
+&DoubleRightArrow; F<sub>BC</sub>/sin(150&deg;) = 15/sin(75&deg;)<br>
+&DoubleRightArrow; F<sub>BC</sub> = 7.764N <br><br>
+
+<h3>Centroid & centre of gravity -</h3>
+<li> <b>Centre of gravity -</b></li>
+A body is compose of no. of particle is attracted by forces, due to gravity of Earth towards
+its centre since the body is negligible as compared to the Earth all forces are consider to
+be parallel with the resultant. The resultant of this force is known as centre of gravity.<br>
+
+Centre of gravity of a body is define as the point which resultant of the gravitational 
+force (weight) act for an orientation of the body.<br>
+<br>
+<li><b>Centroid -</b></li>
+The Centroid is referred as geometrical centre of a uniform density body. This means the 
+object has its weight distributed equally across all body parts. If the body is homogeneous
+(having constant density), its centre of gravity equivallent to the centroid.<br<br>
+
+<b><li>Difference between centre of gravity and centroid -</li></b>
+<table border="1" cellspacing="0">
+  <tr>
+      <th bgcolor="wheat">Centre of gravity</th>
+      <th bgcolor="wheat">Centroid</th>
+  </tr>
+  <tr>
+      <td><li>The point where the total weight of the body focuses upon.</li></td>
+      <td><li>It is referred to as the geometrical centre of a body.</li></td>
+  </tr>
+  <tr>
+      <td><li>It is the point where the gravitational force (weight) acts on the body.</li></td>
+      <td><li>It is referred to the centre of gravity of uniform density objects.</li></td>
+  </tr>
+  <tr>
+      <td><li>It is denoted by g.</li></td>
+      <td><li>It is denoted by c.</li></td>
+  </tr>
+  <tr>
+      <td><li>Centre of Gravity in a uniform gravitational field is the average of all points,
+           weighted by local density or specific weight.</li></td>
+      <td><li>The centroid is a point in a plane area in such a way that the moment of area about
+           any axis throughout that point is 0.</li></td>
+  </tr>
+  <tr>
+      <td><li>It is a physical behaviour of the object, a point where all the weight of an object is 
+          acting.</li></td>
+      <td><li>It is a geometrical behaviour. It is the centre of measure of the amount of geometry.</li></td>
+  </tr>
+
+</table><br>
+
+<b>Centre of gravity formula -</b><br>
+<ol type="1">
+  <li>
+      <b>Cylinder -</b> <br>
+      <img src="../assets/images/mech/28.png" alt="Image Not found" width="200px"><br> 
+      volume = &pi;r&sup2;h<br>
+      x = r<br>
+      y = h/2<br>
+  </li>
+  <br>
+  <li>
+      <b>Cone - </b><br>
+      <img src="../assets/images/mech/29.png" alt="Image Not found" width="200px"><br>
+      volume = 1/3&pi;r&sup2;h<br>
+      x = r<br>
+      y = h/4<br>
+  </li>
+  <br>
+  <li>
+      <b>Sphere -</b> <br>
+      <img src="../assets/images/mech/30.png" alt="Image Not found" width="150px"><br>
+      volume = 4/3&pi;r&sup3;<br>
+      x = r<br>
+      y = r<br>
+  </li>
+  <br>
+  <li>
+     <b> Hemisphere - </b><br>
+      <img src="../assets/images/mech/31.png" alt="Image Not found" width="200px"><br>
+      volume = 2/3&pi;r&sup3;<br>
+      x = r<br>
+      y = 3r/8<br>
+  </li>
+  <br>
+  <li>
+     <b> Cube - </b><br>
+      <img src="../assets/images/mech/32.png" alt="Image Not found" width="200px"><br>
+      volume = a&sup3;<br>
+      x = a/2<br>
+      y = a/2<br>
+  </li>
+</ol>
+
+<b>Q&GreaterGreater; A right circular cone of base diameter 100mm and height 200mm is place on the hemisphere 
+  of the same diameter. Calculate its centre of gravity.
+  </b><br>
+  <img src="../assets/images/mech/33.png" alt="Image Not found" width="200px"><br>
+  <b>sol-</b><br>
+  <table border="2" cellspacing="0">
+      <tr >
+          <th bgcolor="wheat">S.no.</th>
+          <th bgcolor="wheat">Solid</th>
+          <th bgcolor="wheat">Volume(V)(mm<sup>3</sup>) </th>
+          <th bgcolor="wheat">x(mm) </th>
+          <th bgcolor="wheat">y(mm) </th>
+          <th bgcolor="wheat">Vx(mm<sup>4</sup>) </th>
+          <th bgcolor="wheat">Vy(mm<sup>4</sup>) </th>
+          
+      </tr>
+      <tr>
+          <td>1</td>
+          <td><img src="../assets/images/mech/33.3.png" alt="Image Not found" width="50px"></td>
+          <td>523598.775<br>
+              = 5.235 x 10<sup>5</sup></td>
+          <td>50</td>
+          <td>100</td>
+          <td>26179938.75<br>
+              = 26.179 x 10<sup>5</sup></td>
+          <td>52359877.5<br>
+              = 52.359 x 10<sup>6</sup></td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><img src="../assets/images/mech/33.2.png" alt="Image Not found" width="55px"></td>
+          <td>261799.387<br>
+              =2.617 x 10<sup>5</sup></td>
+          <td>50</td>
+          <td>31.25</td>
+          <td>13089969.35<br>
+              = 13.089 x 10<sup>5</sup></td>
+          <td>8181230.844<br>
+              = 81.812 x 10<sup>5</sup></td>     
+      </tr>
+      <tr>
+          <td ></td>
+          <td colspan="2" align="right">  &sum; V = 785398.162</td>
+          <td colspan="2"></td>
+          <td>&sum;Vx = 39269908.1</td>
+          <td>&sum;Vy = 60541102.34</td>
+          
+      </tr>
+
+  </table><br>
+  So, X = &sum;Vx/&sum;V = 39269908.1/785398.162 = 50mm<br>
+  And, Y = &sum;Vy/&sum;V = 60541102.34/785398.162 = 77.083mm<br>
+  &therefore; Centre of gravity, G = (x,y) = (50,77.083) <b>Ans</b><br><br>
+
+  
+ 
+   <b>Q&GreaterGreater;A solid cone having base diameter 150mm and height 150mm is 
+      placed on top of cylinder diameter 150mm and height 200mm, such that axis are 
+      co-liner. Locate center of gravity with respect to bottom.
+      </b><br>
+      <img src="../assets/images/mech/34.png" alt="Image Not found" width="200px"><br>
+      <b>sol-</b><br>
+      <table border="2" cellspacing="0">
+          <tr >
+              <th bgcolor="wheat">S.no.</th>
+              <th bgcolor="wheat">Solid</th>
+              <th bgcolor="wheat">Volume(V)(mm<sup>3</sup>) </th>
+              <th bgcolor="wheat">x(mm) </th>
+              <th bgcolor="wheat">y(mm) </th>
+              <th bgcolor="wheat">Vx(mm<sup>4</sup>) </th>
+              <th bgcolor="wheat">Vy(mm<sup>4</sup>) </th>
+              
+          </tr>
+          <tr>
+              <td>1</td>
+              <td><img src="../assets/images/mech/34.1.png" alt="Image Not found" width="40px"></td>
+              <td>3.534 x 10<sup>6</sup></td>
+              <td>75</td>
+              <td>100</td>
+              <td>265.05 x 10<sup>6</sup></td>
+              <td>353.4 x 10<sup>6</sup></td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td><img src="../assets/images/mech/33.3.png" alt="Image Not found" width="50px"></td>
+              <td>883.57 x 10<sup>5</sup></td>
+              <td>75</td>
+              <td>237.5</td>
+              <td>66.267 x 10<sup>5</sup></td>
+              <td>209.847 x 10<sup>5</sup></td>     
+          </tr>
+          <tr>
+              <td ></td>
+              <td colspan="2" align="right">  &sum; V = 4.417 x 10<sup>6</sup></td>
+              <td colspan="2"></td>
+              <td>&sum;Vx = 331.317 x 10<sup>6</sup></td>
+              <td>&sum;Vy = 563.247 x 10<sup>6</sup></td>
+              
+          </tr>
+  
+      </table><br>
+So, X = &sum;Vx/&sum;V =  331.317 x 10<sup>6</sup>/4.417 x 10<sup>6</sup> = 75mm<br>
+And, Y = &sum;Vy/&sum;V = 563.247 x <sup>6</sup>/4.417 x 10<sup>6</sup> = 127.5mm<br>
+&therefore; Centre of gravity, G = (x,y) = (75,127.5) <b>Ans</b><br><br> 
+
+
+<b>Q&GreaterGreater;Find the centre of gravity of composite body show in fig.
+  </b><br>
+  <img src="../assets/images/mech/35.png" alt="Image Not found" width="200px"><br>
+  <b>sol-</b><br>
+  <table border="2" cellspacing="0">
+      <tr >
+          <th bgcolor="wheat">S.no.</th>
+          <th bgcolor="wheat">Solid</th>
+          <th bgcolor="wheat">Volume(V)(cm<sup>3</sup>) </th>
+          <th bgcolor="wheat">x(cm) </th>
+          <th bgcolor="wheat">y(cm) </th>
+          <th bgcolor="wheat">Vx(cm<sup>4</sup>) </th>
+          <th bgcolor="wheat">Vy(cm<sup>4</sup>) </th>
+          
+      </tr>
+      <tr>
+          <td>1</td>
+          <td><img src="../assets/images/mech/34.1.png" alt="Image Not found" width="40px"></td>
+          <td>18.85</td>
+          <td>2.5</td>
+          <td>3</td>
+          <td>47.125</td>
+          <td>56.55</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><img src="../assets/images/mech/35.2.png" alt="Image Not found" width="50px"></td>
+          <td>39.27</td>
+          <td>2.5</td>
+          <td>7</td>
+          <td>98.175</td>
+          <td>274.89</td>     
+      </tr>
+      <tr>
+          <td ></td>
+          <td colspan="2" align="right">  &sum; V = 58.12</td>
+          <td colspan="2"></td>
+          <td>&sum;Vx = 145.3</td>
+          <td>&sum;Vy = 331.44</td>
+          
+      </tr>
+
+  </table><br>
+  So, X = &sum;Vx/&sum;V = 145.3/58.12 = 2.5cm<br>
+  And, Y = &sum;Vy/&sum;V = 331.44/58.12 = 5.702cm<br>
+  &therefore; Centre of gravity, G = (x,y) = (2.5,5.702) <b>Ans</b><br><br>
+
+  <b>Q&GreaterGreater;A solid cone having base diameter 150mm and height 150mm is 
+      placed on top of cylinder diameter 150mm and height 200mm, such that axis are 
+      co-liner. Locate center of gravity with respect to bottom.
+      </b><br>
+      <img src="../assets/images/mech/35.1.png" alt="Image Not found" width="200px"><br>
+  <b>sol-</b><br>
+      <table border="2" cellspacing="0">
+          <tr >
+              <th bgcolor="wheat">S.no.</th>
+              <th bgcolor="wheat">Solid</th>
+              <th bgcolor="wheat">Volume(V)(mm<sup>3</sup>) </th>
+              <th bgcolor="wheat">x(mm) </th>
+              <th bgcolor="wheat">y(mm) </th>
+              <th bgcolor="wheat">Vx(mm<sup>4</sup>) </th>
+              <th bgcolor="wheat">Vy(mm<sup>4</sup>) </th>
+              
+          </tr>
+          <tr>
+              <td>1</td>
+              <td><img src="../assets/images/mech/33.2.png" alt="Image Not found" width="50px"></td>
+              <td>2.094 x 10<sup>6</sup></td>
+              <td>100</td>
+              <td>462.5</td>
+              <td>209.4 x 10<sup>6</sup></td>
+              <td>968.475 x 10<sup>6</sup></td>
+          </tr>
+          <tr>
+              <td>2</td>
+              <td><img src="../assets/images/mech/34.1.png" alt="Image Not found" width="40px"></td>
+              <td>12.566 x 10<sup>6</sup></td>
+              <td>100</td>
+              <td>200</td>
+              <td>1.2566 x 10<sup>9</sup></td>
+              <td>2.5132 x 10<sup>9</sup></td>     
+          </tr>
+          <tr>
+              <td ></td>
+              <td colspan="2" align="right">  &sum; V = 14.66 x 10<sup>6</sup></td>
+              <td colspan="2"></td>
+              <td>&sum;Vx = 1.466 x 10<sup>9</sup></td>
+              <td>&sum;Vy = 3.4816 x 10<sup>9</sup></td>
+              
+          </tr>
+  
+      </table><br>
+So, X = &sum;Vx/&sum;V = 1.466 x 10<sup>9</sup>/14.66 x 10<sup>6</sup> = 100mm<br>
+And, Y = &sum;Vy/&sum;V = 3.4816 x <sup>9</sup>/14.66 x 10<sup>6</sup> = 237.489mm<br>
+&therefore; Centre of gravity, G = (x,y) = (100,237.489) <b>Ans</b><br><br> 
+
+<h4>Centroid formula -</h4>
+<b><li>Rectangle -<br>
+  <img src="../assets/images/mech/52.png" alt="Image Not found" width="300px"><br>
+</li>
+<li>Right Angle Tringle-<br>\
+  <img src="../assets/images/mech/51.png" alt="Image Not found" width="300px"><br>
+</li>
+<li>Semi Circle-<br>
+  <img src="../assets/images/mech/50.png" alt="Image Not found" width="300px"><br>
+</li>
+<li>Quatrant of Circle-<br>
+  <img src="../assets/images/mech/49.png" alt="Image Not found" width="300px"><br>
+</li></b>
+
+<br>
+
+
+<b>Q&GreaterGreater;Locate the Centroid for the given shape with respect to the 
+  reference x and y axis.
+  </b><br>
+  <img src="../assets/images/mech/36.png" alt="Image Not found" width="250px"><br>
+  <b>sol-</b><br>
+  <table border="2" cellspacing="0">
+      <tr >
+          <th bgcolor="wheat">S.no.</th>
+          <th bgcolor="wheat">Shape</th>
+          <th bgcolor="wheat">Area(A)(m<sup>2</sup>) </th>
+          <th bgcolor="wheat">x(m) </th>
+          <th bgcolor="wheat">y(m) </th>
+          <th bgcolor="wheat">Ax(m<sup>3</sup>) </th>
+          <th bgcolor="wheat">Ay(m<sup>3</sup>) </th>
+          
+      </tr>
+      <tr>
+          <td>1</td>
+          <td><img src="../assets/images/mech/35.2.png" alt="Image Not found" width="50px"></td>
+          <td>12</td>
+          <td>3</td>
+          <td>1</td>
+          <td>36</td>
+          <td>12</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><img src="../assets/images/mech/36.1.png" alt="Image Not found" width="50px"></td>
+          <td>3</td>
+          <td>7</td>
+          <td>0.666</td>
+          <td>21</td>
+          <td>1.998</td>     
+      </tr>
+      <tr>
+          <td>3</td>
+          <td><img src="../assets/images/mech/36.2.png" alt="Image Not found" width="50px"></td>
+          <td>14.137</td>
+          <td>3</td>
+          <td>3.273</td>
+          <td>43.411</td>
+          <td>46.27</td>     
+      </tr>
+      <tr>
+          <td ></td>
+          <td colspan="2" align="right">  &sum;A = 29.137</td>
+          <td colspan="2"></td>
+          <td>&sum;Ax = 99.411</td>
+          <td>&sum;Ay = 60.268</td>
+          
+      </tr>
+
+  </table><br>
+So, X = &sum;Ax/&sum;A = 99.411/29.137 = 3.411m<br>
+And, Y = &sum;Ay/&sum;A = 60.268/29.137 = 2.068m<br>
+&therefore; Centroid, C = (x,y) = (3.411,2.068) <b>Ans</b><br><br> 
+
+<b>Q&GreaterGreater;Locate the Centroid for the given shape with respect to the 
+  reference x and y axis.
+  </b><br>
+  <img src="../assets/images/mech/37.png" alt="Image Not found" width="200px"><br>
+  <b>sol-</b><br>
+  <table border="2" cellspacing="0">
+      <tr >
+          <th bgcolor="wheat">S.no.</th>
+          <th bgcolor="wheat">Shape</th>
+          <th bgcolor="wheat">Area(A)(m<sup>2</sup>) </th>
+          <th bgcolor="wheat">x(m) </th>
+          <th bgcolor="wheat">y(m) </th>
+          <th bgcolor="wheat">Ax(m<sup>3</sup>) </th>
+          <th bgcolor="wheat">Ay(m<sup>3</sup>) </th>
+          
+      </tr>
+      <tr>
+          <td>1</td>
+          <td><img src="../assets/images/mech/35.2.png" alt="Image Not found" width="50px"></td>
+          <td>18</td>
+          <td>3</td>
+          <td>4.5</td>
+          <td>54</td>
+          <td>81</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><img src="../assets/images/mech/33.2.png" alt="Image Not found" width="50px"></td>
+          <td>14.137</td>
+          <td>3</td>
+          <td>1.726</td>
+          <td>42.411</td>
+          <td>24.4</td>     
+      </tr>
+     
+      <tr>
+          <td ></td>
+          <td colspan="2" align="right">  &sum;A = 32.137</td>
+          <td colspan="2"></td>
+          <td>&sum;Ax = 96.411</td>
+          <td>&sum;Ay = 105.4</td>
+          
+      </tr>
+
+  </table><br>
+So, X = &sum;Ax/&sum;A = 96.411/32.137 = 3m<br>
+And, Y = &sum;Ay/&sum;A = 105.4/32.137 = 3.279m<br>
+&therefore; Centroid, C = (x,y) = (3,3.279) <b>Ans</b><br><br>
+
+
+<b>Q&GreaterGreater;Locate the Centroid for the given shape with respect to the 
+  reference x and y axis.
+  </b><br>
+  <img src="../assets/images/mech/38.png" alt="Image Not found" width="200px"><br>
+  <b>sol-</b><br>
+  <table border="2" cellspacing="0">
+      <tr >
+          <th bgcolor="wheat">S.no.</th>
+          <th bgcolor="wheat">Shape</th>
+          <th bgcolor="wheat">Area(A)(m<sup>2</sup>) </th>
+          <th bgcolor="wheat">x(m) </th>
+          <th bgcolor="wheat">y(m) </th>
+          <th bgcolor="wheat">Ax(m<sup>3</sup>) </th>
+          <th bgcolor="wheat">Ay(m<sup>3</sup>) </th>
+          
+      </tr>
+      <tr>
+          <td>1</td>
+          <td><img src="../assets/images/mech/38.2.png" alt="Image Not found" width="50px"></td>
+          <td>7.068</td>
+          <td>1.273</td>
+          <td>7.273</td>
+          <td>8.997</td>
+          <td>51.405</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><img src="../assets/images/mech/38.1.png" alt="Image Not found" width="40px"></td>
+          <td>9</td>
+          <td>1</td>
+          <td>4</td>
+          <td>9</td>
+          <td>36</td>     
+      </tr>
+      <tr>
+          <td ></td>
+          <td colspan="2" align="right">  &sum;A = 16.068</td>
+          <td colspan="2"></td>
+          <td>&sum;Ax = 17.997</td>
+          <td>&sum;Ay = 87.405</td>
+          
+      </tr>
+
+  </table><br>
+So, X = &sum;Ax/&sum;A = 17.997/16.068 = 1.12m<br>
+And, Y = &sum;Ay/&sum;A = 87.405/16.068 = 5.439m<br>
+&therefore; Centroid, C = (x,y) = (1.12,5.439) <b>Ans</b><br><br> 
+
+<b>Q&GreaterGreater;Locate the Centroid for the given shape with respect to the 
+  reference x and y axis.
+  </b><br>
+  <img src="../assets/images/mech/39.png" alt="Image Not found" width="250px"><br>
+  <b>sol-</b><br>
+  <table border="2" cellspacing="0">
+      <tr >
+          <th bgcolor="wheat">S.no.</th>
+          <th bgcolor="wheat">Shape</th>
+          <th bgcolor="wheat">Area(A)(m<sup>2</sup>) </th>
+          <th bgcolor="wheat">x(m) </th>
+          <th bgcolor="wheat">y(m) </th>
+          <th bgcolor="wheat">Ax(m<sup>3</sup>) </th>
+          <th bgcolor="wheat">Ay(m<sup>3</sup>) </th>
+          
+      </tr>
+      <tr>
+          <td>1</td>
+          <td><img src="../assets/images/mech/36.1.png" alt="Image Not found" width="50px"></td>
+          <td>9</td>
+          <td>4</td>
+          <td>2</td>
+          <td>36</td>
+          <td>18</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><img src="../assets/images/mech/39.1.png" alt="Image Not found" width="30px"></td>
+          <td>14.137</td>
+          <td>1.726</td>
+          <td>3</td>
+          <td>24.4</td>
+          <td>42.411</td>     
+      </tr>
+      <tr>
+          <td ></td>
+          <td colspan="2" align="right">  &sum;A = 23.137</td>
+          <td colspan="2"></td>
+          <td>&sum;Ax = 60.4</td>
+          <td>&sum;Ay = 60.411</td>
+          
+      </tr>
+
+  </table><br>
+So, X = &sum;Ax/&sum;A = 60.4/23.137 = 2.61m<br>
+And, Y = &sum;Ay/&sum;A = 60.411/23.137 = 2.611m<br>
+&therefore; Centroid, C = (x,y) = (2.61,2.611) <b>Ans</b><br><br>  
+
+<b>Q&GreaterGreater;Locate the Centroid for the given shape with respect to the 
+  reference x and y axis.
+  </b><br>
+  <img src="../assets/images/mech/40.1.png" alt="Image Not found" width="200px"><br>
+  <b>sol-</b><br>
+  <table border="2" cellspacing="0">
+      <tr >
+          <th bgcolor="wheat">S.no.</th>
+          <th bgcolor="wheat">Shape</th>
+          <th bgcolor="wheat">Area(A)(cm<sup>2</sup>) </th>
+          <th bgcolor="wheat">x(cm) </th>
+          <th bgcolor="wheat">y(cm) </th>
+          <th bgcolor="wheat">Ax(cm<sup>3</sup>) </th>
+          <th bgcolor="wheat">Ay(cm<sup>3</sup>) </th>
+          
+      </tr>
+      <tr>
+          <td>1</td>
+          <td><img src="../assets/images/mech/35.2.png" alt="Image Not found" width="50px"></td>
+          <td>1800</td>
+          <td>45</td>
+          <td>130</td>
+          <td>81000</td>
+          <td>234000</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><img src="../assets/images/mech/34.1.png" alt="Image Not found" width="40px"></td>
+          <td>1800</td>
+          <td>45</td>
+          <td>75</td>
+          <td>81000</td>
+          <td>135000</td>     
+      </tr>
+      <tr>
+          <td>3</td>
+          <td><img src="../assets/images/mech/35.2.png" alt="Image Not found" width="50px"></td>
+          <td>2100</td>
+          <td>45</td>
+          <td>15</td>
+          <td>94500</td>
+          <td>31500</td>     
+      </tr>
+      <tr>
+          <td ></td>
+          <td colspan="2" align="right">  &sum;A = 5700</td>
+          <td colspan="2"></td>
+          <td>&sum;Ax = 256500</td>
+          <td>&sum;Ay = 400500</td>
+          
+      </tr>
+
+  </table><br>
+So, X = &sum;Ax/&sum;A = 256500/5700 = 45cm<br>
+And, Y = &sum;Ay/&sum;A = 400500/5700 = 70.263cm<br>
+&therefore; Centroid, C = (x,y) = (45,70.263) <b>Ans</b><br><br>
+
+<b>Q&GreaterGreater;Find the Centroid of the shaded part with respect to the 
+  reference x and y axis.
+  </b><br>
+  <img src="../assets/images/mech/40.png" alt="Image Not found" width="200px"><br>
+  <b>sol-</b><br>
+  <table border="2" cellspacing="0">
+      <tr >
+          <th bgcolor="wheat">S.no.</th>
+          <th bgcolor="wheat">Shape</th>
+          <th bgcolor="wheat">Area(A)(m<sup>2</sup>) </th>
+          <th bgcolor="wheat">x(m) </th>
+          <th bgcolor="wheat">y(m) </th>
+          <th bgcolor="wheat">Ax(m<sup>3</sup>) </th>
+          <th bgcolor="wheat">Ay(m<sup>3</sup>) </th>
+          
+      </tr>
+      <tr>
+          <td>1</td>
+          <td><img src="../assets/images/mech/34.1.png" alt="Image Not found" width="40px"></td>
+          <td>18</td>
+          <td>1.5</td>
+          <td>3</td>
+          <td>27</td>
+          <td>54</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><img src="../assets/images/mech/36.1.png" alt="Image Not found" width="50px"></td>
+          <td>9</td>
+          <td>4</td>
+          <td>2</td>
+          <td>36</td>
+          <td>18</td>     
+      </tr>
+      <tr>
+          <td>3</td>
+          <td><img src="../assets/images/mech/40.2.png" alt="Image Not found" width="30px"></td>
+          <td>-14.137</td>
+          <td>1.273</td>
+          <td>3</td>
+          <td>-17.996</td>
+          <td>-42.411</td>     
+      </tr>
+      <tr>
+          <td ></td>
+          <td colspan="2" align="right">  &sum;A = 12.863</td>
+          <td colspan="2"></td>
+          <td>&sum;Ax = 45.004</td>
+          <td>&sum;Ay = 29.589</td>
+          
+      </tr>
+
+  </table><br>
+So, X = &sum;Ax/&sum;A = 45.004/12.863 = 3.498m<br>
+And, Y = &sum;Ay/&sum;A = 29.589/12.863 = 2.3m<br>
+&therefore; Centroid, C = (x,y) = (3.498,2.3) <b>Ans</b><br><br>
+
+<b>Q&GreaterGreater;Find the Centroid of the shaded part with respect to the 
+  reference x and y axis.
+  </b><br>
+  <img src="../assets/images/mech/41.png" alt="Image Not found" width="250px"><br>
+  <b>sol-</b><br>
+  <table border="2" cellspacing="0">
+      <tr >
+          <th bgcolor="wheat">S.no.</th>
+          <th bgcolor="wheat">Shape</th>
+          <th bgcolor="wheat">Area(A)(cm<sup>2</sup>) </th>
+          <th bgcolor="wheat">x(cm) </th>
+          <th bgcolor="wheat">y(cm) </th>
+          <th bgcolor="wheat">Ax(cm<sup>3</sup>) </th>
+          <th bgcolor="wheat">Ay(cm<sup>3</sup>) </th>
+          
+      </tr>
+      <tr>
+          <td>1</td>
+          <td><img src="../assets/images/mech/41.2.png" alt="Image Not found" width="40px"></td>
+          <td>24</td>
+          <td>5.333</td>
+          <td>2</td>
+          <td>127.992</td>
+          <td>48</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><img src="../assets/images/mech/41.1.png" alt="Image Not found" width="40px"></td>
+          <td>36</td>
+          <td>11</td>
+          <td>3</td>
+          <td>396</td>
+          <td>108</td>     
+      </tr>
+      <tr>
+          <td>3</td>
+          <td><img src="../assets/images/mech/41.3.png" alt="Image Not found" width="40px"></td>
+          <td>-28.274</td>
+          <td>11.453</td>
+          <td>2.546</td>
+          <td>-323.822</td>
+          <td>-71.985</td>     
+      </tr>
+      <tr>
+          <td ></td>
+          <td colspan="2" align="right">  &sum;A = 31.726</td>
+          <td colspan="2"></td>
+          <td>&sum;Ax = 200.17</td>
+          <td>&sum;Ay = 84.015</td>
+          
+      </tr>
+
+  </table><br>
+So, X = &sum;Ax/&sum;A = 200.17/31.726 = 6.309cm<br>
+And, Y = &sum;Ay/&sum;A = 84.015/31.726 = 2.648cm<br>
+&therefore; Centroid, C = (x,y) = (6.309,2.648) <b>Ans</b><br><br>
+
+<b>Q&GreaterGreater;Find the Centroid of the shaded part with respect to the 
+  reference x and y axis.
+  </b><br>
+  <img src="../assets/images/mech/42.png" alt="Image Not found" width="250px"><br>
+  <b>sol-</b><br>
+  <table border="2" cellspacing="0">
+      <tr >
+          <th bgcolor="wheat">S.no.</th>
+          <th bgcolor="wheat">Shape</th>
+          <th bgcolor="wheat">Area(A)(mm<sup>2</sup>) </th>
+          <th bgcolor="wheat">x(mm) </th>
+          <th bgcolor="wheat">y(mm) </th>
+          <th bgcolor="wheat">Ax(mm<sup>3</sup>) </th>
+          <th bgcolor="wheat">Ay(mm<sup>3</sup>) </th>
+          
+      </tr>
+      <tr>
+          <td>1</td>
+          <td><img src="../assets/images/mech/35.2.png" alt="Image Not found" width="55px"></td>
+          <td>6000</td>
+          <td>50</td>
+          <td>30</td>
+          <td>300000<br>
+          = 3 x 10<sup>5</sup></td>
+          <td>180000<br>
+          = 18 x 10<sup>4</sup></td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><img src="../assets/images/mech/33.3.png" alt="Image Not found" width="50px"></td>
+          <td>2500</td>
+          <td>50</td>
+          <td>76.666</td>
+          <td>125000<br>
+          = 125 x 10<sup>3</sup></td>
+          <td>191665<br>
+          = 191.665 x 10<sup>3</sup></td>     
+      </tr>
+      <tr>
+          <td>3</td>
+          <td><img src="../assets/images/mech/41.3.png" alt="Image Not found" width="50px"></td>
+          <td>-2827.433</td>
+          <td>74.536</td>
+          <td>25.464</td>
+          <td>-210745.546<br>
+          = -210.745 x 10<sup>3</sup></td>
+          <td>-71997.753<br>
+          = -71.997 x 10<sup>3</sup></td>     
+      </tr>
+      <tr>
+          <td ></td>
+          <td colspan="2" align="right">  &sum;A = 5672.567</td>
+          <td colspan="2"></td>
+          <td>&sum;Ax = 214254.454</td>
+          <td>&sum;Ay = 299667.247</td>
+          
+      </tr>
+
+  </table><br>
+So, X = &sum;Ax/&sum;A = 214254.454/5672.567 = 37.77mm<br>
+And, Y = &sum;Ay/&sum;A = 299667.247/5672.567 = 52.827mm<br>
+&therefore; Centroid, C = (x,y) = (37.77,52.827) <b>Ans</b><br><br>
+
+<b>Q&GreaterGreater;Find the Centroid of the shaded part with respect to the 
+  reference x and y axis.
+  </b><br>
+  <img src="../assets/images/mech/43.png" alt="Image Not found" width="250px"><br>
+  <b>sol-</b><br>
+  <table border="2" cellspacing="0">
+      <tr >
+          <th bgcolor="wheat">S.no.</th>
+          <th bgcolor="wheat">Shape</th>
+          <th bgcolor="wheat">Area(A)(mm<sup>2</sup>) </th>
+          <th bgcolor="wheat">x(mm) </th>
+          <th bgcolor="wheat">y(mm) </th>
+          <th bgcolor="wheat">Ax(mm<sup>3</sup>) </th>
+          <th bgcolor="wheat">Ay(mm<sup>3</sup>) </th>
+          
+      </tr>
+      <tr>
+          <td>1</td>
+          <td><img src="../assets/images/mech/35.2.png" alt="Image Not found" width="55px"></td>
+          <td>20000</td>
+          <td>100</td>
+          <td>50</td>
+          <td>2000000<br>
+          = 2 x 10<sup>6</sup></td>
+          <td>1000000<br>
+          = 1 x 10<sup>6</sup></td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><img src="../assets/images/mech/41.2.png" alt="Image Not found" width="50px"></td>
+          <td>5000</td>
+          <td>133.333</td>
+          <td>116.666</td>
+          <td>666665<br>
+          = 6.666 x 10<sup>5</sup></td>
+          <td>523330<br>
+          = 5.833 x 10<sup>5</sup></td>     
+      </tr>
+      <tr>
+          <td>3</td>
+          <td><img src="../assets/images/mech/36.2.png" alt="Image Not found" width="55px"></td>
+          <td>-3926.99</td>
+          <td>150</td>
+          <td>21.22</td>
+          <td>-589048.5<br>
+          = -5.890 x 10<sup>5</sup></td>
+          <td>-83330.727<br>
+          = -83.33 x 10<sup>3</sup></td>     
+      </tr>
+      <tr>
+          <td ></td>
+          <td colspan="2" align="right">  &sum;A = 21073.01</td>
+          <td colspan="2"></td>
+          <td>&sum;Ax = 2077616.5</td>
+          <td>&sum;Ay = 1499999.273</td>
+          
+      </tr>
+
+  </table><br>
+So, X = &sum;Ax/&sum;A = 2077616.5/21073.01 = 98.591mm<br>
+And, Y = &sum;Ay/&sum;A = 1499999.273/21073.01 = 71.181mm<br>
+&therefore; Centroid, C = (x,y) = (98.591,71.181) <b>Ans</b><br><br>
+
+<b>Q&GreaterGreater;Find the Centroid of the given shape with respect to the 
+  reference x and y axis.
+  </b><br>
+  <img src="../assets/images/mech/44.png" alt="Image Not found" width="200px"><br>
+  <b>sol-</b><br>
+  <table border="2" cellspacing="0">
+      <tr >
+          <th bgcolor="wheat">S.no.</th>
+          <th bgcolor="wheat">Shape</th>
+          <th bgcolor="wheat">Area(A)(cm<sup>2</sup>) </th>
+          <th bgcolor="wheat">x(cm) </th>
+          <th bgcolor="wheat">y(cm) </th>
+          <th bgcolor="wheat">Ax(cm<sup>3</sup>) </th>
+          <th bgcolor="wheat">Ay(cm<sup>3</sup>) </th>
+          
+      </tr>
+      <tr>
+          <td>1</td>
+          <td><img src="../assets/images/mech/34.1.png" alt="Image Not found" width="40px"></td>
+          <td>700</td>
+          <td>5</td>
+          <td>35</td>
+          <td>3500</td>
+          <td>24500</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><img src="../assets/images/mech/35.2.png" alt="Image Not found" width="50px"></td>
+          <td>800</td>
+          <td>30</td>
+          <td>10</td>
+          <td>24000</td>
+          <td>8000</td>     
+      </tr>
+      <tr>
+          <td>3</td>
+          <td><img src="../assets/images/mech/35.2.png" alt="Image Not found" width="50px"></td>
+          <td>200</td>
+          <td>20</td>
+          <td>65</td>
+          <td>4000</td>
+          <td>13000</td>     
+      </tr>
+      <tr>
+          <td ></td>
+          <td colspan="2" align="right">  &sum;A = 1700</td>
+          <td colspan="2"></td>
+          <td>&sum;Ax = 31500</td>
+          <td>&sum;Ay = 45500</td>
+          
+      </tr>
+
+  </table><br>
+So, X = &sum;Ax/&sum;A = 31500/1700 = 18.529cm<br>
+And, Y = &sum;Ay/&sum;A = 455500/1700 = 26.764cm<br>
+&therefore; Centroid, C = (x,y) = (18.529,26.764) <b>Ans</b><br><br>
+
+
+<b>Q&GreaterGreater;Find the Centroid of the given shape with respect to the 
+  reference x and y axis.
+  </b><br>
+  <img src="../assets/images/mech/45.png" alt="Image Not found" width="200px"><br>
+  <b>sol-</b><br>
+  <table border="2" cellspacing="0">
+      <tr >
+          <th bgcolor="wheat">S.no.</th>
+          <th bgcolor="wheat">Shape</th>
+          <th bgcolor="wheat">Area(A)(mm<sup>2</sup>) </th>
+          <th bgcolor="wheat">x(mm) </th>
+          <th bgcolor="wheat">y(mm) </th>
+          <th bgcolor="wheat">Ax(mm<sup>3</sup>) </th>
+          <th bgcolor="wheat">Ay(mm<sup>3</sup>) </th>
+          
+      </tr>
+      <tr>
+          <td>1</td>
+          <td><img src="../assets/images/mech/35.2.png" alt="Image Not found" width="50px"></td>
+          <td>1200</td>
+          <td>60</td>
+          <td>5</td>
+          <td>72000</td>
+          <td>6000</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><img src="../assets/images/mech/34.1.png" alt="Image Not found" width="40px"></td>
+          <td>1536</td>
+          <td>60</td>
+          <td>74</td>
+          <td>92160</td>
+          <td>113664</td>     
+      </tr>
+      <tr>
+          <td>3</td>
+          <td><img src="../assets/images/mech/35.2.png" alt="Image Not found" width="50px"></td>
+          <td>960</td>
+          <td>60</td>
+          <td>144</td>
+          <td>57600</td>
+          <td>138240</td>     
+      </tr>
+      <tr>
+          <td ></td>
+          <td colspan="2" align="right">  &sum;A = 3696</td>
+          <td colspan="2"></td>
+          <td>&sum;Ax = 221760</td>
+          <td>&sum;Ay = 257904</td>
+          
+      </tr>
+
+  </table><br>
+So, X = &sum;Ax/&sum;A = 221760/3696 = 60mm<br>
+And, Y = &sum;Ay/&sum;A = 257904/3696 = 69.779mm<br>
+&therefore; Centroid, C = (x,y) = (60,69.779) <b>Ans</b><br><br>
+
+<b>Q&GreaterGreater;Find the Centroid of the shaded part with respect to the 
+  reference x and y axis.
+  </b><br>
+  <img src="../assets/images/mech/46.png" alt="Image Not found" width="250px"><br>
+  <b>sol-</b><br>
+  <table border="2" cellspacing="0">
+      <tr >
+          <th bgcolor="wheat">S.no.</th>
+          <th bgcolor="wheat">Shape</th>
+          <th bgcolor="wheat">Area(A)(Cm<sup>2</sup>) </th>
+          <th bgcolor="wheat">x(Cm) </th>
+          <th bgcolor="wheat">y(Cm) </th>
+          <th bgcolor="wheat">Ax(Cm<sup>3</sup>) </th>
+          <th bgcolor="wheat">Ay(Cm<sup>3</sup>) </th>
+          
+      </tr>
+      <tr>
+          <td>1</td>
+          <td><img src="../assets/images/mech/35.2.png" alt="Image Not found" width="50px"></td>
+          <td>300</td>
+          <td>10</td>
+          <td>7.5</td>
+          <td>3000</td>
+          <td>2250</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><img src="../assets/images/mech/46.1.png" alt="Image Not found" width="40px"></td>
+          <td>75</td>
+          <td>23.333</td>
+          <td>5</td>
+          <td>1749.975</td>
+          <td>375</td>     
+      </tr>
+      <tr>
+          <td>3</td>
+          <td><img src="../assets/images/mech/36.2.png" alt="Image Not found" width="50px"></td>
+          <td>-157.07</td>
+          <td>10</td>
+          <td>4.244</td>
+          <td>-1570.7</td>
+          <td>-666.605</td>     
+      </tr>
+      <tr>
+          <td ></td>
+          <td colspan="2" align="right">  &sum;A = 217.93</td>
+          <td colspan="2"></td>
+          <td>&sum;Ax = 3179.275</td>
+          <td>&sum;Ay = 1958.395</td>
+          
+      </tr>
+
+  </table><br>
+So, X = &sum;Ax/&sum;A = 3179.275/217.93 = 14.588cm<br>
+And, Y = &sum;Ay/&sum;A = 1958.395/217.93 = 8.986cm<br>
+&therefore; Centroid, C = (x,y) = (14.588,8.986) <b>Ans</b><br><br>
+
+<b>Q&GreaterGreater;Find the Centroid of the shaded part with respect to the 
+  reference x and y axis.
+  </b><br>
+  <img src="../assets/images/mech/47.png" alt="Image Not found" width="200px"><br>
+  <b>sol-</b><br>
+  <table border="2" cellspacing="0">
+      <tr >
+          <th bgcolor="wheat">S.no.</th>
+          <th bgcolor="wheat">Shape</th>
+          <th bgcolor="wheat">Area(A)(m<sup>2</sup>) </th>
+          <th bgcolor="wheat">x(m) </th>
+          <th bgcolor="wheat">y(m) </th>
+          <th bgcolor="wheat">Ax(m<sup>3</sup>) </th>
+          <th bgcolor="wheat">Ay(m<sup>3</sup>) </th>
+          
+      </tr>
+      <tr>
+          <td>1</td>
+          <td><img src="../assets/images/mech/38.2.png" alt="Image Not found" width="50px"></td>
+          <td>7.068</td>
+          <td>1.273</td>
+          <td>7.273</td>
+          <td>8.997</td>
+          <td>51.405</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><img src="../assets/images/mech/47.1.png" alt="Image Not found" width="50px"></td>
+          <td>9</td>
+          <td>2</td>
+          <td>4</td>
+          <td>18</td>
+          <td>36</td>     
+      </tr>
+        
+      <tr>
+          <td ></td>
+          <td colspan="2" align="right">  &sum;A = 16.068</td>
+          <td colspan="2"></td>
+          <td>&sum;Ax = 26.997</td>
+          <td>&sum;Ay = 87.405</td>
+          
+      </tr>
+
+  </table><br>
+So, X = &sum;Ax/&sum;A = 26.997/16.068 = 1.68m<br>
+And, Y = &sum;Ay/&sum;A = 87.405/16.068 = 5.439m<br>
+&therefore; Centroid, C = (x,y) = (1.68,5.439) <b>Ans</b><br><br>
+
+<b>Q&GreaterGreater;Find the Centroid of the shaded part with respect to the 
+  reference x and y axis.
+  </b><br>
+  <img src="../assets/images/mech/48.png" alt="Image Not found" width="200px"><br>
+  <b>sol-</b><br>
+  <table border="2" cellspacing="0">
+      <tr >
+          <th bgcolor="wheat">S.no.</th>
+          <th bgcolor="wheat">Shape</th>
+          <th bgcolor="wheat">Area(A)(cm<sup>2</sup>) </th>
+          <th bgcolor="wheat">x(cm) </th>
+          <th bgcolor="wheat">y(cm) </th>
+          <th bgcolor="wheat">Ax(cm<sup>3</sup>) </th>
+          <th bgcolor="wheat">Ay(cm<sup>3</sup>) </th>
+          
+      </tr>
+      <tr>
+          <td>1</td>
+          <td><img src="../assets/images/mech/36.1.png" alt="Image Not found" width="50px"></td>
+          <td>36</td>
+          <td>4</td>
+          <td>8</td>
+          <td>144</td>
+          <td>288</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td><img src="../assets/images/mech/35.2.png" alt="Image Not found" width="50px"></td>
+          <td>72</td>
+          <td>6</td>
+          <td>3</td>
+          <td>432</td>
+          <td>216</td>     
+      </tr>
+      <tr>
+          <td>3</td>
+          <td><img src="../assets/images/mech/33.3.png" alt="Image Not found" width="50px"></td>
+          <td>-36</td>
+          <td>6</td>
+          <td>2</td>
+          <td>-216</td>
+          <td>-72</td>     
+      </tr>
+      <tr>
+          <td ></td>
+          <td colspan="2" align="right">  &sum;A = 72</td>
+          <td colspan="2"></td>
+          <td>&sum;Ax = 360</td>
+          <td>&sum;Ay = 432</td>
+          
+      </tr>
+
+  </table><br>
+So, X = &sum;Ax/&sum;A = 360/72 = 5cm<br>
+And, Y = &sum;Ay/&sum;A = 432/72 = 6m<br>
+&therefore; Centroid, C = (x,y) = (5,6) <b>Ans</b><br><br>
+
+<h3><b><u>Moment of Inertia -</u></b></h3>
+The moment of force (1st moment of force) about any point is given by<br>
+<center><b>M<sub>f</sub> = F x r</b></center>
+where, F = force.<br>
+r = perpendicular distance from reference point O.<br><br>
+The 2nd moment of inertia in given by<br>
+<center><b>M<sub>s</sub> = M<sub>f</sub><br>
+  M<sub>s</sub> = F x r x r <br>
+  M<sub>s</sub> = Fr<sup>2</sup></b></center>
+
+If instead of force F the area of figure is condered it is called Second moment of inertia 
+and in general it is termed as moment of inertia and commonly denoted by I.<br>
+<br>
+Moment of inertia of a plane areas = Ar<sup>2</sup><br>
+Moment of inertia of a body = mr<sup>2</sup><br>
+Where, A and m respectively denote the area and mass of the body.<br>
+<br>
+Inertia refers to the property of a body by virtue of which the body resist any change
+in its state of rest or of uniform motion. Area moment of inertia is essentially a measure
+of resistance to bending and its applied while dealing with the deflection or defomotion 
+of member in bending.<br>
+The mass moment of inertia gives a measure of the resistance that body offers to change 
+in angular velocity and Accordingly is used inconjuction with rotation of rigid bodies.
+<br><br>
+<h5><b><li>Moment of Inertia of an Area -</li></b></h5>
+Consider an Area ABCDA (regular & irregular) situated in the space where axis xx' is 
+located as shown in the figure. <br>
+Consider an element area dA which is located at distance y from xx' axis. Then the 
+moment of inertia of dA about xx' axis is given by<br>
+<center><b>dI = dAxy<sup>2</sup></b></center>
+Therefore, total moment of inertia is given by,
+<center><b>&Integral;dI = &Integral;dAxy<sup>2</sup> </b></center>
+Thus, the moment of inertia of an area about the given axis is the sum of moment of 
+inertia of an elementary area constuting the given area about the given axis.<br><br>
+
+<h5><li><b>Moment of inertia of an Rectangular lemane -</b></li></h5>
+A Rectangle of b x d as shown in figure and xx and yy axis located in passing through
+the centre of gravity of Rectangular lemuna.<br>
+Consider an element area of thickness by at a distance y from xx axis, then the 
+moment of inertia of an element area is given by,<br>
+<center>
+  <b>
+      dI = dAxy<sup>2</sup><br>
+      dI = (bxdy)y<sup>2</sup><br>
+      I<sub>xx</sub> = <sub>-d/2</sub>&Integral;<sup>d/2</sup>(bxdy)y<sup>2</sup><br>
+      I<sub>xx</sub> = bd<sup>3</sup>/12<br>
+      Similarly, I<sub>yy</sub> = db<sup>3</sup>/12
+  </b>
+</center>   <br>
+<h5><b><li>Theorem of perpendicular axis -</li></b></h5>
+It states if I<sub>xx</sub> be the moment of inertia of a plane section about to perpendicular 
+axis meeting at point 'O'. The moment of inertia I about the axis I<sub>zz</sub> perpendicular 
+to the plane and passing through the intersection of xx and yy is given by<br>
+<center><b>I<sub>zz</sub> =  I<sub>xx</sub> + I<sub>yy</sub></b><br><br>
+<img src="../assets/images/mech/59.png" alt="Image Not found" width="250px"></center><br>
+Consider an area dA from total area A located in the 3D and whose coordinate are x and y 
+in the xy plane and its distance from zz-axis is r as shown in fig.<br>
+<center><b>r<sup>2</sup> = x<sup>2</sup> + y<sup>2</sup><br>
+  and, dI<sub>zz</sub> = dAr<sup>2</sup><br>
+  dI<sub>zz</sub> = dA(x<sup>2</sup> + y<sup>2</sup>) <br>
+  dI<sub>zz</sub> = dAx<sup>2</sup> + dAy<sup>2</sup> <br>
+  &therefore; &sum;dAx<sup>2</sup> = I<sub>xx</sub><br>
+  and, &sum;dAy<sup>2</sup> = I<sub>yy</sub><br>
+  &therefore; I<sub>zz</sub> = I<sub>xx</sub> + I<sub>yy</sub> 
+</b></center> <br>
+
+<h5><b><li>Theorem of parallel axis -</li></b></h5>
+This theorem states that the moment of inertia of an area about non-centroidal axis is 
+equal to the moment of inertia of an area about its centre of gravity axis which is 
+parallel to the non-centroidal axis plus the product of area and square of the distance 
+between the referred axis passing through centre of gravity and parallel of the referred 
+axis.<br>
+the moment of inertia dA about xx is given by,<br>
+<center><b>
+   I<sub>xx</sub> = &Integral;dA(h+y)<sup>2</sup><br>
+   I<sub>xx</sub> = &Integral;dAy<sup>2</sup> + &Integral;dAh<sup>2</sup> + &Integral;dA2hy<br>
+   I<sub>xx</sub> = I<sub>yy</sub> + h<sup>2</sup>A + 2h&Integral;dAy<br>
+   I<sub>xx</sub> = I<sub>yy</sub> + h<sup>2</sup>A + 2hAy<br>
+</b></center>
+where y is the distance of centre of gravity of area PQRS from gg-axis as gg passes
+through centre of gravity of area PQRS.<br>
+<center><b>
+   &therefore; I<sub>xx</sub> = I<sub>yy</sub> + h<sup>2</sup>A<br>
+</b></center>
+
+<h5><li><b>Formula of Moment of Inertia -</b></li></h5>
+<li><b>Rectangle -<br>
+  <img src="../assets/images/mech/53.png" alt="Image Not found" width="300px"><br>
+</b></li><br>
+<li><b>Triangle -<br>
+  <img src="../assets/images/mech/54.png" alt="Image Not found" width="300px"><br>
+</b></li><br>
+<li><b>Circle -<br>
+  <img src="../assets/images/mech/55.png" alt="Image Not found" width="300px"><br>
+</b></li><br>
+<li><b>Quarter circle -<br>
+  <img src="../assets/images/mech/56.png" alt="Image Not found" width="300px"><br>
+</b></li><br>
+<li><b>Semi circle -<br>
+  <img src="../assets/images/mech/57.png" alt="Image Not found" width="300px"><br>
+  <img src="../assets/images/mech/58.png" alt="Image Not found" width="300px"><br>
+</b></li><br>
+
+<b>Q&GreaterGreater;Find the moment of inertia for the given shape w.r.t. X and Y axis.<br>
+  <img src="../assets/images/mech/60.png" alt="Image Not found" width="200px"><br>
+Sol -
+  </b><br>
+  <img src="../assets/images/mech/60.1.png" alt="Image Not found" width="200px"><br>
+A = 18m<sup>2</sup><br>
+x = 1.5m<br>
+Y = 3m<br>
+Ix<sub>1</sub> = bh<sup>3</sup>/12 = 3x(6)<sup>3</sup>/12 = 54m<sup>4</sup><br>
+Iy<sub>1</sub> = b<sup>3</sup>h/12 = 6x(3)<sup>3</sup>/12 = 13.5m<sup>4</sup><br>
+Ixx<sub>1</sub> = Ix<sub>1</sub> + Al<sup>2</sup><br>
+Ixx<sub>1</sub> = 54 + 18x(3)<sup>2</sup> = 216m<sup>4</sup><br>
+Iyy<sub>1</sub> = Iy <sub>1</sub> + Al<sup>2</sup><br>
+Iyy<sub>1</sub> = 13.5 + 18x(1.5)<sup>2</sup> = 54m<sup>4</sup><br><br>
+
+<img src="../assets/images/mech/60.2.png" alt="Image Not found" width="200px"><br>
+A = 9m<sup>2</sup><br>
+x = 4m<br>
+Y = 2m<br>
+Ix<sub>2</sub> = bh<sup>3</sup>/36 = 3x(6)<sup>3</sup>/36 = 18m<sup>4</sup><br>
+Iy<sub>2</sub> = b<sup>3</sup>h/36 = 6x(3)<sup>3</sup>/36 = 4.5m<sup>4</sup><br>
+Ixx<sub>2</sub> = Ix<sub>2</sub> + Al<sup>2</sup><br>
+Ixx<sub>2</sub> = 18 + 9x(2)<sup>2</sup>= 54m<sup>4</sup><br>
+Iyy<sub>2</sub> = Iy<sub>2</sub> + Al<sup>2</sup><br>
+Iyy<sub>2</sub> = 4.5 + 9x(4)<sup>2</sup>= 148.5m<sup>4</sup><br><br>
+<img src="../assets/images/mech/60.3.png" alt="Image Not found" width="150px"><br>
+A = 14.137m<sup>2</sup><br>
+x = 1.273m<br>
+Y = 3m<br>
+Ix<sub>3</sub> = 0.392r<sup>4</sup>  = 0392x(3)<sup>4</sup> = 31.752m<sup>4</sup><br>
+Iy<sub>3</sub> = 0.11r<sup>4</sup> = 0.11x(3)<sup>4</sup> = 8.91m<sup>4</sup><br>
+Ixx<sub>3</sub> = Ix<sub>3</sub> + Al<sup>2</sup><br>
+Ixx<sub>2</sub> = 31.752 + 14.137x(3)<sup>2</sup> = 158.985m<sup>4</sup><br>
+Iyy<sub>3</sub> = Iy<sub>3</sub> + Al<sup>2</sup><br>
+Iyy<sub>3</sub> = 8.91 + 14.137x(1.273)<sup>2</sup> = 31.819m<sup>4</sup><br><br>
+
+Ix = Ixx <sub>1</sub> + Ixx<sub>2</sub> - Ixx<sub>3</sub><br>
+Ix = 216 + 54 - 158.985<br>
+Ix = 111.015m<sup>4</sup> <b>Ans</b><br>
+
+Iy = Iyy <sub>1</sub> + Iyy<sub>2</sub> - Iyy<sub>3</sub><br>
+Iy = 54 + 148.5 - 31.819<br>
+Iy = 170.681m<sup>4</sup> <b>Ans</b><br><br>
+
+<b>Q&GreaterGreater;Find the moment of inertia for the given shape w.r.t. X and Y axis.<br>
+  <img src="../assets/images/mech/61.png" alt="Image Not found" width="200px"><br>
+  Sol -
+      </b><br>
+      <img src="../assets/images/mech/61.1.png" alt="Image Not found" width="150px"><br>
+      A = 750cm<sup>2</sup><br>
+      x = 5cm<br>
+      Y = 37.5cm<br>
+      Ix<sub>1</sub> = bh<sup>3</sup>/12 = 10x(75)<sup>3</sup>/12 = 351562.5cm<sup>4</sup><br>
+      Iy<sub>1</sub> = b<sup>3</sup>h/12 = 75x(10)<sup>3</sup>/12 = 6250cm<sup>4</sup><br>
+      Ixx<sub>1</sub> = Ix<sub>1</sub> + Al<sup>2</sup><br>
+      Ixx<sub>2</sub> = 351562.5 + 750x(37.5)<sup>2</sup> = 1406250cm<sup>4</sup><br>
+      Iyy<sub>1</sub> = Iy<sub>1</sub> + Al<sup>2</sup><br>
+      Iyy<sub>1</sub> = 6250 + 750x(5)<sup>2</sup> = 25000cm<sup>4</sup><br><br>
+      <img src="../assets/images/mech/61.2.png" alt="Image Not found" width="200px"><br>
+      A = 675cm<sup>2</sup><br>
+      x = 20cm<br>
+      Y = 45cm<br>
+      Ix<sub>2</sub> = bh<sup>3</sup>/36 = 30x(45)<sup>3</sup>/36 = 75937.5cm<sup>4</sup><br>
+      Iy<sub>2</sub> = b<sup>3</sup>h/36 = 45x(30)<sup>3</sup>/36 = 33750cm<sup>4</sup><br>
+      Ixx<sub>2</sub> = Ix<sub>2</sub> + Al<sup>2</sup><br>
+      Ixx<sub>2</sub> = 75937.5 + 675x(45)<sup>2</sup> = 1442812.5cm<sup>4</sup><br>
+      Iyy<sub>2</sub> = Iy<sub>2</sub> + Al<sup>2</sup><br>
+      Iyy<sub>2</sub> = 33750 + 675x(20)<sup>2</sup> = 303750cm<sup>4</sup><br><br>
+      
+      Ix = Ixx<sub>1</sub> + Ixx<sub>2</sub><br>
+      Ix = 1406250 + 1442812.5<br>
+      Ix = 2849062.5cm<sup>4</sup>
+      
+      Iy = Iyy<sub>1</sub> + Iyy<sub>2</sub><br>
+      Iy = 25000 + 303750<br>
+      Iy = 328750cm<sup>4</sup><br><br>
+      
+
+<b>Q&GreaterGreater;Find the moment of inertia for the given shape w.r.t. X and Y axis.<br>
+  <img src="../assets/images/mech/62.png" alt="Image Not found" width="200px"><br>
+Sol -
+  </b><br>
+  <img src="../assets/images/mech/62.1.png" alt="Image Not found" width="200px"><br>
+  A = 2400mm<sup>2</sup><br>
+  x = 60mm<br>
+  Y= 140mm<br>
+  Ix<sub>1</sub>= bh<sup>3</sup>/12 = 120x(20)<sup>3</sup>/12 = 8x10<sup>4</sup>mm<sup>4</sup><br>
+  Iy<sub>1</sub>= b<sup>3</sup>h/12 = 20x(120)<sup>3</sup>/12 = 288x10<sup>4</sup>mm<sup>4</sup><br>
+  Ixx<sub>1</sub> = Ix<sub>1</sub> + Al<sup>2</sup><br>
+  Ixx<sub>1</sub> = 8x10<sup>4</sup> + 2400x(140)<sup>2</sup> = 47.12x10<sup>6</sup>mm<sup>4</sup><br>
+  Iyy<sub>1</sub>= Iy<sub>1</sub> + Al<sup>2</sup><br>
+  Iyy<sub>1</sub> = 288x10<sup>4</sup> + 2400x(60)<sup>2</sup> = 11.52x10<sup>6</sup>mm<sup>4</sup><br><br>
+  <img src="../assets/images/mech/62.2.png" alt="Image Not found" width="200px"><br>
+  A = 2600mm<sup>2</sup><br>
+  x = 60mm<br>
+  Y= 65mm<br>
+  Ix<sub>2</sub> = bh<sup>3</sup>/12 = 20x(130)<sup>3</sup>/12 = 3.661x10<sup>6</sup>mm<sup>4</sup><br>
+  Iy<sub>2</sub>= b<sup>3</sup>h/12 = 130x(20)<sup>3</sup>/12 = 86.666x10<sup>3</sup>mm<sup>4</sup><br>
+  Ixx<sub>2</sub>= Ix<sub>2</sub> + Al<sup>2</sup><br>
+  Ixx<sub>2</sub>= 3.661x10<sup>6</sup> + 2600x(65)<sup>2</sup>= 14.646x10<sup>6</sup>mm<sup>4</sup><br>
+  Iyy<sub>2</sub> = Iy<sub>2</sub> + Al<sup>2</sup><br>
+  Iyy<sub>2</sub>= 86.666x10<sup>3</sup> + 2600x(60)<sup>2</sup>= 9.446x10<sup>6</sup>mm<sup>4</sup><br><br>
+
+Ix = Ixx <sub>1</sub> + Ixx<sub>2</sub> <br>
+Ix = 47.12x10<sup>6</sup> + 14.646x10<sup>6</sup><br>
+Ix = 61.766x10<sup>6</sup>mm<sup>4</sup> <b>Ans</b><br>
+
+Iy = Iyy <sub>1</sub> + Iyy<sub>2</sub><br>
+Iy = 11.52x10<sup>6</sup> + 9.446x10<sup>6</sup><br>
+Iy = 20.966x10<sup>6</sup>mm<sup>4</sup> <b>Ans</b><br><br>
+
+<b>Q&GreaterGreater;Find the moment of inertia for the given L section about X and Y axis.<br>
+  <img src="../assets/images/mech/63.png" alt="Image Not found" width="200px"><br>
+  Sol -
+      </b><br>
+      <img src="../assets/images/mech/63.1.png" alt="Image Not found" width="200px"><br>
+      A = 700mm<sup>2</sup><br>
+      x = 45mm<br>
+      Y= 5mm<br>
+      Ix<sub>1</sub>= bh<sup>3</sup>/12 = 70x(10)<sup>3</sup>/12 = 5.833x10<sup>3</sup>mm<sup>4</sup><br>
+      Iy<sub>1</sub>= b<sup>3</sup>h/12 = 10x(70)<sup>3</sup>/12 = 285.833x10<sup>3</sup>mm<sup>4</sup><br>
+      Ixx<sub>1</sub> = Ix<sub>1</sub> + Al<sup>2</sup><br>
+      Ixx<sub>1</sub> = 5.833x10<sup>3</sup> + 700x(5)<sup>2</sup> = 23.333x10<sup>3</sup>mm<sup>4</sup><br>
+      Iyy<sub>1</sub> = Iy<sub>1</sub> + Al<sup>2</sup><br>
+      Iyy<sub>1</sub> = 285.833x10<sup>3</sup> + 700x(45)<sup>2</sup> = 1703.333x10<sup>3</sup>mm<sup>4</sup><br><br>
+      <img src="../assets/images/mech/63.2.png" alt="Image Not found" width="200px"><br>
+      A = 1200mm<sup>2</sup><br>
+      x = 5mm<br>
+      Y= 60mm<br>
+      Ix<sub>2</sub> = bh<sup>3</sup>/12 = 10x(120)<sup>3</sup>/12 = 1.44x10<sup>6</sup>mm<sup>4</sup><br>
+      Iy<sub>2</sub>= b<sup>3</sup>h/12 = 120x(10)<sup>3</sup>/12 = 10x10<sup>3</sup>mm<sup>4</sup><br>
+      Ixx<sub>2</sub>= Ix<sub>2</sub> + Al<sup>2</sup><br>
+      Ixx<sub>2</sub>= 1.44x10<sup>6</sup> + 1200x(60)<sup>2</sup>= 5.76x10<sup>6</sup>mm<sup>4</sup><br>
+      Iyy<sub>2</sub> = Iy<sub>2</sub> + Al<sup>2</sup><br>
+      Iyy<sub>2</sub>= 10x10<sup>3</sup> + 1200x(5)<sup>2</sup>= 40x10<sup>3</sup>mm<sup>4</sup><br><br>
+  
+  Ix = Ixx <sub>1</sub> + Ixx<sub>2</sub> <br>
+  Ix = 23.333x10<sup>3</sup> + 5.76x10<sup>6</sup><br>
+  Ix = 5.783x10<sup>6</sup>mm<sup>4</sup> <b>Ans</b><br>
+  
+  Iy = Iyy <sub>1</sub> + Iyy<sub>2</sub><br>
+  Iy = 1703.333x10<sup>3</sup> + 40x10<sup>3</sup><br>
+  Iy = 1.7433x10<sup>6</sup>mm<sup>4</sup> <b>Ans</b><br><br>
+
+<h4><b><u>Friction -</u></b></h4>
+When a body slides towards another body a force is exerted at the surface of contact by the 
+stationary body on the moving body. This resisting force is called the force of friction 
+and acts in opposite direction of motion.<br>
+Friction is quite undesireable and needs to be mitigrated in same machine and process such
+as power fuse. So, bearing and gears, flow of fluids in pipe.<br>
+It presents good cause loss of power, wearing out of parts and huge economic losses. However,
+the working of many devices such as friction breaks and clutch, belt and rope drives, 
+hoilding and fastening devices.<br>
+
+<h5><b><li>Statics and dynamic friction - </li></b></h5>
+Statics friction is the frictional force that develops between mating surfaces when subjected to external 
+forces but there is no relative motion between them.<br>
+The Dynamic friction is the frictional force that develops between mating surfaces subjected to external
+forces and there is relative motion between them. The Dynamic friction is also known as <b>Kinetic friction</b>.
+The Kinetic friction is always somewhat less than the maximum static friction.
+
+<h5><b><li>Nature of friction -</li></b></h5>
+<ol>
+<li>Dry friction</li>
+<ul>
+<li>Sliding friction</li>
+<li>Rolling friction</li></ul>
+<li>Fluid friction</li>
+</ol>
+<b>NOTE -</b>It may be pointed out that rolling friction is always less than sliding friction.<br><br>
+
+<h5><b><li>Laws of friction (for both static and dynamic) - </li></b></h5>
+<ol>
+  <li>Friction acts tanjential to the surface in contact and is in a direction opposite
+      to that in which motion is applied.
+  </li>
+  <li>Friction force is maximum at the instant of impending motion. It varition from 0 to 
+      max value (limiting friction) depends upon the resultant force tending to cause motion.
+  </li>
+  <li>The magnitude of limiting friction bears a constant ratio to the normal reaction
+      between the mating surfaces. These ratio drops to a slightly lower value when the 
+      motion starts.
+  </li>
+  <li>Limiting friction depends upon the nature of the surface in contact.</li>
+  <li>At low velocities between sliding surfaces the friction force is practically independent
+      of the velocity. However slide reduction in friction occurs when speeds are high.
+  </li>
+</ol>
+<b>Q&GreaterGreater;A block of weight 200 N is just on on the point of moving horizontally 
+  by a force of 52 N. What is the coefficient of friction<br>
+  <img src="../assets/images/mech/64.png" alt="Image Not found" width="200px"><br>
+  Sol -
+  </b><br>
+  Free body diagram of block-<br>
+  <img src="../assets/images/mech/64.1.png" alt="Image Not found" width="200px"><br>
+  &DoubleRightArrow; &RightArrow;+ve&sum;F<sub>x</sub> = 0<br>
+  &DoubleRightArrow; 52-F = 0<br>
+  &DoubleRightArrow; &therefore; F = 52N<br><br>
+  &DoubleRightArrow; &uparrow;+ve&sum;F<sub>y</sub> = 0<br>
+  &DoubleRightArrow; R-200 = 0<br>
+  &DoubleRightArrow; R = 200N<br><br>
+  Now, frictional force<br>
+  &DoubleRightArrow;F = &mu;R<br>
+  &DoubleRightArrow; &therefore; &mu; = F/R = 53/200 = 0.26A <b>Ans</b><br><br>
+
+<b>Q&GreaterGreater;A block of weight 200 N rest on a rough horizontal surface. 
+  Find the magnitude of the force to be applied at an angle of 30 degree to 
+  the horizontal in order to move the block on the surface. Assume u= 0.30<br>
+  <img src="../assets/images/mech/65.png" alt="Image Not found" width="200px"><br>
+  Sol -
+  </b><br>
+  Free body diagram of block-<br>
+  <img src="../assets/images/mech/65.1.png" alt="Image Not found" width="200px"><br>
+  &DoubleRightArrow; &RightArrow;+ve&sum;F<sub>x</sub> = 0<br>
+  &DoubleRightArrow; Pcos30&deg; - F = 0<br>
+  &DoubleRightArrow; Pcos30&deg; - &mu;R = 0<br>
+  &DoubleRightArrow; Pcos30&deg; - 0.3R = 0 --------eq1<br><br>
+  &DoubleRightArrow; &uparrow;+ve&sum;F<sub>y</sub> = 0<br>
+  &DoubleRightArrow; Psin30&deg; + R -200 = 0<br>
+  &DoubleRightArrow; Psin30&deg; + R = 200 --------eq2<br><br>
+  From eq1 and eq2, we get<br>
+  &DoubleRightArrow; P = 59.053N <b>Ans</b><br>
+  &DoubleRightArrow; R = 170.473N <b>Ans</b><br><br>   
+  
+<b>Q&GreaterGreater;Find the value of weight "W", If the body is in limiting 
+  equilibrium condition.<br>
+  <img src="../assets/images/mech/66.png" alt="Image Not found" width="200px"><br>
+  Sol -
+  </b><br>
+  Free body diagram of block-<br>
+  <img src="../assets/images/mech/66.1.png" alt="Image Not found" width="250px"><br>
+  &DoubleRightArrow; &RightArrow;+ve&sum;F<sub>x</sub> = 0<br>
+  &DoubleRightArrow; F - 500cos30&deg; = 0<br>
+  &DoubleRightArrow; F - 433.012 = 0<br>
+  &DoubleRightArrow; F = 433.012N<br><br>
+  Frictional force,<br>
+  &DoubleRightArrow; F = &mu;R<br>
+  &DoubleRightArrow; &therefore; R = F/&mu; = 1732.048N<br><br>
+  &DoubleRightArrow; &uparrow;+ve&sum;F<sub>y</sub> = 0<br>
+  &DoubleRightArrow; -W + R - 500sin30&deg; = 0<br>
+  &DoubleRightArrow; -W + 1732.048 - 250 = 0<br>
+  &DoubleRightArrow; -W + 1482.048 = 0<br>
+  &DoubleRightArrow; &therefore; W = 1482.048N <b>Ans</b><br><br>    
+  
+<b>Q&GreaterGreater;A block of weight 500 N is resting on the incline plane making an 
+  angle of 20 degree to the horizontal. Calculate the value of force P applied parallel
+   to the plane to just move the block up the plane if the coefficient of friction is 
+   0.14<br>
+  <img src="../assets/images/mech/67.png" alt="Image Not found" width="200px"><br>
+  Sol -
+  </b><br>
+  Free body diagram of block-<br>
+  <img src="../assets/images/mech/67.1.png" alt="Image Not found" width="250px"><br>
+  &DoubleRightArrow; &uparrow;+ve&sum;F<sub>y</sub> = 0<br>
+  &DoubleRightArrow; R - 500sin70&deg; = 0<br>
+  &DoubleRightArrow; R - 469.846 = 0<br>
+  &DoubleRightArrow; R = 469.846N<br><br>
+  Frictional force,<br>
+  &DoubleRightArrow; F = &mu;R<br>
+  &DoubleRightArrow; &therefore; F = 0.14x469.846 = 65.778N<br><br>
+  &DoubleRightArrow; &rightarrow;+ve&sum;F<sub>x</sub> = 0<br>
+  &DoubleRightArrow; P - F - 500cos70&deg; = 0<br>
+  &DoubleRightArrow; P - 65.778 - 500cos70&deg; = 0<br>
+  &DoubleRightArrow; P - 236.788 = 0<br>
+  &DoubleRightArrow; &therefore; P = 236.788N <b>Ans</b><br><br>
+
+<b>Q&GreaterGreater;A block of mass 200 N resting on a horizontal surface supports another
+   block of 100 N as shown in figure. The smaller block is attach to the string from the
+   wall. Find the horizontal force P just to move the 200 N block to the left. Coefficient
+    of friction is 0.35 for all the rubbing surfaces.<br>
+  <img src="../assets/images/mech/68.png" alt="Image Not found" width="200px"><br>
+  Sol -
+  </b><br>
+  Free body diagram of 100N block-<br>
+  <img src="../assets/images/mech/68.1.png" alt="Image Not found" width="250px"><br>
+  &DoubleRightArrow; &RightArrow;+ve&sum;F<sub>x</sub> = 0<br>
+  &DoubleRightArrow; Tcos30&deg; - F<sub>2</sub> = 0<br>
+  &DoubleRightArrow; Tcos30&deg; - &mu;R<sub>2</sub>= 0<br>
+  &DoubleRightArrow; Tcos30&deg; - 0.35R<sub>2</sub>= 0 --------eq1<br><br>
+  &DoubleRightArrow; &uparrow;+ve&sum;F<sub>y</sub> = 0<br>
+  &DoubleRightArrow; Tsin30&deg; + R<sub>2</sub> - 100 = 0<br>
+  &DoubleRightArrow; Tsin30&deg; + R<sub>2</sub> = 100 --------eq2<br><br>
+  From eq1 and eq2, we get<br>
+  &DoubleRightArrow; T = 33.62N<br>
+  &DoubleRightArrow; R<sub>2</sub> = 83.189N<br><br>
+  Free body diagram of 200N block, <br>
+  <img src="../assets/images/mech/68.2.png" alt="Image Not found" width="200px"><br>
+  &DoubleRightArrow; &uparrow;+ve&sum;F<sub>y</sub> = 0<br>
+  &DoubleRightArrow; R<sub>1</sub> - R<sub>2</sub> - 200 = 0<br>
+  &DoubleRightArrow; R<sub>1</sub> - 83.189 - 200 = 0<br>
+  &DoubleRightArrow; R<sub>1</sub> = 283.189N<br><br>
+  &DoubleRightArrow; &RightArrow;+ve&sum;F<sub>x</sub> = 0<br>
+  &DoubleRightArrow; -P + F<sub>1</sub> + F<sub>2</sub> = 0<br>
+  &DoubleRightArrow; -P + &mu;R<sub>1</sub> + &mu;R<sub>2</sub> = 0<br>
+  &DoubleRightArrow; -P + 0.35x283.189 + 0.35x83.189 = 0<br>
+  &DoubleRightArrow; &therefore; P = 128.232N <b>Ans</b><br><br>
+
+  <b>Q&GreaterGreater;The body on the incline plane is subjected to the vertical and the
+       horizontal forces as shown in figure. Find the component of each force along X and 
+       Y axis, oriented parallel and perpendicular to the incline plane.<br>
+  <img src="../assets/images/mech/69.png" alt="Image Not found" width="200px"><br>
+  Sol -
+  </b><br>
+  Free body diagram of 100N block-<br>
+  <img src="../assets/images/mech/69.1.png" alt="Image Not found" width="250px"><br>
+  From the fig.<br>
+  x component of force P = -Pcos53.13<br>
+  x component of force P = -1200cos53.13<br>
+  x component of force P = -720N <b>Ans</b><br><br>
+  y component of force P = -Psin53.13<br>
+  y component of force P = -1200sin53.13<br>
+  y component of force P = -960N <b>Ans</b><br><br>
+  Now,<br>
+  x component of force F = Fcos36.869<br>
+  x component of force F = 400cos36.869<br>
+  x component of force F = 320N <b>Ans</b><br><br>
+  y component of force F = -Fsin36.869<br>
+  y component of force F = -Fsin36.869<br>
+  y component of force F = -240N <b>Ans</b><br>
+<b>Q&GreaterGreater;One end of a uniform ladder weights 30 N rest against a smooth wall and the other end on the 
+rough horizontal floor. Coefficient of friction is 0.24. Find the inclination of ladder to the
+horizontal when it is on the point of slipping.<br>
+ <img src="../assets/images/mech/70.png" alt="Image Not found" width="200px"><br>
+ Sol -
+ </b><br>
+ Free body diagram of ladder-<br>
+ <img src="../assets/images/mech/70.1.png" alt="Image Not found" width="250px"><br>
+ &DoubleRightArrow; &uparrow;+ve&sum;F<sub>y</sub> = 0<br>
+ &DoubleRightArrow; R<sub>B</sub> - 30 = 0<br>
+ &DoubleRightArrow; R<sub>B</sub> = 30N<br><br>
+ Frictional force,<br>
+ F<sub>B</sub> = &mu;R<sub>B</sub><br>
+ &DoubleRightArrow; F<sub>B</sub> = 0.24 x 30 = 7.2N<br><br>
+ &DoubleRightArrow; &RightArrow;+ve&sum;F<sub>x</sub> = 0<br>
+ &DoubleRightArrow; R<sub>A</sub> - F<sub>B</sub> = 0<br>
+ &DoubleRightArrow; R<sub>A</sub> - 7.2 = 0<br>
+ &DoubleRightArrow; R<sub>A</sub> = 7.2N<br><br>
+
+ &DoubleRightArrow; &circlearrowright;+ve&sum;M<sub>B</sub> = 0<br>
+ &DoubleRightArrow; R<sub>A</sub> x lsin&theta; - 30 x l/2cos&theta; = 0<br>
+ &DoubleRightArrow; 7.2 x lsin&theta; - 15 x lcos&theta; = 0<br>
+ &DoubleRightArrow; 7.2 x lsin&theta; = 15 x lcos&theta; <br>
+ &DoubleRightArrow; 7.2 x sin&theta; = 15 x cos&theta; <br>
+ &DoubleRightArrow; sin&theta;/cos&theta; = 15/7.2 <br>
+ &DoubleRightArrow; tan&theta; = 15/7.2<br>
+ &DoubleRightArrow; &theta; = tan<sup>-1</sup>(15/7.2) = 64.358 <b>Ans</b><br><br>
+
+ <b>Q&GreaterGreater;
+  A uniform ladder of length 5 m and weights 400 N is placed against a smooth vertical wall with 
+  its lower end 4 m from the left wall. In this position the ladder is just to slip. Determined <br>
+  1) The coefficient of friction between the ladder and the floor.<br>
+  2) Frictional force acting on the ladder at the point of contact between the ladder and the floor.
+<br>
+<img src="../assets/images/mech/71.png" alt="Image Not found" width="200px"><br>
+Sol -
+</b><br>
+Free body diagram of ladder-<br>
+<img src="../assets/images/mech/71.1.png" alt="Image Not found" width="200px"><br>
+&DoubleRightArrow; &uparrow;+ve&sum;F<sub>y</sub> = 0<br>
+&DoubleRightArrow; R<sub>B</sub> - 400 = 0<br>
+&DoubleRightArrow; R<sub>B</sub> = 400N<br><br>
+
+&DoubleRightArrow; &circlearrowright;+ve&sum;M<sub>B</sub> = 0<br>
+&DoubleRightArrow; R<sub>A</sub> x 5sin&theta; - 400 x 2.5cos&theta; = 0<br>
+&DoubleRightArrow; R<sub>A</sub> x 5sin&theta; = 400 x 2.5cos&theta; = 0<br>
+&DoubleRightArrow; R<sub>A</sub> = (400 x 2.5cos&theta;)/5sin&theta;<br>
+&DoubleRightArrow; R<sub>A</sub> = {400 x 2.5cos(36.869)}/5sin(36.869)<br>
+&DoubleRightArrow; R<sub>A</sub> = 266.675N<br><br>
+&DoubleRightArrow; &RightArrow;+ve&sum;F<sub>x</sub> = 0<br>
+&DoubleRightArrow; R<sub>A</sub> - F<sub>B</sub> = 0<br>
+&DoubleRightArrow; R<sub>A</sub> = F<sub>B</sub> <br>
+&DoubleRightArrow; R<sub>A</sub> = 266.675N<br><br>
+
+Frictional force,<br>
+F<sub>B</sub> = &mu;R<sub>B</sub><br>
+&DoubleRightArrow; &mu; =  F<sub>B</sub> / &mu;R<sub>B</sub><br>
+&DoubleRightArrow; &mu; =  266.675/400<br>
+&DoubleRightArrow; &mu; =  0.666 <b>Ans</b><br>
+
+<b>Q&GreaterGreater;The ladder AB shown in fig weights 200 N. The coefficient of friction between
+   the ladder and the wall is 0.2 and between the ladder and the floor is 0.5. Determine the force 
+   P applied horizontally at the bottom to just produce motion to the left.
+
+<br>
+<img src="../assets/images/mech/72.png" alt="Image Not found" width="200px"><br>
+Sol -
+</b><br>
+Free body diagram of ladder-<br>
+<img src="../assets/images/mech/72.1.png" alt="Image Not found" width="200px"><br>
+
+&DoubleRightArrow; &circlearrowright;+ve&sum;M<sub>A</sub> = 0<br>
+&DoubleRightArrow; - F<sub>B</sub> x 4.5 - R<sub>B</sub> x 6 + 200 x 4.5/2 = 0<br>
+&DoubleRightArrow; - &mu;<sub>B</sub>R<sub>B</sub> x 4.5 - R<sub>B</sub> x 6 + 200 x 2.25 = 0<br>
+&DoubleRightArrow; (-0.2 x 4.5 - 6)R<sub>B</sub> + 450 = 0<br>
+&DoubleRightArrow; -6.9R<sub>B</sub> = -450<br>
+&DoubleRightArrow; R<sub>B</sub> = 65.217N<br><br>
+
+&DoubleRightArrow; &uparrow;+ve&sum;F<sub>y</sub> = 0<br>
+&DoubleRightArrow; R<sub>A</sub> + F<sub>B</sub> - 200 = 0<br>
+&DoubleRightArrow; R<sub>A</sub> + &mu;<sub>B</sub>R<sub>B</sub> - 200 = 0<br>
+&DoubleRightArrow; R<sub>A</sub> + 0.2 x 65.217 - 200 = 0<br>
+&DoubleRightArrow; R<sub>A</sub> -186.956 = 0<br>
+&DoubleRightArrow; R<sub>A</sub> = 186.956N<br><br>
+
+&DoubleRightArrow; &RightArrow;+ve&sum;F<sub>x</sub> = 0<br>
+&DoubleRightArrow; -P + F<sub>A</sub> - R<sub>B</sub> = 0<br>
+&DoubleRightArrow; -P + &mu;<sub>A</sub>F<sub>A</sub> - 65.217 = 0<br>
+&DoubleRightArrow; P = 0.5 x 186.956 - 65.217 <br>
+&DoubleRightArrow; P = 28.261N <b>Ans</b> <br><br>
+
+
+      <div>
+        <section>
+        </body>
+</html>

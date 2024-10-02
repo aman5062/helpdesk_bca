@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>Helpdesk</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- MD5 Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.19.0/js/md5.min.js"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body onload="checkLogin()">
+    <header class="navbar navbar-expand-md d-flex flex-wrap justify-content-center p-3 mb-2 border-bottom">
+        <div class="container-fluid">
+            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <img src="assets/images/logo.png" id="imglogo" alt="Logo">
+                <span class="fs-4 mr-5 lo"><h2 class="bold-text">Helpdesk</h2></span>
+            </a>
+        </div>
+    </header>
+
+    <div id="body">
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <!-- Alert Container -->
+                    <div id="alert-container" class="alert alert-warning alert-dismissible fade show hidden" role="alert">
+                        <span id="alert-message"></span>
+                        <button type="button" class="btn-close" aria-label="Close" onclick="clearAlert()"></button>
+                    </div>
+
+                    <!-- OTP Request Section -->
+                    <div id="otp-section" class="card p-4">
+                        <h3 class="card-title text-center mb-4">Request OTP</h3>
+                        <form id="otp-form">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <button type="button" class="btn btn-primary w-100" onclick="sendOtp()">Send OTP</button>
+                        </form>
+                    </div>
+
+                    <!-- OTP Verification Section -->
+                    <div id="verify-section" class="card p-4 hidden">
+                        <h3 class="card-title text-center mb-4">Verify OTP</h3>
+                        <form id="verify-form">
+                            <div class="mb-3">
+                                <label for="otp" class="form-label">Enter OTP</label>
+                                <input type="text" class="form-control" id="otp" placeholder="Enter the OTP" required>
+                            </div>
+                            <button type="button" class="btn btn-primary w-100" onclick="verifyOtp()">Verify OTP</button>
+                        </form>
+                    </div>
+
+                    <!-- Change Password Section -->
+                    <div id="change-password-section" class="card p-4 hidden">
+                        <h3 class="card-title text-center mb-4">Change Password</h3>
+                        <form id="change-password-form">
+                            <div class="mb-3">
+                                <label for="new-password" class="form-label">New Password</label>
+                                <input type="password" class="form-control" id="new-password" placeholder="Enter new password" required>
+                            </div>
+                            <button type="button" class="btn btn-primary w-100" onclick="changePassword()">Change Password</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let generatedOtp = null;
+    
+        function sendOtp() {
+            const email = document.getElementById('email').value;
+            const sendOtpButton = document.querySelector('#otp-section .btn-primary');
+    
+            if (!email) {
+                displayAlert('Please enter an email address!');
+                return;
+            }
+    
+            generatedOtp = Math.floor(1000 + Math.random() * 9000); // Generate a 4-digit OTP
+            
+            // Disable the button
+            sendOtpButton.disabled = true;
+    
+            // Simulate sending OTP via email (replace this with actual email sending code)
+            console.log('Generated OTP:', generatedOtp); // For testing purposes only
+            
+            // Send the OTP and email to the server
+            fetch('https://arambhsoftech.com/Helpdesk/otp.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email: email, otp: generatedOtp })
+            })
+            .then(response => response.json())
+            .then(data => {
+                displayAlert(data.message);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            })
+            .finally(() => {
+                // Re-enable the button after showing the alert
+                sendOtpButton.disabled = false;
+            });
+    
+            // Show OTP verification section
+            document.getElementById('otp-section').classList.add('hidden');
+            document.getElementById('verify-section').classList.remove('hidden');
+    
+            // Clear any existing alert
+            clearAlert();
+        }
+    
+        function verifyOtp() {
+            const enteredOtp = document.getElementById('otp').value;
+            const verifyOtpButton = document.querySelector('#verify-section .btn-primary');
+    
+            if (!enteredOtp) {
+                displayAlert('Please enter the OTP!');
+                return;
+            }
+    
+            if (parseInt(enteredOtp) === generatedOtp) {
+                // OTP verified, show change password section
+                document.getElementById('verify-section').classList.add('hidden');
+                document.getElementById('change-password-section').classList.remove('hidden');
+    
+                // Clear any existing alert
+                clearAlert();
+            } else {
+                displayAlert('Invalid OTP.');
+            }
+        }
+    
+        function changePassword() {
+            const email = document.getElementById('email').value;
+            const newPassword = document.getElementById('new-password').value;
+            const changePasswordButton = document.querySelector('#change-password-section .btn-primary');
+    
+            if (!newPassword) {
+                displayAlert('Please enter a new password.');
+                return;
+            }
+    
+            // Disable the button
+            changePasswordButton.disabled = true;
+    
+            // Send the new password and email to the server
+            fetch('https://arambhsoftech.com/Helpdesk/change_pass.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email: email, password: newPassword })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.message === "Password changed successfully") {
+                    displayAlert('Password changed successfully!', 'success');
+                    setTimeout(() => {
+                        window.location.href = 'login.html';
+                    }, 2000);
+                } else {
+                    displayAlert('Error changing password.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            })
+            .finally(() => {
+                // Re-enable the button after showing the alert
+                changePasswordButton.disabled = false;
+            });
+        }
+    
+        function displayAlert(message, type = 'warning') {
+            const alertContainer = document.getElementById('alert-container');
+            const alertMessage = document.getElementById('alert-message');
+            alertContainer.className = `alert alert-${type} alert-dismissible fade show`;
+            alertMessage.textContent = message;
+            alertContainer.classList.remove('hidden');
+        }
+    
+        function clearAlert() {
+            const alertContainer = document.getElementById('alert-container');
+            alertContainer.classList.add('hidden');
+        }
+    </script>
+    
+
+    <!-- Bootstrap JS and dependencies (Popper.js and Bootstrap bundle) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
