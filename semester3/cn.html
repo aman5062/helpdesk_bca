@@ -23,7 +23,32 @@
 <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
 <script src="../assets/js/script.js"></script>
 <style>
-    
+    .pan{
+      font-family: sans-serif;
+      text-align: center;
+      font-weight: 700;
+      color: azure;
+      background-color: red;
+    }
+    .ton{
+      text-decoration: underline;
+      text-align: center;
+      font-family: sans-serif;
+      font-weight: 700;
+      color: azure;
+      background-color: orangered;
+    }
+    .osi{
+      font-weight: 700;
+      font-family: cursive;
+      color: rgb(59, 29, 29);
+    }
+  
+
+
+      
+      
+      
 
 
   
@@ -100,39 +125,39 @@
      <br><b>The effectiveness of any data communications system depends upon
      four fundamental characteristics.</b>
      <ol type="1">
-      <li>Message-A message is a piece of information that is to be transmitted from one person to another.It would
+      <li><b>Message-</b> message is a piece of information that is to be transmitted from one person to another.It would
       be transmitted from one person to another.It could be a text file, an audio file
       ,video file etc.</li>
-      <li>Sender-It is simply a device that sends data message.It can be
+      <li><b>Sender-</b> is simply a device that sends data message.It can be
         a computer,mobile,telephone,laptop,video camera or workstation etc.
-        <br>Receiver-It is a device that receives messages.It can be a computer,
+        <br><b>Receiver-</b> is a device that receives messages.It can be a computer,
         telephone,mobile,workstation etc.
 
       </li>
-      <li>Transmission Medium/Communication channels-Communication channels are the medium that
+      <li><b>Transmission Medium/Communication channels-</b> channels are the medium that
         connect two or more workstations. workstations can be connected by either wired media or
         wireless media.
       </li>
-      <li>Set of Rules(Protocol)-When someone sends the data(The sender),it
+      <li><b>Set of Rules(Protocol)-</b> someone sends the data(The sender),it
         should be understandable to the receiver also otherwise it is meaningless.
         For example,sonali sends a message to chetan.If sonali writes in hindi
         and chetan cannot understand hindi,it is meaningless conversation.
       </li></ol>
       <img height="155"src="transmission.png" alt="communication diagram">
-      <h4><b>Types of data communication</b></h4>
+      <h4 class="ton">Types of data communication</h4>
       <p><b>The data communicationis divided into three types:-</b></p>
       <ol type="1">
-        <li>Simplex Communication-It is a one way Communication or we can say
+        <li><b>Simplex Communication-</b> is a one way Communication or we can say
           that unidirectional communication in which one device only
           receives and another device only send data and devices uses their
           entire capacity in transmission.For example,Iot,Entering data using a 
           keyboard, listening music using a speaker etc.
         </li>
-        <li>Half Duplex Communication-It is a two way communication,or we 
+        <li><b>Half Duplex Communication-</b>It is a two way communication,or we 
           can say that is a bidirectional communication in which both the devices can send and 
           receive data but not at the same time.For example walkie-Talkie,Intrent browsing.
         </li>
-        <li>Full Duplex Communication-It is a two way Communication or we can 
+        <li><b>Full Duplex Communication-</b>It is a two way Communication or we can 
           say that it is bidirectional communication in which both the devices can send 
           and receive data at same time.For example, mobile phone,
           landlines etc.
@@ -154,7 +179,7 @@
         <img height=90 src="protocol.png" alt="protocol">
          <p style="background-color: red;">In a above diagram, Protocols are shown as a set of rules.Communication between the sender and 
           Receiver is not possible without protocol.</p>
-          <h4><center><u><b>Key Elements of Protocol</b></u></center></h4>
+          <h4 ><center><u><b>Key Elements of Protocol</b></u></center></h4>
            <ul>
             <li><u><b>Timing:</b></u> Timing refers to the synchronization and coordination
               between devices while transferring the data. Timing ensures at what
@@ -207,7 +232,7 @@
                 encrypts the data, making it safe from eavesdropping.
                <br><b>SNMP (Simple Network Management Protocol):</b> Used for managing and monitoring network devices like routers, switches, and servers. It collects and organizes
                information about these devices.</p>
-               <h4 style="color: white; background-color: orangered;"><b><center><u>TYPES OF NETWORK</u></center></b></h4>
+               <h4 class="ton">TYPES OF NETWORK</h4>
                <ul type="disc">
                 <li>Local Area Network(LAN)</li>
                 <li>Wide Area Network(WAN)</li>
@@ -262,9 +287,106 @@
                   <li><b>Wired Personal Area Network</b></li>
                   <li><b>Wiredless Personal Area Network</b></li>
                 </ul>
-                <b style="color: maroon;">Wireless Personal Area Network:</b><p>Wireless Personal Area Network is developed
+                 <b style="color: maroon;"><p>Wireless Personal Area Network:</b><p>Wireless Personal Area Network is developed
                   by simply using wireless technologies such as Wi-Fi, Bluetooth. It is a low range network.</p>
-                <b style="color: maroon;">Wired Personal Area Network:</b><p>Wired Personal Area Network is created by using the USB.</p>
+                 <b style="color: maroon;">Wired Personal Area Network:</b><p>Wired Personal Area Network is created by using the USB.</p>
+                 <h5 class="pan">Examples of Personal Area Network:</h5>
+                  <ul>
+                    <li><b>Body Area Network</b></li>
+                    <li><b>Office Network</b></li>
+                    <li><b>Small Home office</b></li>
+                  </ul>
+                  <h3 class="osi">OSI Model & TCP/IP</h3>
+                  <p><b>What Is The OSI Model</b></p>
+                  The open system interconnection (OSI) model describes
+                  seven layers that computer system use to communicate over a 
+                  network. It was the first standard model for network comminication,
+                  adopted by all major computer and
+                  telecommunication companies in the early 1980s
+                  The modern Internet is not based on OSI, but on the simpler
+                  TCP/IP model. However, the OSI 7-layer model is still widely
+                  used, as it helps visualize and communicate how networks
+                  operate, and troubleshoot networking problems.
+                  OSI was introduced in 1983 by representatives of the major
+                  computer and telecom companies, and was adopted by ISO as an international standards In 1984.
+                  <h3 class="osi">Introduction OSI</h3>
+                  <ul>
+                    <li>It divides network architecture into seven layers
+                      which, from top to bottom, are the Application,
+                      Presentation, Session, Transport, Network, Data
+                      Link, and Physical Layers. It is therefore often
+                      referred to as the <b>OSI Seven Layer Model.</b></li>
+                  </ul>
+                  <h3 class="osi">OSI History</h3>
+                    <ul>
+                      <li>In 1978, the International Standars
+                        Organization (ISO) began to develop its
+                        OSI framework architecture.</li>
+                      <li>OSI has two major components: an
+                        abstract model of networking, called the
+                        Basic Reference Model or seven-layer
+                        model, and a set of specific protocols.</li>
+                    </ul>
+                    <img height=310 src="osi.png" alt="osi">
+                    <h3 class="osi">OSI Layers</h3>
+                    <img height=205 src="layer.png" alt="layer">
+                    Going from layer 1 to 7:<b> Please Do Not Throw Sausage Pizza Away</b> 
+                    Going from layer 7 to 1:<b> All People Seem To Need Data Processing</b> 
+                    <h6><b>Application Layer</b></h6>
+                    <p>The application layer is used by end-user software such as web browsers and
+                     email clients. It provides protocols that allow software to send and receive
+                     information and present meaningful data to users. A few examples of application
+                     layer protocols are the <mark>Hypertext Transfer Protocol</mark> (HTTP), File Transfer
+                     Protocol (FTP), Post Office Protocol (POP), Simple Mail Transfer Protocol
+                     (SMTP), and Domain Name System (DNS).</p>
+                     <h6><b>Presentation Layer</b></h6>
+                     <p>The presentation layer prepares data for the application layer. It defines how two
+                        devices should encode, encrypt, and compress data so it is received correctly on
+                        the other end. The presentation layer takes any data transmitted by the application
+                        layer and prepares it for transmission over the session layer.
+                        <br>Presentation layer protocol include MPEG and HTTP/HTML etc</p>
+                        <h6><b>Session Layer</b></h6>
+                        <p>The session layer creates communication channels, called sessions, between
+                         devices. It is responsible for opening sessions, ensuring they remain open and
+                         functional while data is being transferred, and closing them when communication
+                         ends. The session layer can also set checkpoints during a data transfer—if the
+                         session is interrupted, devices can resume data transfer from the last checkpoint</p>
+                         <h6><b>Transport Layer</b></h6>
+                         <p>The transport layer takes data transferred in the session layer and breaks it into
+                         “segments” on the transmitting end. It is responsible for reassembling the segments
+                         on the receiving end, turning it back into data that can be used by the session layer.
+                         The transport layer carries out flow control, sending data at a rate that matches the
+                         connection speed of the receiving device, and error control, checking if data was
+                         received incorrectly and if not, requesting it again.</p>
+                         <h6><b>Network Layer</b></h6>
+                         <p>The network layer has two main functions. One is breaking up segments into
+                          network packets, and reassembling the packets on the receiving end. The other is
+                          routing packets by discovering the best path across a physical network. The network
+                          layer uses network addresses (typically Internet Protocol addresses) to route packets
+                          to a destination node</p>
+                          <h6><b>Data Link Layer</b></h6>
+                          <p>The data link layer establishes and terminates a connection between two 
+                             physically-connected nodes on a network. It breaks up packets into frames and 
+                             sends them from source to destination. This layer is composed of two parts—
+                             Logical Link Control (LLC), which identifies network protocols, performs error 
+                             checking and synchronizes frames, and Media Access Control (MAC) which uses 
+                             MAC addresses to connect devices and define permissions to transmit and receive 
+                             data.</p>
+                            <h6><b>Physical Layer</b></h6>
+                            <p>The physical layer is responsible for the physical cable or wireless connection
+                             between network nodes. It defines the connector, the electrical cable or wireless
+                             technology connecting the devices, and is responsible for transmission of the raw
+                             data, which is simply a series of 0s and 1s, while taking care of bit rate control.</p> 
+
+                     
+                    
+                    
+                      
+                      
+                    
+                  
+                
+
         <section>
         </body>
 </html>
