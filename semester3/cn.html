@@ -1,85 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta meta name="viewport" content="width=device-width, user-scalable=no" />
-    <title>Helpdesk</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>Helpdesk</title>
 </head>
-   
-<script
-	src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-	integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-	crossorigin="anonymous"
-></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link
-	rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
-/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
 <link rel="icon" href="assets/images/logo.png" type="image/png">
 <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
 <script src="../assets/js/script.js"></script>
 <style>
-    .pan{
-      font-family: sans-serif;
-      text-align: center;
-      font-weight: 700;
-      color: azure;
-      background-color: red;
-    }
-    .ton{
-      text-decoration: underline;
-      text-align: center;
-      font-family: sans-serif;
-      font-weight: 700;
-      color: azure;
-      background-color: orangered;
-    }
-    .osi{
-      font-weight: 700;
-      font-family: sans-serif;
-      color: rgb(59, 29, 29);
-    }
-  
+  .pan {
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 700;
+    color: azure;
+    background-color: red;
+  }
 
+  .ton {
+    text-decoration: underline;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: azure;
+    background-color: orangered;
+  }
 
-      
-      
-      
+  .osi {
+    font-weight: 700;
+    font-family: sans-serif;
+    color: rgb(59, 29, 29);
+  }
+</style>
 
-
-  
-  </style>
-<body> 
+<body>
   <header class="navbar navbar-expand-md d-flex flex-wrap justify-content-center mt-2 p-2 mb-2 border-bottom">
-   <div id="top_bar">
-    <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <img src="../assets/images/logo.png" id="imglogo">
-      <span class="fs-4 mr-5 lo"><h2 class="bold-text">Helpdesk</h2></span>
-    </a>
-   </div>
+    <div id="top_bar">
+      <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img src="../assets/images/logo.png" id="imglogo">
+        <span class="fs-4 mr-5 lo">
+          <h2 class="bold-text">Helpdesk</h2>
+        </span>
+      </a>
+    </div>
     <div class="container-fluid" id="sec_nav">
       <button class="navbar-toggler" type="button" onclick="openLeftSidebar()">
-      <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
-     <div id="leftSidebar" class="sidebar-left">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeLeftSidebar()">&times;</a>
-      <h2>semester 3</h2>
-      <a href="../semester3/cn.html">Computer Network</a>
-      <a href="../semester3/math.html" class="active">Discrete Mathematics</a>
-      <a href="../semester3/index.html">DBMS</a>
-      <a href="../semester3/os.html">Operating System</a>
-      <h2>semester 4</h2>
-      <a href="#">Comming Soon....</a>
-  </div>
-  <div class="semester">semester-3</div>
+      <div id="leftSidebar" class="sidebar-left">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeLeftSidebar()">&times;</a>
+        <h2>semester 3</h2>
+        <a href="../semester3/cn.html">Computer Network</a>
+        <a href="../semester3/math.html" class="active">Discrete Mathematics</a>
+        <a href="../semester3/index.html">DBMS</a>
+        <a href="../semester3/os.html">Operating System</a>
+        <h2>semester 4</h2>
+        <a href="#">Comming Soon....</a>
+      </div>
+      <div class="semester">semester-3</div>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" id="upper_menu_btn" data-bs-target="#collapsibleNavbar">
- <i class="fa fa-arrow-down" aria-hidden="true"></i>      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar" >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" id="upper_menu_btn"
+        data-bs-target="#collapsibleNavbar">
+        <i class="fa fa-arrow-down" aria-hidden="true"></i> </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="nav nav-pills navbar-nav ms-auto" id="myNav">
           <!-- 1st Year -->
           <li class="nav-item">
@@ -94,40 +87,41 @@
           <li class="nav-item">
             <a class="nav-link" href="../semester7/index.html">4th Year</a>
           </li>
-         
+
         </ul>
       </div>
     </div>
   </header>
-  
-  
-    <div id="body">
-      <div class="heading_name">Computer Network</div>
-      <div id="watermark">@Debuggers</div>
 
-      <div id="up">
-        <a href="#" id="goToTopButton" class="go-to-top-button">
-          <span><i class="fa fa-arrow-up" aria-hidden="true" id="arrow"></i></span>
+
+  <div id="body">
+    <div class="heading_name">Computer Network</div>
+    <div id="watermark">@Debuggers</div>
+
+    <div id="up">
+      <a href="#" id="goToTopButton" class="go-to-top-button">
+        <span><i class="fa fa-arrow-up" aria-hidden="true" id="arrow"></i></span>
       </a>
-      </div>  
-      <h4><b>Network</b></h4>
-      <p>Network is a group of computers connected with each other through wires,optical fibres or optical links
-        so that various devices can intract with each other through a network.
-      </p>
-      <h4><b>Networking</b></h4>
-      <p>Computer networking refer to interconnected computing devices
-        that can exchange data and share resources with each other.
-      </p>
-      <h3><b>Overview of Data Communication Networks</b></h3>
-      <p>Communication is defined as a process in which more than computers
-        transfers information, instructions to each other and for sharing resources.
-      </p>
-     <br><b>The effectiveness of any data communications system depends upon
-     four fundamental characteristics.</b>
-     <ol type="1">
-      <li><b>Message-</b> message is a piece of information that is to be transmitted from one person to another.It would
-      be transmitted from one person to another.It could be a text file, an audio file
-      ,video file etc.</li>
+    </div>
+    <h4><b>Network</b></h4>
+    <p>Network is a group of computers connected with each other through wires,optical fibres or optical links
+      so that various devices can intract with each other through a network.
+    </p>
+    <h4><b>Networking</b></h4>
+    <p>Computer networking refer to interconnected computing devices
+      that can exchange data and share resources with each other.
+    </p>
+    <h3><b>Overview of Data Communication Networks</b></h3>
+    <p>Communication is defined as a process in which more than computers
+      transfers information, instructions to each other and for sharing resources.
+    </p>
+    <br><b>The effectiveness of any data communications system depends upon
+      four fundamental characteristics.</b>
+    <ol type="1">
+      <li><b>Message-</b> message is a piece of information that is to be transmitted from one person to another.It
+        would
+        be transmitted from one person to another.It could be a text file, an audio file
+        ,video file etc.</li>
       <li><b>Sender-</b> is simply a device that sends data message.It can be
         a computer,mobile,telephone,laptop,video camera or workstation etc.
         <br><b>Receiver-</b> is a device that receives messages.It can be a computer,
@@ -142,292 +136,485 @@
         should be understandable to the receiver also otherwise it is meaningless.
         For example,sonali sends a message to chetan.If sonali writes in hindi
         and chetan cannot understand hindi,it is meaningless conversation.
-      </li></ol>
-      <img height="155"src="transmission.png" alt="communication diagram">
-      <h4 class="ton">Types of data communication</h4>
-      <p><b>The data communicationis divided into three types:-</b></p>
-      <ol type="1">
-        <li><b>Simplex Communication-</b> is a one way Communication or we can say
-          that unidirectional communication in which one device only
-          receives and another device only send data and devices uses their
-          entire capacity in transmission.For example,Iot,Entering data using a 
-          keyboard, listening music using a speaker etc.
-        </li>
-        <li><b>Half Duplex Communication-</b>It is a two way communication,or we 
-          can say that is a bidirectional communication in which both the devices can send and 
-          receive data but not at the same time.For example walkie-Talkie,Intrent browsing.
-        </li>
-        <li><b>Full Duplex Communication-</b>It is a two way Communication or we can 
-          say that it is bidirectional communication in which both the devices can send 
-          and receive data at same time.For example, mobile phone,
-          landlines etc.
-        </li>
-     </ol>
-      <div>
-        <h4><center><b>Protocol and standard in computer networks</b></center></h4>
-        <p>Protocols and Standards are important in Computer networks.They are like the rule and guidelines
-          that allow different devices and system to communicate and works together
-          smoothly.Protocols define how data is sent,received,and processed,while standards ensure that
-          various technologies are compatible with each other.
-        </p></div>
-        <h4><b><u>What is Protocol?</u></b></h4>
-        <p>A protocol is a set of rules that determines how data is sent and received
-          over s network.The protocol is just like a language that computers use to talk to each other, ensuring
-          they understand that can respond to each other's message correctly.Protocol help to make sure that
-          data moves smootly and securely between devices on a network.
-        </p>
-        <img height=90 src="protocol.png" alt="protocol">
-         <p style="background-color: red;">In a above diagram, Protocols are shown as a set of rules.Communication between the sender and 
-          Receiver is not possible without protocol.</p>
-          <h4 ><center><u><b>Key Elements of Protocol</b></u></center></h4>
-           <ul>
-            <li><u><b>Timing:</b></u> Timing refers to the synchronization and coordination
-              between devices while transferring the data. Timing ensures at what
-              time data should be sent and how fast data can be sent. For example,
-              If a sender sends 100 Mbps but the receiver can only handle 1 Mbps,
-              the receiver will overflow and lose data. Timing ensures preventing
-              of data loss, collisions, and other timing-related issues.</li>
-              <li><u><b>Sequence Control:</b></u>Sequence control ensures the proper ordering of
-                data packets. The main responsibility of sequence control is to
-                acknowledge the data while it get received, and the retransmission of
-                lost data. Through this mechanism, the data is delivered in correct order.</li>
-               <li><u><b>Flow Control:</b></u>Flow Control regulates device data delivery. It limits
-                the sender's data or asks the receiver if it's ready for more. Flow
-                control prevents data congestion and loss.
-                </li>
-                <li><u><b>Error Control:</b></u>Error Control mechanisms detect and fix data
-                  transmission faults. They include error detection codes, data resend,
-                  and error recovery. Error control detects and corrects noise,
-                  interference, and other problems to maintain data integrity.</li>
-                 <li><u><b>Security:</b></u>Network security protects data confidentiality, integrity,
-                  and authenticity. which includes encryption, authentication, access
-                  control, and other security procedures. Network communication's
-                  privacy and trustworthiness are protected by security standards.</li></ul>
-                  <h3><b>Types of Protocol</b></h3>
-                  <p>Network Layer Protocols</p>
-                  <p>Transport Layer Protocols</p>
-                  <p>Application Protocols</p>
-                  <p>Wireless Protocols</p>
-                  <p>Routing Protocols</p>
-                  <p>Security Protocols</p>
-                  <p>Internet Protocols</p>
-               <h3><b>Important Protocols Used in Computer Network</b></h3>
-                <p><b>TCP (Transmission Control Protocol):</b> Ensures data is sent and received accurately by
-                breaking it into packets, sending them, and reassembling them at the destination.
-                <br><b>IP (Internet Protocol):</b> Addresses and routes the packets to make sure they reach the right 
-                destination.
-               <br><b> HTTP/HTTPS (Hypertext Transfer Protocol/Secure):</b> HTTP used for transferring 
-                web pages on the internet.
-               <br><b>FTP (File Transfer Protocol):</b> Used for transferring files between computers on a network.
-                It allows users to upload and download files.
-                <br><b>DNS (Domain Name System): DNS:</b> DNS stands for Domain Name System. An IP address 
-                is used to identify the connection of a host to the internet uniquely. But, people prefer to use the 
-                names instead of addresses. Therefore, the system that maps the name to the address is known as 
-                Domain Name System.
-               <br><b>DHCP (Dynamic Host Configuration Protocol):</b> Automatically assigns IP addresses 
-                to devices on a network, ensuring each device has a unique address.
-               <br><b>SMTP (Simple Mail Transfer Protocol):</b> Used for sending emails. It transfers emails 
-                from a client to a server or between servers.
-               <br><b>SSH (Secure Shell):</b> Provides a secure way to access and manage devices over a network. It 
-                encrypts the data, making it safe from eavesdropping.c
-               <br><b>SNMP (Simple Network Management Protocol):</b> Used for managing and monitoring network devices like routers, switches, and servers. It collects and organizes
-               information about these devices.</p>
-               <h4 class="ton">TYPES OF NETWORK</h4>
-               <ul type="disc">
-                <li>Local Area Network(LAN)</li>
-                <li>Wide Area Network(WAN)</li>
-                <li>Metropolitan Area Network(MAN)</li>
-                <li>Personal Area Network(PAN)</li>
-               </ul>
-               <center><img height=80 src="network.png" alt="network"></center>
-               <h3 style="color: brown;"><b>LAN(Local Area Network)</b></h3>
-               <ul>
-                <li>Local Area Network is a group of Computers connected to each other
-                    in a small area such as building,office.
-                </li>
-                <li>LAN is used for connecting two or more personal computers through communication
-                  medium such as twisted pair cable,coaxial cable etc </li>
-                <li>The data is transferred at an extremely faster rate in Local Area Network</li> 
-               </ul>
-              <center><img height= 150 src="lan.png" alt="lan"></center>
-              <h3 style="color: brown;"><b>Metropolitan Area Network(MAN)</b></h3>
-              <b>MAN</b> or Metropolitan area Network covers a larger area than that
-              of a LAN and smaller area as compared to WAN. It connects two or more
-              computers that are apart but resides in the same or different cities. It covers
-              a large geographical area and may serve as an ISP (Internet Service Provider).
-              <center><img height=150 src="man.png" alt="man"></center>  
-              <h3 style="color: brown;"><b>WAN(Wide Area Network)</b></h3>
-              <ul>
-                <li>A Wide Area Network is a network that extends over a large geographical
-                  area such as states or countries.</li>
-                <li>A Wide Area Network is quite bigger network than the LAN & MAN.</li>  
-                <li>A Wide Area Network is not limited to a single location, but it spans over a
-                  large geographical area through a telephone line, fibre optic cable or satellite
-                  links.</li></ul>
-                <center><img height=190 src="wan.png" alt="wan"></center>
-                <h5><b>Examples of Wide Area network</b></h5> 
-                <ul>
-                  <li><b>Mobile Broadband.</b></li>
-                  <li><b>Last mile.</b></li>
-                  <li><b>Private network.</b></li>
-                </ul>
-                <h3 style="color: brown;"><b>PAN(Personal Area Network)</b></h3>
-                <ul>
-                  <li>Personal Area Network is used for connecting the computer devices of
-                    personal use is known as Personal Area Network.</li>
-                  <li><b>Thomas Zimmerman</b> was the first research scientist to bring the idea of the
-                    Personal Area Network.</li>  
-                  <li>Personal Area Network covers an area of 30 feet.</li>  
-                  <li>Personal computer devices that are used to develop the personal area
-                    network are the laptop, mobile phones, media player and play station.
-                  </li></ul>
-                  <center><img height=150 src="pan.png" alt="pan"></center>
-                <h5><b>There are two types of Personal area network:-</b></h5>
-                <ul>
-                  <li><b>Wired Personal Area Network</b></li>
-                  <li><b>Wiredless Personal Area Network</b></li>
-                </ul>
-                 <b style="color: maroon;"><p>Wireless Personal Area Network:</b><p>Wireless Personal Area Network is developed
-                  by simply using wireless technologies such as Wi-Fi, Bluetooth. It is a low range network.</p>
-                 <b style="color: maroon;">Wired Personal Area Network:</b><p>Wired Personal Area Network is created by using the USB.</p>
-                 <h5 class="pan">Examples of Personal Area Network:</h5>
-                  <ul>
-                    <li><b>Body Area Network</b></li>
-                    <li><b>Office Network</b></li>
-                    <li><b>Small Home office</b></li>
-                  </ul>
-                  <h3 class="osi">OSI Model & TCP/IP</h3>
-                  <p><b>What Is The OSI Model</b></p>
-                  The open system interconnection (OSI) model describes
-                  seven layers that computer system use to communicate over a 
-                  network. It was the first standard model for network comminication,
-                  adopted by all major computer and
-                  telecommunication companies in the early 1980s
-                  The modern Internet is not based on OSI, but on the simpler
-                  TCP/IP model. However, the OSI 7-layer model is still widely
-                  used, as it helps visualize and communicate how networks
-                  operate, and troubleshoot networking problems.
-                  OSI was introduced in 1983 by representatives of the major
-                  computer and telecom companies, and was adopted by ISO as an international standards In 1984.
-                  <h3 class="osi">Introduction OSI</h3>
-                  <ul>
-                    <li>It divides network architecture into seven layers
-                      which, from top to bottom, are the Application,
-                      Presentation, Session, Transport, Network, Data
-                      Link, and Physical Layers. It is therefore often
-                      referred to as the <b>OSI Seven Layer Model.</b></li>
-                  </ul>
-                  <h3 class="osi">OSI History</h3>
-                    <ul>
-                      <li>In 1978, the International Standars
-                        Organization (ISO) began to develop its
-                        OSI framework architecture.</li>
-                      <li>OSI has two major components: an
-                        abstract model of networking, called the
-                        Basic Reference Model or seven-layer
-                        model, and a set of specific protocols.</li>
-                    </ul>
-                    <img height=310 src="osi.png" alt="osi">
-                    <h3 class="osi">OSI Layers</h3>
-                    <img height=205 src="layer.png" alt="layer">
-                    Going from layer 1 to 7:<b> Please Do Not Throw Sausage Pizza Away</b> 
-                    Going from layer 7 to 1:<b> All People Seem To Need Data Processing</b> 
-                    <h6><b>Application Layer</b></h6>
-                    <p>The application layer is used by end-user software such as web browsers and
-                     email clients. It provides protocols that allow software to send and receive
-                     information and present meaningful data to users. A few examples of application
-                     layer protocols are the <mark>Hypertext Transfer Protocol</mark> (HTTP), File Transfer
-                     Protocol (FTP), Post Office Protocol (POP), Simple Mail Transfer Protocol
-                     (SMTP), and Domain Name System (DNS).</p>
-                     <h6><b>Presentation Layer</b></h6>
-                     <p>The presentation layer prepares data for the application layer. It defines how two
-                        devices should encode, encrypt, and compress data so it is received correctly on
-                        the other end. The presentation layer takes any data transmitted by the application
-                        layer and prepares it for transmission over the session layer.
-                        <br>Presentation layer protocol include MPEG and HTTP/HTML etc</p>
-                        <h6><b>Session Layer</b></h6>
-                        <p>The session layer creates communication channels, called sessions, between
-                         devices. It is responsible for opening sessions, ensuring they remain open and
-                         functional while data is being transferred, and closing them when communication
-                         ends. The session layer can also set checkpoints during a data transfer—if the
-                         session is interrupted, devices can resume data transfer from the last checkpoint</p>
-                         <h6><b>Transport Layer</b></h6>
-                         <p>The transport layer takes data transferred in the session layer and breaks it into
-                         “segments” on the transmitting end. It is responsible for reassembling the segments
-                         on the receiving end, turning it back into data that can be used by the session layer.
-                         The transport layer carries out flow control, sending data at a rate that matches the
-                         connection speed of the receiving device, and error control, checking if data was
-                         received incorrectly and if not, requesting it again.</p>
-                         <h6><b>Network Layer</b></h6>
-                         <p>The network layer has two main functions. One is breaking up segments into
-                          network packets, and reassembling the packets on the receiving end. The other is
-                          routing packets by discovering the best path across a physical network. The network
-                          layer uses network addresses (typically Internet Protocol addresses) to route packets
-                          to a destination node</p>
-                          <h6><b>Data Link Layer</b></h6>
-                          <p>The data link layer establishes and terminates a connection between two 
-                             physically-connected nodes on a network. It breaks up packets into frames and 
-                             sends them from source to destination. This layer is composed of two parts—
-                             Logical Link Control (LLC), which identifies network protocols, performs error 
-                             checking and synchronizes frames, and Media Access Control (MAC) which uses 
-                             MAC addresses to connect devices and define permissions to transmit and receive 
-                             data.</p>
-                            <h6><b>Physical Layer</b></h6>
-                            <p>The physical layer is responsible for the physical cable or wireless connection
-                             between network nodes. It defines the connector, the electrical cable or wireless
-                             technology connecting the devices, and is responsible for transmission of the raw
-                             data, which is simply a series of 0s and 1s, while taking care of bit rate control.</p> 
-                            <h5><b><u>Analog Signal</u></b></h5>
-                            Analog Signals were used in many systems to produce Signals
-                            to carry information. These signals are continuous in both 
-                            values and time. The use of analog signal has declined with 
-                            the arrival of digital signals.
-                            <h6><b>Examples of Analog Signals</b></h6>
-                            Some common examples of analog signals include:
-                            <ul>
-                              <li>Human Voice</li>
-                              <li>Analog Radio and TV Broadcast</li>
-                              <li>Audio signals transferred via cables</li>
-                              <li>Radio signals</li>
-                            </ul> 
-                            <h5><b><u>Digital signals</u></b></h5>
-                            Digital signal is a type ofcommunication where the data is 
-                            communicated in the form of discrete data.
-                            <p>Digital signal is mostly done in computers,where the 
-                              data to be transferred is in the form of discrete values.
-                              Mostly the data is transferred in the form of binary which has 
-                              only two discrete values which are zero and one.
-                            </p>
-                            <h6><b>Examples of Digital Signals</b></h6>
-                            Some common examples include:
-                            <ul>
-                              <li>Digital Audio</li>
-                              <li>Digital Video</li>
-                              <li>Binary data</li>
-                              <li>Digital clocks</li>
-                              <li>Smartphone</li>
-                            </ul>
-                            <h5 style="font-family: sans-serif;"><b>DATA RATE LIMIT</b></h5>
-                            A very important consideration in data communications is how 
-                            fast we can send data, in bits per second, over a channel.
-                            <p>Date rate depends on three factors:</p>
-                            <ol>
-                              <li>The bandwidth available</li>
-                              <li>The level of the signals we use</li>
-                              <li>The quality of the channel</li>
-                            </ol>
-                            
+      </li>
+    </ol>
+    <img height="155" src="transmission.png" alt="communication diagram" id="img1">
+    <h4 class="ton">Types of data communication</h4>
+    <p><b>The data communicationis divided into three types:-</b></p>
+    <ol type="1">
+      <li><b>Simplex Communication-</b> is a one way Communication or we can say
+        that unidirectional communication in which one device only
+        receives and another device only send data and devices uses their
+        entire capacity in transmission.For example,Iot,Entering data using a
+        keyboard, listening music using a speaker etc.
+      </li>
+      <li><b>Half Duplex Communication-</b>It is a two way communication,or we
+        can say that is a bidirectional communication in which both the devices can send and
+        receive data but not at the same time.For example walkie-Talkie,Intrent browsing.
+      </li>
+      <li><b>Full Duplex Communication-</b>It is a two way Communication or we can
+        say that it is bidirectional communication in which both the devices can send
+        and receive data at same time.For example, mobile phone,
+        landlines etc.
+      </li>
+    </ol>
+    <div>
+      <h4>
+        <center><b>Protocol and standard in computer networks</b></center>
+      </h4>
+      <p>Protocols and Standards are important in Computer networks.They are like the rule and guidelines
+        that allow different devices and system to communicate and works together
+        smoothly.Protocols define how data is sent,received,and processed,while standards ensure that
+        various technologies are compatible with each other.
+      </p>
+    </div>
+    <h4><b><u>What is Protocol?</u></b></h4>
+    <p>A protocol is a set of rules that determines how data is sent and received
+      over s network.The protocol is just like a language that computers use to talk to each other, ensuring
+      they understand that can respond to each other's message correctly.Protocol help to make sure that
+      data moves smootly and securely between devices on a network.
+    </p>
+    <img height=90 src="protocol.png" alt="protocol" id="img1">
+    <p style="background-color: red;">In a above diagram, Protocols are shown as a set of rules.Communication between
+      the sender and
+      Receiver is not possible without protocol.</p>
+    <h4>
+      <center><u><b>Key Elements of Protocol</b></u></center>
+    </h4>
+    <ul>
+      <li><u><b>Timing:</b></u> Timing refers to the synchronization and coordination
+        between devices while transferring the data. Timing ensures at what
+        time data should be sent and how fast data can be sent. For example,
+        If a sender sends 100 Mbps but the receiver can only handle 1 Mbps,
+        the receiver will overflow and lose data. Timing ensures preventing
+        of data loss, collisions, and other timing-related issues.</li>
+      <li><u><b>Sequence Control:</b></u>Sequence control ensures the proper ordering of
+        data packets. The main responsibility of sequence control is to
+        acknowledge the data while it get received, and the retransmission of
+        lost data. Through this mechanism, the data is delivered in correct order.</li>
+      <li><u><b>Flow Control:</b></u>Flow Control regulates device data delivery. It limits
+        the sender's data or asks the receiver if it's ready for more. Flow
+        control prevents data congestion and loss.
+      </li>
+      <li><u><b>Error Control:</b></u>Error Control mechanisms detect and fix data
+        transmission faults. They include error detection codes, data resend,
+        and error recovery. Error control detects and corrects noise,
+        interference, and other problems to maintain data integrity.</li>
+      <li><u><b>Security:</b></u>Network security protects data confidentiality, integrity,
+        and authenticity. which includes encryption, authentication, access
+        control, and other security procedures. Network communication's
+        privacy and trustworthiness are protected by security standards.</li>
+    </ul>
+    <h3><b>Types of Protocol</b></h3>
+    <p>Network Layer Protocols</p>
+    <p>Transport Layer Protocols</p>
+    <p>Application Protocols</p>
+    <p>Wireless Protocols</p>
+    <p>Routing Protocols</p>
+    <p>Security Protocols</p>
+    <p>Internet Protocols</p>
+    <h3><b>Important Protocols Used in Computer Network</b></h3>
+    <p><b>TCP (Transmission Control Protocol):</b> Ensures data is sent and received accurately by
+      breaking it into packets, sending them, and reassembling them at the destination.
+      <br><b>IP (Internet Protocol):</b> Addresses and routes the packets to make sure they reach the right
+      destination.
+      <br><b> HTTP/HTTPS (Hypertext Transfer Protocol/Secure):</b> HTTP used for transferring
+      web pages on the internet.
+      <br><b>FTP (File Transfer Protocol):</b> Used for transferring files between computers on a network.
+      It allows users to upload and download files.
+      <br><b>DNS (Domain Name System): DNS:</b> DNS stands for Domain Name System. An IP address
+      is used to identify the connection of a host to the internet uniquely. But, people prefer to use the
+      names instead of addresses. Therefore, the system that maps the name to the address is known as
+      Domain Name System.
+      <br><b>DHCP (Dynamic Host Configuration Protocol):</b> Automatically assigns IP addresses
+      to devices on a network, ensuring each device has a unique address.
+      <br><b>SMTP (Simple Mail Transfer Protocol):</b> Used for sending emails. It transfers emails
+      from a client to a server or between servers.
+      <br><b>SSH (Secure Shell):</b> Provides a secure way to access and manage devices over a network. It
+      encrypts the data, making it safe from eavesdropping.c
+      <br><b>SNMP (Simple Network Management Protocol):</b> Used for managing and monitoring network devices like
+      routers, switches, and servers. It collects and organizes
+      information about these devices.
+    </p>
+    <h4 class="ton">TYPES OF NETWORK</h4>
+    <ul type="disc">
+      <li>Local Area Network(LAN)</li>
+      <li>Wide Area Network(WAN)</li>
+      <li>Metropolitan Area Network(MAN)</li>
+      <li>Personal Area Network(PAN)</li>
+    </ul>
+    <center><img height=80 src="network.png" alt="network" id="img1"></center>
+    <h3 style="color: brown;"><b>LAN(Local Area Network)</b></h3>
+    <ul>
+      <li>Local Area Network is a group of Computers connected to each other
+        in a small area such as building,office.
+      </li>
+      <li>LAN is used for connecting two or more personal computers through communication
+        medium such as twisted pair cable,coaxial cable etc </li>
+      <li>The data is transferred at an extremely faster rate in Local Area Network</li>
+    </ul>
+    <center><img height=150 src="lan.png" alt="lan" id="img1"></center>
+    <h3 style="color: brown;"><b>Metropolitan Area Network(MAN)</b></h3>
+    <b>MAN</b> or Metropolitan area Network covers a larger area than that
+    of a LAN and smaller area as compared to WAN. It connects two or more
+    computers that are apart but resides in the same or different cities. It covers
+    a large geographical area and may serve as an ISP (Internet Service Provider).
+    <center><img height=150 src="man.png" alt="man" id="img1"></center>
+    <h3 style="color: brown;"><b>WAN(Wide Area Network)</b></h3>
+    <ul>
+      <li>A Wide Area Network is a network that extends over a large geographical
+        area such as states or countries.</li>
+      <li>A Wide Area Network is quite bigger network than the LAN & MAN.</li>
+      <li>A Wide Area Network is not limited to a single location, but it spans over a
+        large geographical area through a telephone line, fibre optic cable or satellite
+        links.</li>
+    </ul>
+    <center><img height=190 src="wan.png" alt="wan" id="img1"></center>
+    <h5><b>Examples of Wide Area network</b></h5>
+    <ul>
+      <li><b>Mobile Broadband.</b></li>
+      <li><b>Last mile.</b></li>
+      <li><b>Private network.</b></li>
+    </ul>
+    <h3 style="color: brown;"><b>PAN(Personal Area Network)</b></h3>
+    <ul>
+      <li>Personal Area Network is used for connecting the computer devices of
+        personal use is known as Personal Area Network.</li>
+      <li><b>Thomas Zimmerman</b> was the first research scientist to bring the idea of the
+        Personal Area Network.</li>
+      <li>Personal Area Network covers an area of 30 feet.</li>
+      <li>Personal computer devices that are used to develop the personal area
+        network are the laptop, mobile phones, media player and play station.
+      </li>
+    </ul>
+    <center><img height=150 src="pan.png" alt="pan" id="img1"></center>
+    <h5><b>There are two types of Personal area network:-</b></h5>
+    <ul>
+      <li><b>Wired Personal Area Network</b></li>
+      <li><b>Wiredless Personal Area Network</b></li>
+    </ul>
+    <b style="color: maroon;">
+      <p>Wireless Personal Area Network:
+    </b>
+    <p>Wireless Personal Area Network is developed
+      by simply using wireless technologies such as Wi-Fi, Bluetooth. It is a low range network.</p>
+    <b style="color: maroon;">Wired Personal Area Network:</b>
+    <p>Wired Personal Area Network is created by using the USB.</p>
+    <h5 class="pan">Examples of Personal Area Network:</h5>
+    <ul>
+      <li><b>Body Area Network</b></li>
+      <li><b>Office Network</b></li>
+      <li><b>Small Home office</b></li>
+    </ul>
+    <h3 class="osi">OSI Model & TCP/IP</h3>
+    <p><b>What Is The OSI Model</b></p>
+    The open system interconnection (OSI) model describes
+    seven layers that computer system use to communicate over a
+    network. It was the first standard model for network comminication,
+    adopted by all major computer and
+    telecommunication companies in the early 1980s
+    The modern Internet is not based on OSI, but on the simpler
+    TCP/IP model. However, the OSI 7-layer model is still widely
+    used, as it helps visualize and communicate how networks
+    operate, and troubleshoot networking problems.
+    OSI was introduced in 1983 by representatives of the major
+    computer and telecom companies, and was adopted by ISO as an international standards In 1984.
+    <h3 class="osi">Introduction OSI</h3>
+    <ul>
+      <li>It divides network architecture into seven layers
+        which, from top to bottom, are the Application,
+        Presentation, Session, Transport, Network, Data
+        Link, and Physical Layers. It is therefore often
+        referred to as the <b>OSI Seven Layer Model.</b></li>
+    </ul>
+    <h3 class="osi">OSI History</h3>
+    <ul>
+      <li>In 1978, the International Standars
+        Organization (ISO) began to develop its
+        OSI framework architecture.</li>
+      <li>OSI has two major components: an
+        abstract model of networking, called the
+        Basic Reference Model or seven-layer
+        model, and a set of specific protocols.</li>
+    </ul>
+    <img height=310 src="osi.png" alt="osi" id="img1">
+    <h3 class="osi">OSI Layers</h3>
+    <img height=205 src="layer.png" alt="layer" id="img1">
+    <p>Going from layer 1 to 7:<b> Please Do Not Throw Sausage Pizza Away</b>
+      Going from layer 7 to 1:<b> All People Seem To Need Data Processing</b></p>
+    <h6><b>Application Layer</b></h6>
+    <p>The application layer is used by end-user software such as web browsers and
+      email clients. It provides protocols that allow software to send and receive
+      information and present meaningful data to users. A few examples of application
+      layer protocols are the <mark>Hypertext Transfer Protocol</mark> (HTTP), File Transfer
+      Protocol (FTP), Post Office Protocol (POP), Simple Mail Transfer Protocol
+      (SMTP), and Domain Name System (DNS).</p>
+    <h6><b>Presentation Layer</b></h6>
+    <p>The presentation layer prepares data for the application layer. It defines how two
+      devices should encode, encrypt, and compress data so it is received correctly on
+      the other end. The presentation layer takes any data transmitted by the application
+      layer and prepares it for transmission over the session layer.
+      <br>Presentation layer protocol include MPEG and HTTP/HTML etc
+    </p>
+    <h6><b>Session Layer</b></h6>
+    <p>The session layer creates communication channels, called sessions, between
+      devices. It is responsible for opening sessions, ensuring they remain open and
+      functional while data is being transferred, and closing them when communication
+      ends. The session layer can also set checkpoints during a data transfer—if the
+      session is interrupted, devices can resume data transfer from the last checkpoint</p>
+    <h6><b>Transport Layer</b></h6>
+    <p>The transport layer takes data transferred in the session layer and breaks it into
+      “segments” on the transmitting end. It is responsible for reassembling the segments
+      on the receiving end, turning it back into data that can be used by the session layer.
+      The transport layer carries out flow control, sending data at a rate that matches the
+      connection speed of the receiving device, and error control, checking if data was
+      received incorrectly and if not, requesting it again.</p>
+    <h6><b>Network Layer</b></h6>
+    <p>The network layer has two main functions. One is breaking up segments into
+      network packets, and reassembling the packets on the receiving end. The other is
+      routing packets by discovering the best path across a physical network. The network
+      layer uses network addresses (typically Internet Protocol addresses) to route packets
+      to a destination node</p>
+    <h6><b>Data Link Layer</b></h6>
+    <p>The data link layer establishes and terminates a connection between two
+      physically-connected nodes on a network. It breaks up packets into frames and
+      sends them from source to destination. This layer is composed of two parts—
+      Logical Link Control (LLC), which identifies network protocols, performs error
+      checking and synchronizes frames, and Media Access Control (MAC) which uses
+      MAC addresses to connect devices and define permissions to transmit and receive
+      data.</p>
+    <h6><b>Physical Layer</b></h6>
+    <p>The physical layer is responsible for the physical cable or wireless connection
+      between network nodes. It defines the connector, the electrical cable or wireless
+      technology connecting the devices, and is responsible for transmission of the raw
+      data, which is simply a series of 0s and 1s, while taking care of bit rate control.</p>
+    <h5><b><u>Analog Signal</u></b></h5>
+    Analog Signals were used in many systems to produce Signals
+    to carry information. These signals are continuous in both
+    values and time. The use of analog signal has declined with
+    the arrival of digital signals.
+    <h6><b>Examples of Analog Signals</b></h6>
+    Some common examples of analog signals include:
+    <ul>
+      <li>Human Voice</li>
+      <li>Analog Radio and TV Broadcast</li>
+      <li>Audio signals transferred via cables</li>
+      <li>Radio signals</li>
+    </ul>
+    <h5><b><u>Digital signals</u></b></h5>
+    Digital signal is a type ofcommunication where the data is
+    communicated in the form of discrete data.
+    <p>Digital signal is mostly done in computers,where the
+      data to be transferred is in the form of discrete values.
+      Mostly the data is transferred in the form of binary which has
+      only two discrete values which are zero and one.
+    </p>
+    <h6><b>Examples of Digital Signals</b></h6>
+    Some common examples include:
+    <ul>
+      <li>Digital Audio</li>
+      <li>Digital Video</li>
+      <li>Binary data</li>
+      <li>Digital clocks</li>
+      <li>Smartphone</li>
+    </ul>
+    <h5 style="font-family: sans-serif;"><b>DATA RATE LIMIT</b></h5>
+    A very important consideration in data communications is how
+    fast we can send data, in bits per second, over a channel.
+    <p>Date rate depends on three factors:</p>
+    <ol>
+      <li>The bandwidth available</li>
+      <li>The level of the signals we use</li>
+      <li>The quality of the channel</li>
+    </ol>
+    <h4 style="text-align: center; font-weight: 700;">Multiplexing</h4>
+    <p>Multiplexing is a technique used to combine and send the multiple
+      data stream over a single medium. The process of combining the data stream is
+      known as Multiplexing and hardware used for multiplexing is known as a multiplexer.
+    </p>
+    <br>Multiplexing is achieved by using a device called Multiplexer(MUX) that combines n
+    input lines to generate a single output line. Multiplexing follow many-to-one,i.e..,n input lines
+    and one output line.</br>
+    <br>Demultiplexing is achieved by using a device called Demultiplexer (DEMUX) available at the
+    receving end. DEMUX seperate a single into its component single(One input and n outputs).
+    <h4 style="text-align: center; font-weight: 700;">History of Multiplexing</h4>
+    <ul>
+      <li>Multiplexing technique is widely used in telecommunications
+        in which several telephone calls are carried through a single
+        wire.</li>
+      <li>Multiplexing originated in telegraphy in the early 1870s and
+        is now widely used in communication.</li>
+      <li>George Owen Squier developed the telephone carrier
+        multiplexing in 1910.</li>
+    </ul>
+    <h3 style="color: maroon;">Concept of Multiplexing</h3>
+    <img height="120" src="mul.png" alt="multiplexing" id="img1">
+    <h4 style="text-align: center; font-weight: 700; color: maroon;">Frequency-division Multiplexing(FDM)</h4>
+    <h6>It is an analog technique</h6>
+    <p><b>Frequency Division Multiplexing</b> is a technique in which
+      the available bandwidth of a single transmission medium is
+      subdivided into several channels.
+      <br>Frequency division multiplexing (FDM) is a technique of
+      multiplexing which means combining more than one signal
+      over a shared medium.
+      <br>The modulated signals are combined together using a
+      multiplexer (MUX) in the sending end. The combined signal
+      is transmitted over the communication channel, thus
+      allowing multiple independent data streams to be
+      transmitted simultaneously. At the receiving end, the
+      individual signals are extracted from the combined signal by the process of
+      Demultiplexing(DEMUX)
+    </p>
+    <img height="120" src="fdm.png" alt="fdm" id="img1">
+    <p>The following diagram conceptually represents
+      multiplexing using FDM. It has 4 frequency bands, each
+      of which can carry signal from 1 sender to 1 receiver.
+      Each of the 4 senders is allocated a frequency band. The
+      four frequency bands are multiplexed and sent via the
+      communication channel. At the receiving end, a
+      demultiplexer regenerates the original four signals as
+      outputs.</p>
+    <br><b>Wavelength Division Multiplexing (WDM)</b> is a fiber-optic
+    transmission technique that enables the use of multiple light
+    wavelengths (or colors) to send data over the same medium.
+    Two or more colors of light can travel on one fiber, and
+    several signals can be transmitted in an optical waveguide at
+    differing wavelengths or frequencies on the optical spectrum.</br>
+    <br><b>The Time Division Multiplexing</b> is a digital
+    procedure. Here, each sender is given the entire possession
+    of the whole bandwidth of the channel for a fixed duration
+    of time. After this, the control is moved to the next sender,
+    and the process continues on a round-robin basis.
+    An example of TDM is the television broadcast. In a
+    television serial, generally, a 10 minutes' serial is followed
+    by a 5 minutes' advertisement. The time in which the serial
+    is being broadcasted, the total frequency is dedicated to the serial.<br>
+    <br>
+    <p><b>Transmission media</b> refer to the physical pathways through
+      which data is transmitted from one device to another within a
+      network. These pathways can be wired or wireless. The
+      choice of medium depends on factors like distance and speed
+      etc.
+      <br>
+      <center>OR</center></br>
+      A Transmission medium is a physical path between the
+      transmitter and the receiver i.e. it is the channel through
+      which data is sent from one place to another. Transmission
+      Media is broadly classified into the following types:
+    </p>
+    <img height="200" src="tm.png" alt="tm" id="img1">
+    <h5><b>Guided Media</b></h5>
+    <p>Guided Media is also refer to as Wired or Bounded transmission media.
+      Signals being transmitted are direted and confined in a narrow pathway by
+      using physical links.
+    </p>
+    <br>Features:
+    <ul>
+      <li>High Speed</li>
+      <li>Secure</li>
+      <li>Used for comparatively shorter distances</li>
+    </ul>
+    <br>There are 3 major types of Guided Media:
+    <br><b>Twisted Pair Cable </b>
+    <p>
+      It consists of 2 separately insulated conductor wires wound
+      about each other. Generally, several such pairs are bundled
+      together in a protective sheath. They are the most widely
+      used Transmission Media.
+    </p>
+    <b>Twisted Pair cable is ot two types:</b>
+    <ul type="square">
+      <li><b>Unshielded Twisted Pair Cable (UTP):</b>UTP consists of two
+        insulated copper wires twisted around one another. This
+        type of cable has the ability to block interference and does
+        not depend on a physical shield for this purpose. It is used
+        for telephonic applications. </li>
+    </ul>
+    <img height="120" src="utp.png" alt="utp" id="img1">
+    <p><b>Shielded Twisted Pair(STP):</b>This type of cable consists of
+      a special jacket (a copper braid covering or a foil shield) to
+      block external interference. It is used in fast-data-rate
+      Ethernet and in voice and data channels of telephone lines.</p>
+    <img src="stp.png" alt="stp" id="img1">
+    <p><b>Coaxial Cable</b> is commonly used by cable operators,
+      telephone companies, and internet providers worldwide to
+      convey data, video, and voice communications to customers.
+      It has also been used extensively within homes.
+      It has an inner conductor surrounded by an insulating layer,
+      surrounded by conductive shielding (outer conductor), and a
+      protective outer jacket.</p>
+    <img src="coaxial.png" alt="coaxial" id="img1">
+    <p><b><u>A Fiber optic Cable</u></b> is a network cable that contains strands of
+      glass fibers inside an insulated casing. They're designed for
+      long-distance, high-performance data networking, and
+      telecommunications. Compared to wired cables, fiber optic
+      cables provide higher bandwidth and transmit data over longer
+      distances. Fiber optic cables support much of the world's
+      internet, cable television, and telephone systems.</p>
+    <img height="90" src="fiber.png" alt="fiber" id="img1">
+    <h5><b>Unguided Media</b></h5>
+    <p>An unguided transmission transmits the electromagnetic waves
+      without using any physical medium. Therefore it is also known
+      as wireless transmission.
+      <br>In unguided media, air is the media through which the
+      electromagnetic energy can flow easily.
+    </p>
+    <br><b><u>Radio Waves</u></b> are a type of electromagnetic radiation. A radio
+    wave has a much longer wavelength than visible light. Humans
+    use radio waves extensively for communications. This radio
+    tower has both rectangular and circular antennas to transmit
+    and receive radio frequency energy.
+    <br><b><u>Infrared(IR)</u></b>is a wireless technology that uses light waves
+    to transmit data over short to medium ranges in computer
+    networks. It's similar to the technology used in many
+    household devices, like remote controls and wireless
+    headphones.
+    <p><b><u>Switching</u></b> is process to forward packets coming in from one
+      port to a port leading towards the destination. When data
+      comes on a port it is called ingress, and when data leaves a
+      port or goes out it is called egress. A communication system
+      may include number of switches and nodes.</p>
+    <p><b>A telephone network</b> is a telecommunications network that
+      connects telephones which allows telephone calls between two
+      or more parties, as well as newer features such as fax and internet.</p>
+    <b>There are a number of different types of telephone network:</b>
+    <p><b>A landline network</b> where the telephones must be directly
+      wired into a single telephone exchange This is known as
+      the <b>public switched telephone network or PSTN.</b>
+      <br>
+      <b>A wireless network</b> where the telephones are mobile and can
+      move around anywhere within the coverage area.
+      <br>A private network where a closed group of telephones are
+      connected primarily to each other and use a gateway to reach
+      the outside world. This is usually used
+      inside companies and call centers and is called a <b>private
+        branch exchange (PBX).</b>
+    </p>
+    <h5>
+      <center><u><b>Digital Subscriber Lines(DSL)</b></u></center>
+    </h5>
+    <p><b>Digital Subscriber Lines (DSL)</b> are a set of technologies that are existing
+      telephones lines to transmit digital data,such as internet access</p>
+    <br>DSL uses a modem to convert digital data from a computer
+    into a format that can be transmitted over the telephone line.
 
 
-                     
-                    
-                    
-                      
-                      
-                    
-                  
-                
 
-        <section>
-        </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section>
+</body>
+
 </html>
