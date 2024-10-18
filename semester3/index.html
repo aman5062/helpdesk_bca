@@ -277,7 +277,7 @@
      <li>COMMIT: To save changes made in a transaction.</li>
      <li>ROLLBACK: To undo changes made in a transaction.</li>
      <li>SAVEPOINT:To set a point within a transaction to which you can later roll back.</li>
-      <li>SET TRANSACTION: To specify properties for a transaction, such as isolation level.</li><br>4
+      <li>SET TRANSACTION: To specify properties for a transaction, such as isolation level.</li><br>
     <h4><b>Data Model in the dbms:-</b></h4>  
        <p> A Data Model in Database Management System (DBMS) is the concept of tools that are developed to summarize the description of the database. Data Models provide us with a transparent picture of data which helps us in creating an actual database. It shows us from the design of the data to its proper implementation of data.</p>
 
@@ -292,9 +292,9 @@
     <ol type="1">
       <li><b>Conceptual Data Model:-</b></li>
        <p>The conceptual data model describes the database at a very high level and is useful to understand the needs or requirements of the database. It is this model, that is used in the requirement-gathering process ie. before the Database Designers start making a particular database. One such popular model is the entity/relationship model (ER model). The E/R model specializes in entities, relationships, and even attributes that are used by database designers. In terms of this concept, a discussion can be made even with non-computer science(non-technical) users and stakeholders, and their requirements can be understood.</p>
-      
+      </ol>
       <p><b>Entity-Relationship Model( ER Model):</b>-It is a high-level data model which is used to define the data and the relationships between them. It is basically a conceptual design of any database which is easy to design the view of data.</p>
-
+  
        <b>Components of ER Model:</b>
        <ul>
        <li><b>Entity:</b>-An entity is referred to as a real-world object. It can be a name, place, object, class, etc. These are represented by a rectangle in an ER Diagram.</li>
@@ -310,8 +310,8 @@
       <li>The conceptual model is developed independently of hardware specifications like data storage capacity, location or software specifications like DBMS vendor and technology. The focus is to represent data as a user will see it in the "real world."</li><br>
     </ul>  
     <P>Conceptual data models known as Domain models create a common vocabulary for all stakeholders by establishing basic concepts and scope.</P><br>
-      
-    <li><b>Representational Data Model.</li></b>
+    <ol type="2">
+     <li><b>Representational Data Model.</li></b>
       
       <p>This type of data model is used to represent only the logical part of the database and does not represent the physical structure of the database. The representational data model allows us to focus primarily, on the design part of the database. A popular representational model is a Relational model. The relational Model consists of Relational Algebra and Relational Calculus. In the Relational Model, we basically use tables to represent our data and the relationships between them. It is a theoretical concept whose practical. implementation is done in Physical Data Model.<br>
       
@@ -333,6 +333,7 @@
       <li>Primary and Foreign keys, views, indexes, access profiles, and authorizations, etc. are defined</li>
       </ul> 
       <br> 
+    </ol>
      <h5>Some Other Data Models</h5>
     <ol type="1">  
      <li><b>Hierarchical Model.</li></b>
@@ -377,6 +378,141 @@
     To develop Data model one should know physical data stored characteristics.</li>
     </ul>
 
+    <h4><b>ER (Entity Relationship) Diagram in DBMS</b></h4>
+      <p>ER model stands for an Entity-Relationship model. It is a high-level data model. This model is used to define the data elements and relationship for a specified system.<br></p>
+      <p>It develops a conceptual design for the database. It also develops a very simple and   easy to design view of data.<br></p>
+      <p>In ER modeling, the database structure is portrayed as a diagram called an entity-relationship diagram.<br></p>
+      <P>For example, Suppose we design a school database. In this database, the student will be an entity with attributes like address, name, id, age, etc. The address can be another entity with attributes like city, street name, pin code, etc and there will be a relationship between them.</P>
+        <img src="../assets/images/ERdigarm.png.png" alt="ERdigram" id="img1">
+       <br>
+       
+        <img src="../assets/images/CompERdiagram.png" alt="compERdigeam" id="img1"><br>
+
+        <b><h5>1.Entity:</b></h5>
+      <P>An entity may be any object, class, person or place. In the ER diagram, an entity can be represented as rectangles.<br>
+
+        Consider an organization as an example- manager, product, employee, department etc. can be taken as an entity.</P>
+       <img src="../assets/images/Entity.png.png" alt="entity" id="img1"><br>
+
+      <b>a.Weak Entity</b>
+       <p>An entity that depends on another entity called a weak entity. The weak entity doesn't contain any key attribute of its own. The weak entity is represented by a double rectangle.</p>
+       <img src="../assets/images/weak.png.png" alt="weak" id="img1"><br>
+
+       <b><h5>2.Attribute</b></h5>
+        <p>The attribute is used to describe the property of an entity. Eclipse is used to represent an attribute.<br>
+                   
+       For example, id, age, contact number, name, etc. can be attributes of a student.</p>
+       <img src="../assets/images/attributes.png.png" alt="attribute" id="img1"><br>
+        
+        <b>a.Key Attribute</b>
+        <p>The key attribute is used to represent the main characteristics of an entity. It represents a primary key. The key attribute is represented by an ellipse with the text underlined.</p>
+        <img src="../assets/images/keyattributes.png.png" alt="keyattributes" id="img1"><br>
+
+      <b>b.Composite Attribute</b>
+       <p>An attribute that composed of many other attributes is known as a composite attribute. The composite attribute is represented by an ellipse, and those ellipses are connected with an ellipse.</p>
+       <img src="../assets/images/compostive.png.png" alt="compostive" id="img1"><br>
+
+      
+       <b>c.Multivalued Attribute</b>
+        <p>An attribute can have more than one value. These attributes are known as a multivalued attribute. The double oval is used to represent multivalued attribute.<br>
+
+     For example, a student can have more than one phone number.</p>
+      <img src="../assets/images/multivalued.png" alt="multivalued" id="img1"><br>
+      <br>
+  
+
+      <b>d.Derived Attribute</b>
+      <P>An attribute that can be derived from other attribute is known as a derived attribute. It can be represented by a dashed ellipse.<br>
+
+      For example, A person's age changes over time and can be derived from another attribute like Date of birth.</P>
+      <img src="../assets/images/derived.png.png" alt="drived" id="img1"><br>
+      
+      <br>
+      <b><h5>3.Relationship</b></h5>
+       <p>A relationship is used to describe the relation between entities. Diamond or rhombus is used to represent the relationship.</p>
+       <img src="../assets/images/realational.png.png" alt="realtionalship" id="img1"><br>
+
+       <b><p>Types of relationship are as follows:</b></p>
+
+        <b>a.One-to-One Relationship</b>
+        <p>When only one instance of an entity is associated with the relationship, then it is known as one to one relationship.
+         <br>
+         For example, A female can marry to one male, and a male can marry to one female.</p>
+        <img src="../assets/images/one-onepng.png" alt="one-one" id="img1"><br>
+
+      <b>b.One-to-many relationship</b>
+       <p>When only one instance of the entity on the left, and more than one instance of an entity on the right associates with the relationship then this is known as a one-to-many relationship.<br>
+
+        For example, Scientist can invent many inventions, but the invention is done by the only specific scientist.</p>
+        <img src="../assets/images/one-many.png.png" alt="one-many" id="img1"><br>
+
+      <b>c.Many-to-one relationship</b>
+         <p>When more than one instance of the entity on the left, and only one instance of an entity on the right associates with the relationship then it is known as a many-to-one relationship.<br>
+
+        For example, Student enrolls for only one course, but a course can have many students.</p>
+        <img src="../assets/images/many-one.png (2).png" alt="many-one" id="img1"><br>
+
+      <b>d.Many-to-many relationship</b>
+       <p>When more than one instance of the entity on the left, and more than one instance of an entity on the right associates with the relationship then it is known as a many-to-many relationship.<br>
+
+      For example, Employee can assign by many projects and project can have many employees.</p>
+      <img src="../assets/images/many-many.png.png" alt="many-many" id="img1"><br>
+      
+      <br>
+      <h4><b>Superclass subclass and inheritance</b></h4>
+      <P>The Enhanced Entity Relationship Model contains all the features of the Entity Relationship model. In addition to all that, it also contains features of Subclasses, Superclasses and Inheritance.</P>
+
+     All of these in detail are as follow-
+       <br>
+      <b>Subclasses</b>
+       <p>A subclass is a class derived from the superclass. It inherits the properties of the superclass and also contains attributes of its own. An example is:</p>
+       <img src="../assets/images/superclas.png.png" alt="super" id="img1">
+
+       <p>Car, Truck and Motorcycle are all subclasses of the superclass Vehicle. They all inherit common attributes from vehicle such as speed, colour etc. while they have different attributes also i.e Number of wheels in Car is 4 while in Motorcycle is 2.</p>
+
+       <b>Superclasses</b>
+        <p>A superclass is the class from which many subclasses can be created. The subclasses inherit the characteristics of a superclass. The superclass is also known as the parent class or base class.
+        <br>
+
+       In the above example, Vehicle is the Superclass and its subclasses are Car, Truck and Motorcycle.</p>
+      
+      <b>Inheritance</b>
+      <p>Inheritance is basically the process of basing a class on another class i.e to build a class on a existing  class. The new class contains all the features and functionalities of the old class in addition to its own.<br>
+       The class which is newly created is known as the subclass or child class and the original class is the parent class or the superclass.</p>
+
+       <h4><b>Generalization</h4></b>
+       <p>Generalization is like a bottom-up approach in which two or more entities of lower level combine to form a higher level entity if they have some attributes in common.</p>
+       <p>In generalization, an entity of a higher level can also combine with the entities of the lower level to form a further higher level entity.</p>
+       <p>Generalization is more like subclass and superclass system, but the only difference is the approach. Generalization uses the bottom-up approach.</p>
+       <p>In generalization, entities are combined to form a more generalized entity, i.e., subclasses are combined to make a superclass.</p>
+       <b>For example,</b> Faculty and Student entities can be generalized and create a higher level entity Person.
+         <img src="../assets/images/generaliziatio.png.png" alt="generalization" id="img1">
+         <br>
+   
+        <br>
+      <h4><b>Normalization</b></h4>
+         
+    <b>Functional Dependency</b>
+     <p>The functional dependency is a relationship that exists between two attributes. It typically exists between the primary key and non-key attribute within a table.</p>
+         
+         X   →   Y  
+      <p>The left side of FD is known as a determinant, the right side of the production is known as a dependent.</p>
+      <b>For example:</b>
+         <p>Assume we have an employee table with attributes: Emp_Id, Emp_Name, Emp_Address.</p>
+
+      <b>types of function dependency</b>
+      <ul>
+        <li>Trivial functional Dependency</li>
+         <li>Non-Trivial functional Dependency</li>
+      </ul>
+
+      <h5><b>What is Normalization?</b></h5>
+      <p>Normalization is the process of organizing the data in the database.</p>
+      <p>Normalization is used to minimize the redundancy from a relation or set of relations. It is also used to eliminate undesirable characteristics like Insertion, Update, and Deletion Anomalies.</p>
+     <p>Normalization divides the larger table into smaller and links them using relationships.</p>
+    <p>The normal form is used to reduce redundancy from the database table.</p><br>
     
-        </body>
+   <b>Why do we need Normalization?</b>
+    <p>The main reason for normalizing the relations is removing these anomalies. Failure to eliminate anomalies leads to data redundancy and can cause data integrity and other problems as the database grows. Normalization consists of a series of guidelines that helps to guide you in creating a good database structure.</p>
+</body>
 </html>
