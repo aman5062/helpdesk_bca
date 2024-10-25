@@ -596,7 +596,132 @@
     <p><b>Digital Subscriber Lines (DSL)</b> are a set of technologies that are existing
       telephones lines to transmit digital data,such as internet access</p>
     <br>DSL uses a modem to convert digital data from a computer
-    into a format that can be transmitted over the telephone line.
+    into a format that can be transmitted over the telephone line.<br>
+    <br>
+    <p>Error is a condition when the receiver's information does not match the sender's.
+      Digital signals suffer from noise during
+      transmission that can introduce errors in the binary bits
+      traveling from sender to receiver. That means a 0 bit may
+      change to 1 or a 1 bit may change to 0.
+      <br> Error detection and correction are implemented either
+      at the data link layer or the transport layer of the OSI model.
+    </p>
+    <img src="error.png" alt="error" id="img1">
+    <h6>Single-Bit Error</h6>
+    <div>A single-bit error refers to a type of data transmission error
+      that occurs when one bit (i.e., a single binary digit) of a
+      transmitted data unit is altered during transmission, resulting
+      in an incorrect or corrupted data unit.</div>
+    <h4 style="color: rgb(9, 9, 61); text-align: center; font-weight: 800;">Single-bit Error</h4>
+    <img src="singlebit.png" alt="single-bit" id="img1">
+    <h5><b>Multiple-Bit Error</b></h5>
+    <p>A multiple-bit error is an error type that arises when more than
+      one bit in a data transmission is affected. Although multiple-bit
+      errors are relatively rare when compared to single-bit errors,
+      they can still occur, particularly in high-noise or highinterference
+      digital environments.</p>
+    <img src="mulbit.png" alt="multiplebit" id="img1">
+    <h5 style="color: rgb(107, 19, 19); text-align: center; border: black 1px; font-weight: 700;">M-III</h5>
+    <p><b>Network Devices:</b>Network devices, also known as networking
+      hardware, are physical devices that allow hardware on a
+      computer network to communicate and interact with one
+      another. For example Repeater, Hub, Bridge, Switch, Routers,
+      Gateway, and NIC, etc.
+      <br><b>Repeater-</b>A repeater operates at the physical layer. Its job is
+      to amplifies (i.e., regenerates) the signal over the same network
+      before the signal becomes too weak or corrupted to extend the
+      length to which the signal can be transmitted over the same
+      network. When the signal becomes weak, they copy it bit by bit
+      and regenerate it at its star topology connectors connecting
+      following the original strength. It is a 2-port device.
+      <br><b>Hub-</b>A hub is a basically multi-port repeater. A hub connects
+      multiple wires coming from different branches, for example, the
+      connector in star topology which connects different stations.
+      Hubs cannot filter data, so data packets are sent to all connected devices.
+    </p>
+    <h5><b>Types of Hub</b></h5>
+    <ul>
+      <li><b>Active Hub-</b>These are the hubs that have their power
+        supply and can clean, boost, and relay the signal along with
+        the network. It serves both as a repeater as well as a wiring
+        center. These are used to extend the maximum distance
+        between nodes.</li>
+      <li><b>Passive Hub-</b>These are the hubs that collect wiring from
+        nodes and power supply from the active hub. These hubs
+        relay signals onto the network without cleaning and boosting
+        them and can't be used to extend the distance between nodes.</li>
+      <li><b>Intelligent Hub-</b>It works like an active hub and includes
+        remote management capabilities. They also provide flexible
+        data rates to network devices. It also enables an administrator
+        to monitor the traffic passing through the hub and to
+        configure each port in the hub.</li>
+    </ul>
+    <p>A layer 2 switch is a type of network switch or device that works
+      on the data link layer (OSI Layer 2) and utilizes MAC Address
+      to determine the path through where the frames are to be
+      forwarded. It uses hardware based switching techniques to
+      connect and transmit data in a local area network (LAN).</p>
+    <ul>
+      <li><b>MAC Address Table:</b> A Layer-2 switch will keep a MAC
+        address table that identifies the MAC address of the
+        connected device and the port number. This enables the
+        switch to direct frames towards the correct destination.</li>
+      <li><b>VLAN Support:</b> Layer-2 switches can support VLANs
+        (Virtual Local Area Networks), which means that the network
+        can be segmented at this layer.</li>
+      <li><b>Switching Frames:</b> These forward Ethernet frames are
+        according to MAC addresses and are vital in minimizing
+        collision within LANs.</li>
+      <li><b>Broadcast Domains:</b> Layer-2 switches do not partition
+        broadcast domains, all the devices connected to a Layer-2
+        switch are in the same broadcast domain</li>
+    </ul>
+    <h5 style="text-align: center; font-weight: 800;">ROUTER</h5>
+    <p>A router is a device that connects two or more packet-switched
+      networks or subnetworks. It serves two primary functions:
+      managing traffic between these networks by forwarding data
+      packets to their intended IP addresses, and allowing multiple
+      devices to use the same Internet connection.
+      <br>There are several types of routers, but most routers pass data
+      between LANs (local area networks) and WANs (wide area
+      networks). A LAN is a group of connected devices restricted to
+      a specific geographic area. A LAN usually requires a single route.
+    <br>A WAN, by contrast, is a large network spread out over a vast
+    geographic area. Large organizations and companies that
+    operate in multiple locations across the country, for instance,
+    will need separate LANs for each location, which then
+    connect to the other LANs to form a WAN. Because a WAN
+    is distributed over a large area, it often necessitates multiple 
+    router and switches.</p>
+    <h6>What is a Layer 3 switch?</h6>
+    <p>Also called a multilayer switch, it is a specialized hardware
+      device that has a lot in common with the traditional router—
+      both in physical appearance and function. Layer 3 switches
+      support the same routing protocols as routers and inspect
+      incoming packets, as well as make vital routing decisions the
+      same way routers do. And they do these routing tasks in addition
+      to performing switching duties. Like routers, Layer 3 switches
+      can be configured to support such routing protocols as:</p>
+      <ul>
+        <li>Routing Information Protocol(RIP)</li>
+        <li>Open Shortest Path First(OSPF)</li>
+        <li>Enhanced Interior Gateway Routing Protocol(EIGRP)</li>
+      </ul>
+      <h5><b>What is the purpose of Layer 3 switches?</b></h5>
+      <p>These switches were designed to improve the network routing
+        performance on large local area networks (LANs) such as
+        corporate intranets.
+       <br> While Layer 2 switches can route data traffic dynamically
+        when there is low to medium traffic, their performance suffers
+        when it increases to a high level.
+        <br>The main difference between a router and a Layer 3 switch lies
+        inside the hardware itself. Layer 3 switch hardware combines
+        that of traditional switch and routers—replacing some of the
+        typical router software with integrated circuit hardware that
+        provides better LAN performance. In addition, a Layer 3
+        switch will not usually have wide area network (WAN) ports which are 
+      standards in routers.</p>
+
 
 
 
