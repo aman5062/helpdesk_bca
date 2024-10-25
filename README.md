@@ -7,7 +7,7 @@
 <tr>
 <td>
 <a href="https://github.com/aman5062/helpdesk_bca/graphs/contributors" align="center">
-  <img src="https://contributors-img.web.app/image?repo=aman5062/helpdesk2" /> 
+  <img src="https://contributors-img.web.app/image?repo=aman5062/helpdesk_bca" /> 
 </a>
   
 </td>
