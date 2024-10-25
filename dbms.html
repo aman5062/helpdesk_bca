@@ -64,6 +64,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
+    var er = "no error";
     async function checkLogin() {
         const userEmail = getCookie('user_email');
         const userYear = getCookie('user_year');
@@ -75,7 +76,7 @@
                 Email: userEmail
             };
     
-            try {debugger;
+            try {
                 const response = await fetch('https://arambhsoftech.com/Helpdesk_bca/Helpdesk_login.php', {
                     method: 'POST',
                     headers: {
@@ -95,6 +96,7 @@
                     window.location = "nouser.html";
                 }
             } catch (error) {
+                er = "error";
                 console.error('Error:', error);
                 document.write("An error occurred: " + error.message);
             }
@@ -106,13 +108,13 @@
     function redirectToPage(userYear) {
         switch(userYear) {
             case '1':
-                window.location = "semester1/index.html";
+                window.location = "semester1/index.html?txt="+er;
                 break;
             case '2':
-                window.location = "semester3/index.html";
+                window.location = "semester3/index.html?txt="+er;
                 break;
             case '3':
-                window.location = "semester5/index.html";
+                window.location = "semester5/index.html?txt="+er;
                 break;
             default:
                 console.error('Invalid user year:', userYear);
