@@ -1,20 +1,8 @@
 [
   {
-    "name": "Aman Kumar Keshri",
-    "desg": "Founder",
-    "email": "amank232004@gmail.com",
-    "img":"https://arambhsoftech.com/assets/img/aman.jpg"
-  },
-  {
-    "name": "Harsh kumar",
-    "desg": "Project Lead & Web Developer",
-    "email": "2005harshkumar@gmail.com",
-     "img":"https://arambhsoftech.com/assets/img/harsh.jpg"
-  },
-  {
-    "name": "Nikhil kumar",
-    "desg": "Web Developer ",
-    "email": "927nikhilkumar@gmail.com",
-     "img":"https://arambhsoftech.com/assets/img/nikhil_sahu.jpg"
+    "name": "Prachi Sinha",
+    "desg": "Web developer",
+    "email": "prachisinha.abad@gmail.com",
+    "img":"https://arambhsoftech.com/assets/img/prachi.jpg"
   }
 ]

@@ -107,20 +107,7 @@
       </div>
     </div>
   </header>
-  <div id="blur_back"></div>
 
-  <!-- Meme Box Content -->
-  <div id="meme_box" class="container position-fixed top-50 start-50 translate-middle rounded shadow-lg">
-      <div class="row justify-content-center">
-          <div class="col-12">
-              <img id="meme_img" class="img-fluid rounded" alt="Meme Image">
-              
-          </div><br><center style="font-size: larger;">Meme of the Day</center><br>
-          <div class="col-12 mt-4" >
-              <button class="btn btn-danger" onclick="removememe()">Close</button>
-          </div>
-      </div>
-  </div>
   
     <div id="body">
       <div class="heading_name">DBMS</div>
@@ -131,9 +118,401 @@
           <span><i class="fa fa-arrow-up" aria-hidden="true" id="arrow"></i></span>
       </a>
       </div>  
-     
+      <h4><center><b>DATABASE MANAGEMENT STYSTEM</center></h4></b>
+      <P>DBMS stands for Database management system. It is a software facilitating efficient data storage, retrieval and management in database
+      <br>
+              Ensure data safety and integrity, while offering accessibility and concurrency control.</P>
+      <ul>
+      <li>data is  information. It  can take  various forms, such as number, text, image,audio and video and can be stored in different formats. there are three types structured, semi-structured and unstructured data.</li>
+      <li>database is a container which can store data is called database</li>
+        <li>Management means how data are manage in database.</li>	
+      </ul>
+       <b>Advantage  and disadvantage of the dbms:-</b>
+        <br>
+       
+        <p>Advantages of DBMS (Short Notes):-</p>
+        <ol type="i">
+        <li><b>Data Integrity & Security:</b>- Ensures data accuracy and provides controlled access</li>
+         <li><b>Redundancy Control:</b>-Minimizes data duplication and inconsistency.</li>
+         <li><b>Data Sharing:</b>-Multiple users can access data simultaneously.</b></li>
+        <li><b>Data Independence:</b>- Structure changes don’t affect application functionality.</li>
+         <li><b>Backup & Recovery:</b>- Automated backups and data recovery systems.</li>
+         <li><b>Efficient Querying:-</b> Quick data retrieval and processing.</li>
+        <li><b>Better Decision Making:</b>-Facilitates accurate data analysis.</li>
+     </ol>  
+      <b>Disadvantages of DBMS (Short Notes):</b>
+      <ol type="i">
+       <li><b>Complexity:</b>-Requires specialized knowledge to manage.</li>
+       <li><b>Cost:</b>-High setup, maintenance, and training costs.</li>
+       <li><b>Performance:</b>-Slower for small databases due to system overhead.</li>
+       <li><b>Storage Needs:</b>-Requires large storage capacity.</li>
+       <li><b>Failure Impact:</b>-A DBMS failure can disrupt entire operations.
+       <li><b>Maintenance:</b>-Regular updates and optimizations needed.</li>
+       </ol>
+       <b>Application of dbms:-</b>
+      <p>Database Management Systems (DBMS) are widely applied in various sectors to handle data efficiently. Here are some key applications of DBMS:</p>
+<ol type="i">
+     <li><b>Banking:</b>-DBMS is used to manage customer information, accounts, transactions, loans, and online banking activities. It ensures secure data handling and real-time transaction processing.</li>
 
-      <div>
-        <section>
-        </body>
+    <li><b>Education:</b>-Universities and colleges use DBMS to store and manage student records, course registrations, schedules, grades, and library management systems.</li>
+
+    <li><b>E-Commerce:</b>-Online shopping platforms use DBMS to manage product catalogs, customer data, transactions, and payment details.</li>
+
+    <li><b>Government:</b>-Governments use DBMS for managing citizen information, voter databases, tax records, and other administrative processes.</li>
+
+     <li><b>Social Media:</b>-Platforms like Facebook, Instagram, and Twitter use DBMS to manage massive amounts of user data, messages, posts, and interact.
+     </ol>  
+       <b>Data independance</b>
+          <p>Data Independence is mainly defined as a property   of DBMS that helps you to change the database 
+           schema at one level of a system without requiring to change the schema at the next level. it helps to 
+           keep the data separated from all program that makes use of it.</p>
+           <b>We have namely two levels of data independence arising from these levels of abstracation:</b>
+           <ul>
+           <li><b>Physical level data independence</b></li>
+           <li><b>Logical level data independence</b></li>
+           </ul>
+      
+  <li><b>Physical Level Data Independence</b> :-
+             It refers to the characteristic of being able to modify the physical schema without any alterations to 
+             the conceptual or logical schema, done for optimization purposes, e.g.the Conceptual structure of 
+             the database would not be affected by any change in storage size of the database system server. 
+             Changing from sequenoal to random access files is one such example. These alterations or 
+             Modifications to the physical structure my include:</li></ul>
+           <ul types="circle">
+            <li>Utilizing new storage devices.</li>
+            <li>Modifying data structures used for storage.</li> 
+            <li>Altering indexes or using alternative file organization techniques etc.</li><br></ul>
+   <li><b>Logical Level Data Independence</b>:-
+       It refers characteristic of being able modify the logical schema without affecting. the external schema or application program. The user view of the data would not be affected by any changes to the conceptual view of the data. These changes may include insertion or deletion of attributes,altering table structures entities or relationships to the logical schema, etc.
+</ul></li>
+
+    <p>Database systems comprise complex data structures. In order to make the system efficient in terms 
+    of retrieval of data, and reduce complexity in terms of usability of users, developers use abstraction
+    i.e. hide irrelevant details from the users. This approach simplifies database design.</p>
+    <br>
+   <b>Level of Abstraction in a DBMS</b>
+  There are mainly 3 levels of data abstraction:
+<ul>
+    <li>Physical or Internal Level</li>
+    <li>Logical or Conceptual Level.</li>
+    <li>View or External Level</li>
+</ul><br>
+    <b>Physical/(Internal Level)</b>
+    <p>This is the lowest level of data abstraction. It tells us how the data is actually stored in memory.
+     Access methods like sequential or random access and file organizaƟon methods like B+ trees and
+     hashing are used for the same. Usability, size of memory, and the number of Ɵmes the records are
+     factors that we need to know while designing the database.</p>
+     <p>Suppose we need to store the details of an employee. Blocks of storage and the amount of memory
+     used for  these purposes are kept hidden from the user.</p>
+     <br>
+
+    <b>Logical or Conceptual Level</b>
+     <p>This level comprises the information that is actually stored in the database in the form of tables. It
+     also stores the relationship among the data entities in relatively simple structures. At this level, the
+     information available to the user at the view level is unknown.<br>
+     We can store the various aributes of an employee and relationships, e.g. with the manager can also
+     be stored.<br>
+     The logical level thus describes the entire database in terms of a small number of relatively simple
+     structures. Although implementation of the simple structures at the logical level may involve
+     complex physical-level structures, the user of the logical level does not need to be aware of this
+     complexity. This is referred to as physical data independence. Database administrators, who must
+     decide what information to keep in the database, use the logical level of abstraction.</p><br>
+   
+    <b>View or External Level</b>
+     <p>This is the highest level of abstraction. Only a part of the actual database is viewed by the users. This
+     level exists to ease the accessibility of the database by an individual user. Users view data in the form
+     of rows and columns. Tables and relations are used to store data. Multiple views of the same
+     database may exist. Users can just view the data and interact with the database, storage and
+     implementation details are hidden from them. Even though the logical level uses simpler structures,
+     complexity remains because of the variety of information stored in a large database. Many users of
+     the database system do not need all this information; instead, they need to access only a part of the
+     database. The view level of abstracƟon exists to simplify their interaction with the system</p><br>
+   
+     Example: In case of storing customer data,
+     <ul>
+     <li><b>Physical level</b>-it will contains block of storages (bytes,GB,TB,etc).</li>
+     <li><b>Logical level</b>-it will contain the fields and the atributes of data.</li>
+     <li><b>View level </b>-it works with CLI or GUI access of database.</li> 
+     </ul>
+      <img src="../assets/images/viewlevel.png" alt="viewlevel" id="img1">
+    <p><center><u>figure- view level</u></p></center>
+
+     <b>Instance of the Database:</b>
+     <p>The collection of information stored in the database at a specific moment is known as an 
+     instance of the database. It is a snapshot of the database that contains live data at that 
+     moment, showing the current state of all records and transactions.</p><br>
+     <b>Database Schema:</b>
+     <p>The database schema refers to the overall design  of the database, illustrating the logical 
+     structure and organization of data. It defines how data is organized and how relationships 
+     between data are handled, essentially serving as the blueprint for how the database is 
+     constructed.</p>
+
+     <h4><b>There are various types of database language statements</b></h4>
+     <p>In a Database Management System (DBMS), different types of database language statements are used to define, manipulate, and manage data. These are categorized into four main types:</p>
+    <br>
+     <b>Data Definition Language (DDL)</b>:- object based command.
+     <p>DDL statements are used to define and modify the structure of database objects such as tables, indexes, and schemas. Examples include:</p>
+     <ul type="1">
+     <li>CREATE: To create new database objects like tables, indexes, views, etc.</li>
+     <li>ALTER: To modify the structure of an existing database object (e.g., adding/removing columns).</li>
+     <li>DROP: To delete a database object.</li>
+     <li>TRUNCATE: To delete all records from a table but retain the table structure.</li>
+     <li>RENAME: To rename a database object.</li>
+   </ul>  
+     
+    <b>Data Manipulation Language (DML)</b>:-records based commands.
+     <p>DML statements deal with the manipulation of data within database objects. These include:</p>
+     <li>SELECT: To retrieve data from the database.</li>
+     <li>INSERT: To add new records into a table.</li>
+     <li>UPDATE: To modify existing records.</li>
+     <li>DELETE: To remove existing records.</li><br>
+     
+     <b>Data Control Language (DCL)</b>
+     <p>DCL statements manage access permissions and user controls for the database:</p>
+     <li>GRANT: To give access privileges to users.</li>
+     <li>REVOKE: To remove access privileges.</li><br>
+     
+     <b>Transaction Control Language (TCL)</b>
+     <p>TCL statements manage transactions within a database to ensure data integrity:</p>
+     <li>COMMIT: To save changes made in a transaction.</li>
+     <li>ROLLBACK: To undo changes made in a transaction.</li>
+     <li>SAVEPOINT:To set a point within a transaction to which you can later roll back.</li>
+      <li>SET TRANSACTION: To specify properties for a transaction, such as isolation level.</li><br>
+    <h4><b>Data Model in the dbms:-</b></h4>  
+       <p> A Data Model in Database Management System (DBMS) is the concept of tools that are developed to summarize the description of the database. Data Models provide us with a transparent picture of data which helps us in creating an actual database. It shows us from the design of the data to its proper implementation of data.</p>
+
+       <b>Types of Relational Models</b>
+        <ul>
+        <li>Conceptual Data Model.</li>
+         <li>Representational Data Model.</li>
+         <li>Physical Data Model.</li>
+        </ul>
+      <p>It is basically classified into 3 types:-</p>
+        <img src="../assets/images/datamodel.jpg" alt="datamodel" id="img1">
+    <ol type="1">
+      <li><b>Conceptual Data Model:-</b></li>
+       <p>The conceptual data model describes the database at a very high level and is useful to understand the needs or requirements of the database. It is this model, that is used in the requirement-gathering process ie. before the Database Designers start making a particular database. One such popular model is the entity/relationship model (ER model). The E/R model specializes in entities, relationships, and even attributes that are used by database designers. In terms of this concept, a discussion can be made even with non-computer science(non-technical) users and stakeholders, and their requirements can be understood.</p>
+      </ol>
+      <p><b>Entity-Relationship Model( ER Model):</b>-It is a high-level data model which is used to define the data and the relationships between them. It is basically a conceptual design of any database which is easy to design the view of data.</p>
+  
+       <b>Components of ER Model:</b>
+       <ul>
+       <li><b>Entity:</b>-An entity is referred to as a real-world object. It can be a name, place, object, class, etc. These are represented by a rectangle in an ER Diagram.</li>
+         <li><b>Attributes:</b>-An attribute can be defined as the description of the entity. These are represented by Ellipse in an ER Diagram. It can be Age, Roll Number, or Marks for a Student.</li>
+         <li><b>Relationship:</b>-Relationships are used to define relations among different entities. Diamonds and Rhombus are used to show Relationships.</li>
+      </ul>
+      
+      <b>Characteristics of a conceptual data model</b>
+    
+     <ul>
+     <li>Offers Organization-wide coverage of the business concepts.</li>
+      <li>This type of Data Models are designed and developed for a business audience.</li>
+      <li>The conceptual model is developed independently of hardware specifications like data storage capacity, location or software specifications like DBMS vendor and technology. The focus is to represent data as a user will see it in the "real world."</li><br>
+    </ul>  
+    <P>Conceptual data models known as Domain models create a common vocabulary for all stakeholders by establishing basic concepts and scope.</P><br>
+    <ol type="2">
+     <li><b>Representational Data Model.</li></b>
+      
+      <p>This type of data model is used to represent only the logical part of the database and does not represent the physical structure of the database. The representational data model allows us to focus primarily, on the design part of the database. A popular representational model is a Relational model. The relational Model consists of Relational Algebra and Relational Calculus. In the Relational Model, we basically use tables to represent our data and the relationships between them. It is a theoretical concept whose practical. implementation is done in Physical Data Model.<br>
+      
+      The advantage of using a Representational data model is to provide a foundation to form the base for the Physical model</p><br>
+      
+      <li><b>Physical Data Model.</li></b>
+    
+      <p>The physical Data Model is used to practically implement Relational Data Model. Ultimately, all data in a database is stored physically on a secondary storage device such as dises and tapes. This is stored in the form of files, records, and certain other data structures. It has all the information on the format in which the files are present and the structure of the databases, the presence of external data structures, and their relation to each other. Here, we basically save tables in memory so they can be accessed efficiently. In order to come up with a good physical model, we have to work on the relational model in a better way. Structured Query Language (SQL) is used to practically implement Relational Algebra.<br>
+      
+      This Data Model describes HOW the system will be implemented using a specific DBMS system. This model is typically created by DBA and developers. The purpose is actual implementation of the database.</p><br>  
+    </ol>  
+      <b>Characteristics of a physical data model:</b>
+      <ul>
+      <li>The physical data model describes data need for a single project or application though it maybe.</li>
+      <li>integrated with other physical data models based on project scope.</li>
+      <li>Data Model contains relationships between tables that which addresses cardinality and nullability of the relationships.</li>
+      <li>Developed for a specific version of a DBMS, location, data storage or technology to be used in the project.</li>
+      <li>Columns should have exact datatypes, lengths assigned and default values.</li>
+      <li>Primary and Foreign keys, views, indexes, access profiles, and authorizations, etc. are defined</li>
+      </ul> 
+      <br> 
+    </ol>
+     <h5>Some Other Data Models</h5>
+    <ol type="1">  
+     <li><b>Hierarchical Model.</li></b>
+      <P>The hierarchical Model is one of the oldest models in the data model which was developed by IBM, in the
+      1950s. In a hierarchical model, data are viewed as a collection of tables, or we can say segments that form
+      a hierarchical relation. In this, the data is organized into a tree-like structure where each record consists of
+      one parent record and many children. Even if the segments are connected as a chain-like structure by
+      logical associations, then the instant structure can be a fan structure with multiple branches. We call the
+      illogical associations as directional associations.</P><br>
+      
+      <li><b>Network Model</li></b>
+      <p>The Network Model was formalized by the Database Task group in the 1960s. This model is the
+      generalization of the hierarchical model. This model can consist of multiple parent segments and these
+      segments are grouped as levels but there exists a logical association between the segments belonging to
+      any level. Mostly, there exists a many-to-many logical association between any of the two segments.</p><br>
+
+      <li><b>Object-Oriented Data Model.</li></b>
+      <p>In the Object-Oriented Data Model, data and their relationships are contained in a single structure which is referred to as an object in this data model. In this, real-world problems are represented as objects with different attributes. All objects have multiple relationships between them. Basically, it is a combination of Object Oriented programming and a Relational Database Model.</p><br>
+      
+      <li><b>Float Data Model</b></li>
+      <p>The float data model basically consists of a two-dimensional array of data models that do not contain any duplicate elements in the array. This data model has one drawback it cannot store a large amount of data that is the tables can not be of large size.</p>
+
+      <li><b>Context Data Model.</b></li>
+       <p>The Context data model is simply a data model which consists of more than one data model. For example, the Context data model consists of ER Model, Object-Oriented Data Model, etc. This model allows users to do more than one thing which each individual data model can do.</p>
+
+       <li><b>Semi-Structured Data Model</li></b>
+      <p>Semi-Structured data models deal with the data in a flexible way. Some entities may have extra attributes and some entities may have some missing attributes. Basically, you can represent data here in a flexible way.</p>
+    </ol>
+       <b>Advantages of Data Models</b>
+    <ul>
+     <li>Data Models help us in representing data accurately.
+     it helps us in finding the missing data and also in minimizing Data Redundancy.</li>
+     <li>Data Model provides data security in a better way.
+     The data model should be detailed enough to be used for building the physical database.</li>
+    <li>The information in the data model can be used for defining the relationship between tables, primary and foreign keys, and stored procedures.</li><br>
+
+   <b>Disadvantages of Data Models</b>
+    <li>In the case of a vast database, sometimes it becomes difficult to understand the data model.</li>
+    <li>You must have the proper knowledge of SQL to use physical models.</li>
+    <li>Even smaller change made in structure require modification in the entire application.</li>
+    <li>There is no set data manipulation language in DBMS.
+    To develop Data model one should know physical data stored characteristics.</li>
+    </ul>
+
+    <h4><b>ER (Entity Relationship) Diagram in DBMS</b></h4>
+      <p>ER model stands for an Entity-Relationship model. It is a high-level data model. This model is used to define the data elements and relationship for a specified system.<br></p>
+      <p>It develops a conceptual design for the database. It also develops a very simple and   easy to design view of data.<br></p>
+      <p>In ER modeling, the database structure is portrayed as a diagram called an entity-relationship diagram.<br></p>
+      <P>For example, Suppose we design a school database. In this database, the student will be an entity with attributes like address, name, id, age, etc. The address can be another entity with attributes like city, street name, pin code, etc and there will be a relationship between them.</P>
+        <img src="../assets/images/ERdigarm.png.png" alt="ERdigram" id="img1">
+       <br>
+       
+        <img src="../assets/images/CompERdiagram.png" alt="compERdigeam" id="img1"><br>
+
+        <b><h5>1.Entity:</b></h5>
+      <P>An entity may be any object, class, person or place. In the ER diagram, an entity can be represented as rectangles.<br>
+
+        Consider an organization as an example- manager, product, employee, department etc. can be taken as an entity.</P>
+       <img src="../assets/images/Entity.png.png" alt="entity" id="img1"><br>
+
+      <b>a.Weak Entity</b>
+       <p>An entity that depends on another entity called a weak entity. The weak entity doesn't contain any key attribute of its own. The weak entity is represented by a double rectangle.</p>
+       <img src="../assets/images/weak.png.png" alt="weak" id="img1"><br>
+
+       <b><h5>2.Attribute</b></h5>
+        <p>The attribute is used to describe the property of an entity. Eclipse is used to represent an attribute.<br>
+                   
+       For example, id, age, contact number, name, etc. can be attributes of a student.</p>
+       <img src="../assets/images/attributes.png.png" alt="attribute" id="img1"><br>
+        
+        <b>a.Key Attribute</b>
+        <p>The key attribute is used to represent the main characteristics of an entity. It represents a primary key. The key attribute is represented by an ellipse with the text underlined.</p>
+        <img src="../assets/images/keyattributes.png.png" alt="keyattributes" id="img1"><br>
+
+      <b>b.Composite Attribute</b>
+       <p>An attribute that composed of many other attributes is known as a composite attribute. The composite attribute is represented by an ellipse, and those ellipses are connected with an ellipse.</p>
+       <img src="../assets/images/compostive.png.png" alt="compostive" id="img1"><br>
+
+      
+       <b>c.Multivalued Attribute</b>
+        <p>An attribute can have more than one value. These attributes are known as a multivalued attribute. The double oval is used to represent multivalued attribute.<br>
+
+     For example, a student can have more than one phone number.</p>
+      <img src="../assets/images/multivalued.png" alt="multivalued" id="img1"><br>
+      <br>
+  
+
+      <b>d.Derived Attribute</b>
+      <P>An attribute that can be derived from other attribute is known as a derived attribute. It can be represented by a dashed ellipse.<br>
+
+      For example, A person's age changes over time and can be derived from another attribute like Date of birth.</P>
+      <img src="../assets/images/derived.png.png" alt="drived" id="img1"><br>
+      
+      <br>
+      <b><h5>3.Relationship</b></h5>
+       <p>A relationship is used to describe the relation between entities. Diamond or rhombus is used to represent the relationship.</p>
+       <img src="../assets/images/realational.png.png" alt="realtionalship" id="img1"><br>
+
+       <b><p>Types of relationship are as follows:</b></p>
+
+        <b>a.One-to-One Relationship</b>
+        <p>When only one instance of an entity is associated with the relationship, then it is known as one to one relationship.
+         <br>
+         For example, A female can marry to one male, and a male can marry to one female.</p>
+        <img src="../assets/images/one-onepng.png" alt="one-one" id="img1"><br>
+
+      <b>b.One-to-many relationship</b>
+       <p>When only one instance of the entity on the left, and more than one instance of an entity on the right associates with the relationship then this is known as a one-to-many relationship.<br>
+
+        For example, Scientist can invent many inventions, but the invention is done by the only specific scientist.</p>
+        <img src="../assets/images/one-many.png.png" alt="one-many" id="img1"><br>
+
+      <b>c.Many-to-one relationship</b>
+         <p>When more than one instance of the entity on the left, and only one instance of an entity on the right associates with the relationship then it is known as a many-to-one relationship.<br>
+
+        For example, Student enrolls for only one course, but a course can have many students.</p>
+        <img src="../assets/images/many-one.png (2).png" alt="many-one" id="img1"><br>
+
+      <b>d.Many-to-many relationship</b>
+       <p>When more than one instance of the entity on the left, and more than one instance of an entity on the right associates with the relationship then it is known as a many-to-many relationship.<br>
+
+      For example, Employee can assign by many projects and project can have many employees.</p>
+      <img src="../assets/images/many-many.png.png" alt="many-many" id="img1"><br>
+      
+      <br>
+      <h4><b>Superclass subclass and inheritance</b></h4>
+      <P>The Enhanced Entity Relationship Model contains all the features of the Entity Relationship model. In addition to all that, it also contains features of Subclasses, Superclasses and Inheritance.</P>
+
+     All of these in detail are as follow-
+       <br>
+      <b>Subclasses</b>
+       <p>A subclass is a class derived from the superclass. It inherits the properties of the superclass and also contains attributes of its own. An example is:</p>
+       <img src="../assets/images/superclas.png.png" alt="super" id="img1">
+
+       <p>Car, Truck and Motorcycle are all subclasses of the superclass Vehicle. They all inherit common attributes from vehicle such as speed, colour etc. while they have different attributes also i.e Number of wheels in Car is 4 while in Motorcycle is 2.</p>
+
+       <b>Superclasses</b>
+        <p>A superclass is the class from which many subclasses can be created. The subclasses inherit the characteristics of a superclass. The superclass is also known as the parent class or base class.
+        <br>
+
+       In the above example, Vehicle is the Superclass and its subclasses are Car, Truck and Motorcycle.</p>
+      
+      <b>Inheritance</b>
+      <p>Inheritance is basically the process of basing a class on another class i.e to build a class on a existing  class. The new class contains all the features and functionalities of the old class in addition to its own.<br>
+       The class which is newly created is known as the subclass or child class and the original class is the parent class or the superclass.</p>
+
+       <h4><b>Generalization</h4></b>
+       <p>Generalization is like a bottom-up approach in which two or more entities of lower level combine to form a higher level entity if they have some attributes in common.</p>
+       <p>In generalization, an entity of a higher level can also combine with the entities of the lower level to form a further higher level entity.</p>
+       <p>Generalization is more like subclass and superclass system, but the only difference is the approach. Generalization uses the bottom-up approach.</p>
+       <p>In generalization, entities are combined to form a more generalized entity, i.e., subclasses are combined to make a superclass.</p>
+       <b>For example,</b> Faculty and Student entities can be generalized and create a higher level entity Person.
+         <img src="../assets/images/generaliziatio.png.png" alt="generalization" id="img1">
+         <br>
+   
+        <br>
+      <h4><b>Normalization</b></h4>
+         
+    <b>Functional Dependency</b>
+     <p>The functional dependency is a relationship that exists between two attributes. It typically exists between the primary key and non-key attribute within a table.</p>
+         
+         X   →   Y  
+      <p>The left side of FD is known as a determinant, the right side of the production is known as a dependent.</p>
+      <b>For example:</b>
+         <p>Assume we have an employee table with attributes: Emp_Id, Emp_Name, Emp_Address.</p>
+
+      <b>types of function dependency</b>
+      <ul>
+        <li>Trivial functional Dependency</li>
+         <li>Non-Trivial functional Dependency</li>
+      </ul>
+
+      <h5><b>What is Normalization?</b></h5>
+      <p>Normalization is the process of organizing the data in the database.</p>
+      <p>Normalization is used to minimize the redundancy from a relation or set of relations. It is also used to eliminate undesirable characteristics like Insertion, Update, and Deletion Anomalies.</p>
+     <p>Normalization divides the larger table into smaller and links them using relationships.</p>
+    <p>The normal form is used to reduce redundancy from the database table.</p><br>
+    
+   <b>Why do we need Normalization?</b>
+    <p>The main reason for normalizing the relations is removing these anomalies. Failure to eliminate anomalies leads to data redundancy and can cause data integrity and other problems as the database grows. Normalization consists of a series of guidelines that helps to guide you in creating a good database structure.</p>
+</body>
 </html>
