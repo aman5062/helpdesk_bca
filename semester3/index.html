@@ -61,7 +61,7 @@
     }
   }
     </style>
-  <body onload="memelogy();"> 
+  <body  onload="err();"> 
   <header class="navbar navbar-expand-md d-flex flex-wrap justify-content-center mt-2 p-2 mb-2 border-bottom">
    <div id="top_bar">
     <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
@@ -109,6 +109,7 @@
   
     <div id="body">
       <div class="heading_name">DBMS</div>
+      <div id="error"></div>
       <div id="watermark">@Debuggers</div>
 
       <div id="up">
@@ -513,4 +514,9 @@
    <b>Why do we need Normalization?</b>
     <p>The main reason for normalizing the relations is removing these anomalies. Failure to eliminate anomalies leads to data redundancy and can cause data integrity and other problems as the database grows. Normalization consists of a series of guidelines that helps to guide you in creating a good database structure.</p>
 </body>
+<script>
+  function err(){
+    document.getElementById("error").innerText = window.location.href.split("?")[1];
+  }
+</script>
 </html>
