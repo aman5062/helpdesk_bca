@@ -106,13 +106,13 @@
     function redirectToPage(userYear) {
         switch(userYear) {
             case '1':
-                window.location = "semester1/index.html?t="+JSON.stringify(data);
+                window.location = "semester1/index.html";
                 break;
             case '2':
-                window.location = "semester3/index.html?t="+JSON.stringify(data);
+                window.location = "semester3/index.html";
                 break;
             case '3':
-                window.location = "semester5/index.html?t="+JSON.stringify(data);
+                window.location = "semester5/index.html";
                 break;
             default:
                 console.error('Invalid user year:', userYear);
