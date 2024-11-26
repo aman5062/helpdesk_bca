@@ -621,6 +621,157 @@
       they can still occur, particularly in high-noise or highinterference
       digital environments.</p>
     <img src="mulbit.png" alt="multiplebit" id="img1">
+    <h5>Burst Error</h5>
+    <p>When several consecutive bits are flipped mistakenly in digital
+      transmission, it creates a burst error. This error causes a sequence of
+      consecutive incorrect values.</p>
+    <img src="be.png" alt="be" id="img1">
+    <div>Error detection mechanisms are crucial for identifying errors in data during
+      transmission over networks. Here’s an overview of common error detection
+      mechanisms, including linear codes, Cyclic Redundancy Check (CRC), and
+      checksum.
+      <ol>
+        <li><b>Linear Codes</b></li>
+        <ul>
+          <li><b>Concept:</b>Linear codes are a type of error-detecting code that use algebraic
+            structures. The simplest form is a parity bit, which ensures that the number
+            of 1s in the data is even (even parity) or odd (odd parity).</li>
+          <li><b>Mechanism:</b>The sender adds an extra bit (parity bit) to each data frame.
+            The receiver checks if the total number of 1s is even or odd, depending on
+            the agreed parity.</li>
+          <li><b>Application:</b>Parity checks are effective at detecting single-bit errors but are
+            limited because they cannot detect multiple-bit errors.</li>
+          <li><b>Examples:</b>Simple parity check, two-dimensional parity, Hamming code
+            (used for error detection and correction).</li>
+        </ul>
+        <li><b><u>Cyclic Redundancy Check(CRC)</u></b></li>
+        <ul>
+          <li><b>concept:</b>CRC is a widely used error-detection method that involves treating
+            the data as a binary number, dividing it by a fixed binary polynomial, and
+            appending the remainder to the data.</li>
+          <li><b>Mechanism:</b></li>
+          <ul>
+            <li>Mechanism:
+              Both sender and receiver agree on a fixed binary divisor (the
+              generator polynomial).</li>
+            <li>The sender divides the data by this polynomial and appends the
+              remainder (CRC value) to the data.</li>
+            <li>The receiver performs the same division on the received data. If the
+              remainder is zero, the data is assumed to be error-free; otherwise, an
+              error is detected.</li>
+          </ul>
+          <li><b>Application:</b>CRC is highly effective at detecting burst errors and is
+            commonly used in network protocols like Ethernet and USB.</li>
+          <li><b>Examples:</b>CRC-8, CRC-16, CRC-32 (where the number indicates the length
+            of the CRC code in bits).</li>
+        </ul>
+        <li><b><u>Checksum</u></b></li>
+        <ul>
+          <li><b>Concept:</b>The checksum is a simple method where data is divided into
+            equal-sized blocks, summed, and the sum’s complement is added to the data
+            as the checksum.</li>
+          <li><b>Mechanism:</b></li>
+          <ul>
+            <li>Data is divided into fixed-size segments (e.g., 16 bits).</li>
+            <li>The segments are added up to produce a sum.</li>
+            <li>The sum is complemented (inverted) and appended to the data as the
+              checksum.</li>
+            <li>The receiver calculates the checksum by summing the received
+              segments, including the checksum. If the result is zero, the data is
+              assumed to be error-free.</li>
+          </ul>
+          <li><b>Application:</b>Checksum is simpler but less robust than CRC and is used in
+            error detection for protocols like TCP/IP, where simpler error-checking is
+            needed.</li>
+          <li><b>Example:</b>Internet Checksum (used in TCP/IP and UDP protocols).</li>
+        </ul>
+      </ol>
+    </div>
+    <div>
+      <b>Error correction</b> mechanisms not only detect errors in transmitted data but
+      also allow the receiver to reconstruct the original data without needing
+      retransmission. These mechanisms are particularly important in
+      environments where retransmissions are costly or impractical, such as
+      satellite communications, deep-space missions, or streaming applications.
+      Common Error Correction Mechanisms.
+      <ol>
+        <li><b>Hamming Code</b></li>
+        <ul>
+          <li><b>Concept:</b>Hamming code is an error-correcting code that can detect up to
+            two-bit errors and correct single-bit errors in data.</li>
+            <li><b>Mechanism:</b></li>
+            <ul>
+              <li>Redundant bits are added to the data in specific positions.</li>
+              <li>These bits are calculated based on parity for groups of positions,
+                with each redundant bit covering certain data bits.</li>
+              <li>At the receiver's end, the parity bits are recalculated. If there's a
+                discrepancy, the pattern of discrepancies points to the exact bit that is
+                in error, allowing single-bit error correction.</li>
+            </ul>
+            <li><b>Application:</b>Used in memory systems, telecommunications, and data
+              storage systems where low levels of errors are anticipated.</li>
+              <li><b>Limitations:</b>Hamming codes are limited to single-bit error correction and
+                are not ideal for handling high error rates.</li>
+        </ul>
+      </ol>
+    </div>
+    <p><b>Data Link Control</b> is a set of protocols and mechanisms used to ensure reliable
+      communication over a network at the Data Link layer (Layer 2) of the OSI model. It
+      includes both flow control and error control, which are essential for handling data
+      frames effectively and preventing issues like data loss, congestion, or duplication.</p>
+      <p><b>Flow control</b> Flow control is used to manage the rate at which data is transmitted between a sender
+        and a receiver to prevent the receiver from being overwhelmed by too much data too
+        quickly. The two main types of flow control techniques are:</p>
+        <ol>
+          <li><b>Stop-and-Wait:</b></li>
+          <ol>
+            <li>In the Stop-and-Wait protocol, the sender transmits a single frame and then
+              waits for an acknowledgment (ACK) from the receiver before sending the
+              next frame.</li>
+              <li>This simple approach ensures that data is sent in an orderly fashion and
+                prevents the receiver's buffer from overflowing.</li>
+              </ol>
+              <li><b>Sliding Window:</b></li>
+              <ol>
+                <li>In the Sliding Window protocol, the sender can transmit multiple frames
+                  before needing an acknowledgment.</li>
+                  <li>It uses a "window" of sequence numbers to manage frames that can be sent
+                    or received at a time, providing greater efficiency by allowing a continuous
+                    flow of frames.</li>
+                    <li>This approach is widely used in reliable transmission protocols (like TCP).</li>
+              </ol>
+            </ol>
+            <h4><b>Error control</b></h4>
+            <p>Error control is responsible for detecting and correcting errors that occur during
+              transmission. It ensures data integrity and can request retransmission if errors are
+              detected. There are three main error control methods:</p>
+              <ol>
+                <li><b>Automatic Repeat request(ARQ):</b></li>
+                <ol>
+                  <li>ARQ is a family of protocols that include error detection and retransmission
+                    strategies.</li>
+                  <li>When an error is detected, a frame is either retransmitted or dropped based
+                    on certain conditions, and mechanisms like acknowledgments (ACKs) or
+                    negative acknowledgments (NAKs) are used.</li>
+                </ol>
+                <li><b>Forward Error correction(FEC):</b></li>
+                <ol>
+                  <li>When an error is detected, a frame is either retransmitted or dropped based
+                    on certain conditions, and mechanisms like acknowledgments (ACKs) or
+                    negative acknowledgments (NAKs) are used.</li>
+                  <li>This technique is often used in real-time applications where retransmission
+                    would cause unacceptable delays.</li>
+                </ol>
+                <li><b>Cyclic Redundancy Check(CRC):</b></li>
+                <ol>
+                  <li>CRC is an error-detection method that attaches a checksum to each frame,
+                    allowing the receiver to detect any data corruption that might have occurred
+                    during transmission.</li>
+                  </ol>
+                </ol>
+                  
+
+
     <h5 style="color: rgb(107, 19, 19); text-align: center; border: black 1px; font-weight: 700;">M-III</h5>
     <p><b>Network Devices:</b>Network devices, also known as networking
       hardware, are physical devices that allow hardware on a
@@ -757,18 +908,19 @@
       There are two versions of IP: IPv4 and IPv6. IPv4 is the older
       version, while IPv6 is the newer one. both have their own features
       and functions.</p>
-      <div>
-        <p>IP stands for Internet Protocol version v4 stands for Version
-          Four (IPv4), is the most widely used system for identifying
-          devices on a network. It uses a set of four numbers, separated
-          by periods (like 192.168.0.1), to give each device a unique
-          address. This address helps data find its way from one device to
-          another over the internet.<br>
-          <br>IPv4 was the primary version brought into action for production
-          within the ARPANET in 1983. IP version four addresses are 32-
-          bit integers which will be expressed in decimal
-          notation. Example- 192.0.2.126 could be an IPv4 address</p>
-      </div>
+    <div>
+      <p>IP stands for Internet Protocol version v4 stands for Version
+        Four (IPv4), is the most widely used system for identifying
+        devices on a network. It uses a set of four numbers, separated
+        by periods (like 192.168.0.1), to give each device a unique
+        address. This address helps data find its way from one device to
+        another over the internet.<br>
+        <br>IPv4 was the primary version brought into action for production
+        within the ARPANET in 1983. IP version four addresses are 32-
+        bit integers which will be expressed in decimal
+        notation. Example- 192.0.2.126 could be an IPv4 address
+      </p>
+    </div>
 
 
 
