@@ -699,19 +699,19 @@
         <ul>
           <li><b>Concept:</b>Hamming code is an error-correcting code that can detect up to
             two-bit errors and correct single-bit errors in data.</li>
-            <li><b>Mechanism:</b></li>
-            <ul>
-              <li>Redundant bits are added to the data in specific positions.</li>
-              <li>These bits are calculated based on parity for groups of positions,
-                with each redundant bit covering certain data bits.</li>
-              <li>At the receiver's end, the parity bits are recalculated. If there's a
-                discrepancy, the pattern of discrepancies points to the exact bit that is
-                in error, allowing single-bit error correction.</li>
-            </ul>
-            <li><b>Application:</b>Used in memory systems, telecommunications, and data
-              storage systems where low levels of errors are anticipated.</li>
-              <li><b>Limitations:</b>Hamming codes are limited to single-bit error correction and
-                are not ideal for handling high error rates.</li>
+          <li><b>Mechanism:</b></li>
+          <ul>
+            <li>Redundant bits are added to the data in specific positions.</li>
+            <li>These bits are calculated based on parity for groups of positions,
+              with each redundant bit covering certain data bits.</li>
+            <li>At the receiver's end, the parity bits are recalculated. If there's a
+              discrepancy, the pattern of discrepancies points to the exact bit that is
+              in error, allowing single-bit error correction.</li>
+          </ul>
+          <li><b>Application:</b>Used in memory systems, telecommunications, and data
+            storage systems where low levels of errors are anticipated.</li>
+          <li><b>Limitations:</b>Hamming codes are limited to single-bit error correction and
+            are not ideal for handling high error rates.</li>
         </ul>
       </ol>
     </div>
@@ -719,57 +719,112 @@
       communication over a network at the Data Link layer (Layer 2) of the OSI model. It
       includes both flow control and error control, which are essential for handling data
       frames effectively and preventing issues like data loss, congestion, or duplication.</p>
-      <p><b>Flow control</b> Flow control is used to manage the rate at which data is transmitted between a sender
-        and a receiver to prevent the receiver from being overwhelmed by too much data too
-        quickly. The two main types of flow control techniques are:</p>
-        <ol>
-          <li><b>Stop-and-Wait:</b></li>
-          <ol>
-            <li>In the Stop-and-Wait protocol, the sender transmits a single frame and then
-              waits for an acknowledgment (ACK) from the receiver before sending the
-              next frame.</li>
-              <li>This simple approach ensures that data is sent in an orderly fashion and
-                prevents the receiver's buffer from overflowing.</li>
-              </ol>
-              <li><b>Sliding Window:</b></li>
-              <ol>
-                <li>In the Sliding Window protocol, the sender can transmit multiple frames
-                  before needing an acknowledgment.</li>
-                  <li>It uses a "window" of sequence numbers to manage frames that can be sent
-                    or received at a time, providing greater efficiency by allowing a continuous
-                    flow of frames.</li>
-                    <li>This approach is widely used in reliable transmission protocols (like TCP).</li>
-              </ol>
-            </ol>
-            <h4><b>Error control</b></h4>
-            <p>Error control is responsible for detecting and correcting errors that occur during
-              transmission. It ensures data integrity and can request retransmission if errors are
-              detected. There are three main error control methods:</p>
-              <ol>
-                <li><b>Automatic Repeat request(ARQ):</b></li>
-                <ol>
-                  <li>ARQ is a family of protocols that include error detection and retransmission
-                    strategies.</li>
-                  <li>When an error is detected, a frame is either retransmitted or dropped based
-                    on certain conditions, and mechanisms like acknowledgments (ACKs) or
-                    negative acknowledgments (NAKs) are used.</li>
-                </ol>
-                <li><b>Forward Error correction(FEC):</b></li>
-                <ol>
-                  <li>When an error is detected, a frame is either retransmitted or dropped based
-                    on certain conditions, and mechanisms like acknowledgments (ACKs) or
-                    negative acknowledgments (NAKs) are used.</li>
-                  <li>This technique is often used in real-time applications where retransmission
-                    would cause unacceptable delays.</li>
-                </ol>
-                <li><b>Cyclic Redundancy Check(CRC):</b></li>
-                <ol>
-                  <li>CRC is an error-detection method that attaches a checksum to each frame,
-                    allowing the receiver to detect any data corruption that might have occurred
-                    during transmission.</li>
-                  </ol>
-                </ol>
-                  
+    <p><b>Flow control</b> Flow control is used to manage the rate at which data is transmitted between a sender
+      and a receiver to prevent the receiver from being overwhelmed by too much data too
+      quickly. The two main types of flow control techniques are:</p>
+    <ol>
+      <li><b>Stop-and-Wait:</b></li>
+      <ol>
+        <li>In the Stop-and-Wait protocol, the sender transmits a single frame and then
+          waits for an acknowledgment (ACK) from the receiver before sending the
+          next frame.</li>
+        <li>This simple approach ensures that data is sent in an orderly fashion and
+          prevents the receiver's buffer from overflowing.</li>
+      </ol>
+      <li><b>Sliding Window:</b></li>
+      <ol>
+        <li>In the Sliding Window protocol, the sender can transmit multiple frames
+          before needing an acknowledgment.</li>
+        <li>It uses a "window" of sequence numbers to manage frames that can be sent
+          or received at a time, providing greater efficiency by allowing a continuous
+          flow of frames.</li>
+        <li>This approach is widely used in reliable transmission protocols (like TCP).</li>
+      </ol>
+    </ol>
+    <h4><b>Error control</b></h4>
+    <p>Error control is responsible for detecting and correcting errors that occur during
+      transmission. It ensures data integrity and can request retransmission if errors are
+      detected. There are three main error control methods:</p>
+    <ol>
+      <li><b>Automatic Repeat request(ARQ):</b></li>
+      <ol>
+        <li>ARQ is a family of protocols that include error detection and retransmission
+          strategies.</li>
+        <li>When an error is detected, a frame is either retransmitted or dropped based
+          on certain conditions, and mechanisms like acknowledgments (ACKs) or
+          negative acknowledgments (NAKs) are used.</li>
+      </ol>
+      <li><b>Forward Error correction(FEC):</b></li>
+      <ol>
+        <li>When an error is detected, a frame is either retransmitted or dropped based
+          on certain conditions, and mechanisms like acknowledgments (ACKs) or
+          negative acknowledgments (NAKs) are used.</li>
+        <li>This technique is often used in real-time applications where retransmission
+          would cause unacceptable delays.</li>
+      </ol>
+      <li><b>Cyclic Redundancy Check(CRC):</b></li>
+      <ol>
+        <li>CRC is an error-detection method that attaches a checksum to each frame,
+          allowing the receiver to detect any data corruption that might have occurred
+          during transmission.</li>
+      </ol>
+    </ol>
+    <h5><b>Stop-and-Wait ARQ Protocol</b></h5>
+    <p>The Stop-and-Wait ARQ is a specific flow and error control protocol based on the
+      Stop-and-Wait approach. Here's how it works:</p>
+    <ol>
+      <li><b>Frame Transmission:</b></li>
+      <ol>
+        <li>The sender sends a frame and waits for an acknowledgment from the
+          receiver</li>
+        <li>If the receiver successfully receives the frame without errors, it sends an
+          acknowledgment (ACK) back to the sender.</li>
+      </ol>
+      <li><b>Acknowledgment and retransmission:</b></li>
+      <ol>
+        <li>If the sender receives an ACK, it proceeds to send the next frame.</li>
+        <li>If no acknowledgment is received within a certain time frame (due to a frame
+          loss or error), the sender will retransmit the frame.</li>
+        <li>This prevents data loss in case of transmission errors.</li>
+      </ol>
+      <li><b>Error Handling with Timeout:</b></li>
+      <ol>
+        <li>A timer is used to monitor the time taken to receive an ACK. If the timer
+          expires, the sender retransmits the frame, assuming it was lost or corrupted
+          during transmission.</li>
+      </ol>
+    </ol>
+    <h4>Multiple Access Techniques</h4>
+    <p>Multiple Access techniques determine how multiple devices share the same
+      communication medium efficiently. They can be grouped into three main categories:</p>
+    <ol>
+      <li><b>Random Access:</b>
+        In Random Access, devices access the channel whenever they have data to send,
+        leading to possible collisions, which are then managed by various protocols:</li>
+      <ul>
+        <li>ALOHA:</li>
+        <ul>
+          <li>A simple protocol where devices transmit data whenever they are ready.</li>
+          <li>Collisions occur when two or more devices send data at the same time. After
+            a collision, devices wait a random time before retrying</li>
+          <li>Variants: Pure ALOHA and Slotted ALOHA, where Slotted ALOHA reduces
+            collisions by allowing transmissions only at specific time slots.</li>
+        </ul>
+        <li>CSMA(Carrier Sense Multiple Access):</li>
+        <ul>
+          <li>Devices sense the channel to check if it is idle before transmitting. If busy,
+            they wait until it is free.</li>
+            <li>CSMA/CD (Collision Detection): Used in wired networks, especially
+              Ethernet, where devices detect collisions and stop transmission, wait, and
+              then retry.</li>
+              <li>CSMA/CA (Collision Avoidance): Used in wireless networks, where
+                collision detection is challenging. Devices wait before transmitting and use
+                acknowledgment signals to minimize collisions.</li>
+        </ul>
+      </ul>
+      
+    </ol>
+
 
 
     <h5 style="color: rgb(107, 19, 19); text-align: center; border: black 1px; font-weight: 700;">M-III</h5>
