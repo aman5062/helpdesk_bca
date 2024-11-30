@@ -69,13 +69,13 @@
         const userYear = getCookie('user_year');
         const Username = getCookie('user_name');
     
-        if (userEmail && userYear && Username) {
+        if (userEmail && userYear) {
             const data = {
                 Name: Username,
                 Email: userEmail
             };
     
-            try {
+            try {debugger;
                 const response = await fetch('https://arambhsoftech.com/Helpdesk_bca/Helpdesk_login.php', {
                     method: 'POST',
                     headers: {
@@ -85,7 +85,6 @@
                 });
     
                 if (!response.ok) {
-                    const errorText = await response.text();
                     throw new Error(`HTTP error! Status: ${response.status}`);
                 }
     
@@ -134,7 +133,7 @@
         }
         return null;
     }
-
+  
     // Call checkLogin on page load or whenever needed
    
   </script>
