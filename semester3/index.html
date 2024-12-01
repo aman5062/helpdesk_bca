@@ -795,68 +795,298 @@
     Operations of Transaction:
     Following are the main operations of transaction:
 
-   <p><b>Read(X):</b> Read operation is used to read the value of X from the database and stores it in a
-    buffer in main memory.<br>
-    <b>Write(X):</b> Write operation is used to write the value back to the database from the buffer.
-    Let's take an example to debit transaction from an account which consists of following
-    operations:</p>
-     1. R(X);<br>
-     2. X = X - 500;<br>
-     3. W(X);<br>
+    <p><b>Read(X):</b> Read operation is used to read the value of X from the database and stores it in a
+      buffer in main memory.<br>
+      <b>Write(X):</b> Write operation is used to write the value back to the database from the buffer.
+      Let's take an example to debit transaction from an account which consists of following
+      operations:
+    </p>
+    1. R(X);<br>
+    2. X = X - 500;<br>
+    3. W(X);<br>
     <ol type="1"></ol>
-     <p>Let's assume the value of X before starting of the transaction is 4000.</p>
-     <li>The first operation reads X's value from database and stores it in a buffer.</li>
-      <li>The second operation will decrease the value of X by 500. So buffer will contain 3500.</li>
-      <li>The third operation will write the buffer's value to the database. So X's final value will be
-          3500.</li>
-         <p>But it may be possible that because of the failure of hardware, software or power, etc. that
-          transaction may fail before finished all the operations in the set.<br>
-          <b>For example:</b> If in the above transaction, the debit transaction fails after executing operation 2
-          then X's value will remain 4000 in the database which is not acceptable by the bank.
-          Advertisement<br>
-          
-          <i><p>To solve this problem, we have two important operations:</p></i>
-          <b>Commit:</b> It is used to save the work done permanently.<br>
-          <b>Rollback:</b> It is used to undo the work done.<br>
-         </p>
-          States of Transaction
-          In a database, the transaction can be in one of the following states - 
-         <img src="../assets/images/transtion1.jpg" alt="">
-        <br>
-         <i><h5>Active state</i></h5>
-         <li>The active state is the first state of every transaction. In this state, the transaction is being
-         executed.</li>
-         <li>For example: Insertion or deletion or updating a record is done here. But all the records are
-         still not saved to the database.</li><br>
-         <i><h5>Partially committed</i></h5>
-         <li>In the partially committed state, a transaction executes its final operation, but the data is
-         still not saved to the database.</li>
-         <li>In the total mark calculation example, a final display of the total marks step is executed in
-         this state.</li><br>
-         
-         <i><h5>Committed</h5></i>
-         <li>A transaction is said to be in a committed state if it executes all its operations successfully. In
-         this state, all the effects are now permanently saved on the database system.
-         Failed state</li>
-         <li>If any of the checks made by the database recovery system fails, then the transaction is said
-         to be in the failed state.</li>
-        
-        <li>In the example of total mark calculation, if the database is not able to fire a query to fetch
-         the marks, then the transaction will fail to execute.</li><br>
-         </li><br>
-         </ul>
-         <i><h5>Aborted</h5></i>
-         <li>If any of the checks fail and the transaction has reached a failed state then the database
-         recovery system will make sure that the database is in its previous consistent state. If not
-         then it will abort or roll back the transaction to bring the database into a consistent state.</li>
-         <li>If the transaction fails in the middle of the transaction then before executing the transaction,
-         all the executed transactions are rolled back to its consistent state.</li>
-         <li>After aborting the transaction, the database recovery module will select one of the two
-         operations:</li>
-         <li>Re-start the transaction</li>
-         <li>Kill the transaction</li>
-         </ul>
-        
-        </body>
+    <p>Let's assume the value of X before starting of the transaction is 4000.</p>
+    <li>The first operation reads X's value from database and stores it in a buffer.</li>
+    <li>The second operation will decrease the value of X by 500. So buffer will contain 3500.</li>
+    <li>The third operation will write the buffer's value to the database. So X's final value will be
+      3500.</li>
+    <p>But it may be possible that because of the failure of hardware, software or power, etc. that
+      transaction may fail before finished all the operations in the set.<br>
+      <b>For example:</b> If in the above transaction, the debit transaction fails after executing operation 2
+      then X's value will remain 4000 in the database which is not acceptable by the bank.
+      Advertisement<br>
+
+      <i>
+        <p>To solve this problem, we have two important operations:</p>
+      </i>
+      <b>Commit:</b> It is used to save the work done permanently.<br>
+      <b>Rollback:</b> It is used to undo the work done.<br>
+    </p>
+    States of Transaction
+    In a database, the transaction can be in one of the following states -
+    <img src="../assets/images/transtion1.jpg" alt="">
+    <br>
+    <i>
+      <h5>Active state
+    </i></h5>
+    <li>The active state is the first state of every transaction. In this state, the transaction is being
+      executed.</li>
+    <li>For example: Insertion or deletion or updating a record is done here. But all the records are
+      still not saved to the database.</li><br>
+    <i>
+      <h5>Partially committed
+    </i></h5>
+    <li>In the partially committed state, a transaction executes its final operation, but the data is
+      still not saved to the database.</li>
+    <li>In the total mark calculation example, a final display of the total marks step is executed in
+      this state.</li><br>
+
+    <i>
+      <h5>Committed</h5>
+    </i>
+    <li>A transaction is said to be in a committed state if it executes all its operations successfully. In
+      this state, all the effects are now permanently saved on the database system.
+      Failed state</li>
+    <li>If any of the checks made by the database recovery system fails, then the transaction is said
+      to be in the failed state.</li>
+
+    <li>In the example of total mark calculation, if the database is not able to fire a query to fetch
+      the marks, then the transaction will fail to execute.</li><br>
+    </li><br>
+    </ul>
+    <i>
+      <h5>Aborted</h5>
+    </i>
+    <li>If any of the checks fail and the transaction has reached a failed state then the database
+      recovery system will make sure that the database is in its previous consistent state. If not
+      then it will abort or roll back the transaction to bring the database into a consistent state.</li>
+    <li>If the transaction fails in the middle of the transaction then before executing the transaction,
+      all the executed transactions are rolled back to its consistent state.</li>
+    <li>After aborting the transaction, the database recovery module will select one of the two
+      operations:</li>
+    <li>Re-start the transaction</li>
+    <li>Kill the transaction</li>
+    </ul>
+
+    <br>
+    <h5><u>Concurrency in DBMS</h5></u>
+    <p>Concurrency in a Database Management System (DBMS) refers to the ability of the system to handle multiple
+      transactions simultaneously without compromising data integrity or consistency. This capability is essential in
+      multi-user environments where multiple users or processes access and modify the database concurrently.</p>
+
+    <h5>Key Concepts in Concurrency</h5>
+
+    <h5>1. Transactions</h5>
+    <p>A transaction is a sequence of database operations (read, write, etc.) that form a single logical unit of work.
+      Transactions must follow the ACID properties:</p>
+    <ul>
+      <li><strong>Atomicity</strong>: All operations within a transaction are completed, or none are.</li>
+      <li><strong>Consistency</strong>: Transactions bring the database from one valid state to another.</li>
+      <li><strong>Isolation</strong>: Transactions are isolated from one another to prevent interference.</li>
+      <li><strong>Durability</strong>: Once a transaction is committed, its changes persist even in the event of a
+        failure.</li>
+    </ul>
+
+    <h5>2. Concurrency Issues</h5>
+    <ul>
+      <li><strong>Lost Update</strong>: Two transactions overwrite each other’s updates.</li>
+      <li><strong>Dirty Read</strong>: A transaction reads uncommitted data from another transaction.</li>
+      <li><strong>Non-Repeatable Read</strong>: A transaction reads the same data twice and gets different results due
+        to changes made by another transaction.</li>
+      <li><strong>Phantom Read</strong>: A transaction reads a set of rows that satisfy a condition, but another
+        transaction inserts or deletes rows, changing the result of the query.</li>
+    </ul>
+
+    <h5>3. Concurrency Control</h5>
+    <p>To ensure that multiple transactions can execute concurrently without issues, DBMS implements concurrency control
+      mechanisms. These include:</p>
+    <ul>
+      <li><strong>Locking Mechanisms</strong>:
+        <ul>
+          <li><strong>Shared Lock (S-lock)</strong>: Allows multiple transactions to read a resource but prevents
+            writing.</li>
+          <li><strong>Exclusive Lock (X-lock)</strong>: Prevents other transactions from accessing the resource for
+            reading or writing.</li>
+        </ul>
+      </li>
+      <li><strong>Timestamp Ordering</strong>: Transactions are ordered based on their timestamps to ensure
+        serializability.</li>
+      <li><strong>Multiversion Concurrency Control (MVCC)</strong>: Maintains multiple versions of data to allow read
+        and write operations to occur simultaneously.</li>
+      <li><strong>Optimistic Concurrency Control</strong>: Assumes conflicts are rare and validates changes only during
+        commit.</li>
+    </ul>
+
+    <h5>4. Isolation Levels</h5>
+    <p>DBMS provides different isolation levels to balance concurrency and consistency:</p>
+    <ul>
+      <li><strong>Read Uncommitted</strong>: Transactions can read uncommitted changes, leading to possible
+        inconsistencies.</li>
+      <li><strong>Read Committed</strong>: Transactions read only committed changes.</li>
+      <li><strong>Repeatable Read</strong>: Ensures that data read during a transaction remains consistent.</li>
+      <li><strong>Serializable</strong>: Ensures full isolation by making transactions appear to execute sequentially.
+      </li>
+    </ul>
+
+    <h5>5. Deadlock</h5>
+    <p>Deadlocks occur when two or more transactions are waiting for each other to release resources, leading to a cycle
+      of dependencies. DBMS detects and resolves deadlocks using techniques like:</p>
+    <ul>
+      <li>Deadlock prevention (e.g., ordering resource acquisition).</li>
+      <li>Deadlock detection and recovery (e.g., aborting one of the transactions).</li>
+    </ul>
+
+    <h4>Importance of Concurrency</h4>
+    <ul>
+      <li><strong>Maximizes System Throughput</strong>: By allowing multiple transactions to execute simultaneously,
+        DBMS optimizes resource utilization.</li>
+      <li><strong>Reduces Waiting Time</strong>: Concurrent execution reduces transaction wait times.</li>
+      <li><strong>Enhances User Experience</strong>: Provides faster responses in multi-user environments.</li>
+    </ul>
+
+    <p>Concurrency in DBMS ensures efficient and reliable data access while maintaining database integrity and
+      consistency, which is critical for real-world applications such as banking, e-commerce, and enterprise systems.
+    </p>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+    <h2><b><u>important Notes for examination</h2></u></b>
+    <b>1.what do you mean by normalization. Explain it benifits in dbms</b>
+    <h5>Normalization in DBMS</h5>
+    <p>Normalization in a database management system (DBMS) is the process of organizing data to minimize redundancy and
+      improve data integrity. It involves dividing a database into smaller, related tables and defining relationships
+      between them according to specific rules called <em>normal forms</em>.</p>
+
+    <h5>Key Objectives of Normalization</h5>
+    <ul>
+      <li><strong>Reduce Redundancy:</strong> Eliminate duplicate data to save storage space and ensure consistency.
+      </li>
+      <li><strong>Improve Data Integrity:</strong> Ensure the accuracy and reliability of the data by reducing anomalies
+        during operations such as insertions, updates, or deletions.</li>
+      <li><strong>Optimize Queries:</strong> Simplify complex queries by structuring data logically.</li>
+      <li><strong>Facilitate Maintenance:</strong> Make databases easier to maintain and scale over time.</li>
+    </ul>
+
+    <h5>Benefits of Normalization</h5>
+    <ol>
+      <li><strong>Elimination of Data Anomalies:</strong>
+        <ul>
+          <li><strong>Insert Anomaly:</strong> Prevents issues where inserting new data requires unnecessary
+            information.</li>
+          <li><strong>Update Anomaly:</strong> Ensures changes to data in one place are automatically reflected
+            everywhere.</li>
+          <li><strong>Delete Anomaly:</strong> Prevents accidental loss of critical data when deleting redundant data.
+          </li>
+        </ul>
+      </li>
+      <li><strong>Efficient Data Storage:</strong> Reduces duplication, saving storage space and improving performance.
+      </li>
+      <li><strong>Improved Data Consistency:</strong> Normalized data ensures consistency across tables and
+        relationships, reducing errors.</li>
+      <li><strong>Better Scalability:</strong> Logical division of data enables easier modifications and additions to
+        the database structure.</li>
+      <li><strong>Simpler Data Maintenance:</strong> Clear relationships and structured tables simplify tasks such as
+        backup, recovery, and migration.</li>
+      <li><strong>Improved Query Performance:</strong> Well-structured tables improve the efficiency of data retrieval,
+        especially in complex queries.</li>
+    </ol>
+
+    <h5>Example</h5>
+    <p>Consider a table with student and course information:</p>
+    <table border="1">
+      <tr>
+        <th>StudentID</th>
+        <th>StudentName</th>
+        <th>CourseID</th>
+        <th>CourseName</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Alice</td>
+        <td>101</td>
+        <td>Math</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Bob</td>
+        <td>102</td>
+        <td>Science</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Alice</td>
+        <td>102</td>
+        <td>Science</td>
+      </tr>
+    </table>
+    <p>This table has redundancy (e.g., Alice's name appears multiple times). By normalizing, we can divide it into two
+      tables:</p>
+
+    <h3>Students Table:</h3>
+    <table border="1">
+      <tr>
+        <th>StudentID</th>
+        <th>StudentName</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Alice</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Bob</td>
+      </tr>
+    </table>
+
+    <h3>Courses Table:</h3>
+    <table border="1">
+      <tr>
+        <th>CourseID</th>
+        <th>CourseName</th>
+      </tr>
+      <tr>
+        <td>101</td>
+        <td>Math</td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Science</td>
+      </tr>
+    </table>
+
+    <h3>Enrollments Table:</h3>
+    <table border="1">
+      <tr>
+        <th>StudentID</th>
+        <th>CourseID</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>101</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>102</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>102</td>
+      </tr>
+    </table>
+    <p>This structure removes redundancy and makes the database more manageable and efficient.</p>
+</body>
+
+</html>
+</body>
 
 </html>
