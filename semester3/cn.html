@@ -619,6 +619,212 @@
       they can still occur, particularly in high-noise or highinterference
       digital environments.</p>
     <img src="mulbit.png" alt="multiplebit" id="img1">
+    <h5>Burst Error</h5>
+    <p>When several consecutive bits are flipped mistakenly in digital
+      transmission, it creates a burst error. This error causes a sequence of
+      consecutive incorrect values.</p>
+    <img src="be.png" alt="be" id="img1">
+    <div>Error detection mechanisms are crucial for identifying errors in data during
+      transmission over networks. Here’s an overview of common error detection
+      mechanisms, including linear codes, Cyclic Redundancy Check (CRC), and
+      checksum.
+      <ol>
+        <li><b>Linear Codes</b></li>
+        <ul>
+          <li><b>Concept:</b>Linear codes are a type of error-detecting code that use algebraic
+            structures. The simplest form is a parity bit, which ensures that the number
+            of 1s in the data is even (even parity) or odd (odd parity).</li>
+          <li><b>Mechanism:</b>The sender adds an extra bit (parity bit) to each data frame.
+            The receiver checks if the total number of 1s is even or odd, depending on
+            the agreed parity.</li>
+          <li><b>Application:</b>Parity checks are effective at detecting single-bit errors but are
+            limited because they cannot detect multiple-bit errors.</li>
+          <li><b>Examples:</b>Simple parity check, two-dimensional parity, Hamming code
+            (used for error detection and correction).</li>
+        </ul>
+        <li><b><u>Cyclic Redundancy Check(CRC)</u></b></li>
+        <ul>
+          <li><b>concept:</b>CRC is a widely used error-detection method that involves treating
+            the data as a binary number, dividing it by a fixed binary polynomial, and
+            appending the remainder to the data.</li>
+          <li><b>Mechanism:</b></li>
+          <ul>
+            <li>Mechanism:
+              Both sender and receiver agree on a fixed binary divisor (the
+              generator polynomial).</li>
+            <li>The sender divides the data by this polynomial and appends the
+              remainder (CRC value) to the data.</li>
+            <li>The receiver performs the same division on the received data. If the
+              remainder is zero, the data is assumed to be error-free; otherwise, an
+              error is detected.</li>
+          </ul>
+          <li><b>Application:</b>CRC is highly effective at detecting burst errors and is
+            commonly used in network protocols like Ethernet and USB.</li>
+          <li><b>Examples:</b>CRC-8, CRC-16, CRC-32 (where the number indicates the length
+            of the CRC code in bits).</li>
+        </ul>
+        <li><b><u>Checksum</u></b></li>
+        <ul>
+          <li><b>Concept:</b>The checksum is a simple method where data is divided into
+            equal-sized blocks, summed, and the sum’s complement is added to the data
+            as the checksum.</li>
+          <li><b>Mechanism:</b></li>
+          <ul>
+            <li>Data is divided into fixed-size segments (e.g., 16 bits).</li>
+            <li>The segments are added up to produce a sum.</li>
+            <li>The sum is complemented (inverted) and appended to the data as the
+              checksum.</li>
+            <li>The receiver calculates the checksum by summing the received
+              segments, including the checksum. If the result is zero, the data is
+              assumed to be error-free.</li>
+          </ul>
+          <li><b>Application:</b>Checksum is simpler but less robust than CRC and is used in
+            error detection for protocols like TCP/IP, where simpler error-checking is
+            needed.</li>
+          <li><b>Example:</b>Internet Checksum (used in TCP/IP and UDP protocols).</li>
+        </ul>
+      </ol>
+    </div>
+    <div>
+      <b>Error correction</b> mechanisms not only detect errors in transmitted data but
+      also allow the receiver to reconstruct the original data without needing
+      retransmission. These mechanisms are particularly important in
+      environments where retransmissions are costly or impractical, such as
+      satellite communications, deep-space missions, or streaming applications.
+      Common Error Correction Mechanisms.
+      <ol>
+        <li><b>Hamming Code</b></li>
+        <ul>
+          <li><b>Concept:</b>Hamming code is an error-correcting code that can detect up to
+            two-bit errors and correct single-bit errors in data.</li>
+          <li><b>Mechanism:</b></li>
+          <ul>
+            <li>Redundant bits are added to the data in specific positions.</li>
+            <li>These bits are calculated based on parity for groups of positions,
+              with each redundant bit covering certain data bits.</li>
+            <li>At the receiver's end, the parity bits are recalculated. If there's a
+              discrepancy, the pattern of discrepancies points to the exact bit that is
+              in error, allowing single-bit error correction.</li>
+          </ul>
+          <li><b>Application:</b>Used in memory systems, telecommunications, and data
+            storage systems where low levels of errors are anticipated.</li>
+          <li><b>Limitations:</b>Hamming codes are limited to single-bit error correction and
+            are not ideal for handling high error rates.</li>
+        </ul>
+      </ol>
+    </div>
+    <p><b>Data Link Control</b> is a set of protocols and mechanisms used to ensure reliable
+      communication over a network at the Data Link layer (Layer 2) of the OSI model. It
+      includes both flow control and error control, which are essential for handling data
+      frames effectively and preventing issues like data loss, congestion, or duplication.</p>
+    <p><b>Flow control</b> Flow control is used to manage the rate at which data is transmitted between a sender
+      and a receiver to prevent the receiver from being overwhelmed by too much data too
+      quickly. The two main types of flow control techniques are:</p>
+    <ol>
+      <li><b>Stop-and-Wait:</b></li>
+      <ol>
+        <li>In the Stop-and-Wait protocol, the sender transmits a single frame and then
+          waits for an acknowledgment (ACK) from the receiver before sending the
+          next frame.</li>
+        <li>This simple approach ensures that data is sent in an orderly fashion and
+          prevents the receiver's buffer from overflowing.</li>
+      </ol>
+      <li><b>Sliding Window:</b></li>
+      <ol>
+        <li>In the Sliding Window protocol, the sender can transmit multiple frames
+          before needing an acknowledgment.</li>
+        <li>It uses a "window" of sequence numbers to manage frames that can be sent
+          or received at a time, providing greater efficiency by allowing a continuous
+          flow of frames.</li>
+        <li>This approach is widely used in reliable transmission protocols (like TCP).</li>
+      </ol>
+    </ol>
+    <h4><b>Error control</b></h4>
+    <p>Error control is responsible for detecting and correcting errors that occur during
+      transmission. It ensures data integrity and can request retransmission if errors are
+      detected. There are three main error control methods:</p>
+    <ol>
+      <li><b>Automatic Repeat request(ARQ):</b></li>
+      <ol>
+        <li>ARQ is a family of protocols that include error detection and retransmission
+          strategies.</li>
+        <li>When an error is detected, a frame is either retransmitted or dropped based
+          on certain conditions, and mechanisms like acknowledgments (ACKs) or
+          negative acknowledgments (NAKs) are used.</li>
+      </ol>
+      <li><b>Forward Error correction(FEC):</b></li>
+      <ol>
+        <li>When an error is detected, a frame is either retransmitted or dropped based
+          on certain conditions, and mechanisms like acknowledgments (ACKs) or
+          negative acknowledgments (NAKs) are used.</li>
+        <li>This technique is often used in real-time applications where retransmission
+          would cause unacceptable delays.</li>
+      </ol>
+      <li><b>Cyclic Redundancy Check(CRC):</b></li>
+      <ol>
+        <li>CRC is an error-detection method that attaches a checksum to each frame,
+          allowing the receiver to detect any data corruption that might have occurred
+          during transmission.</li>
+      </ol>
+    </ol>
+    <h5><b>Stop-and-Wait ARQ Protocol</b></h5>
+    <p>The Stop-and-Wait ARQ is a specific flow and error control protocol based on the
+      Stop-and-Wait approach. Here's how it works:</p>
+    <ol>
+      <li><b>Frame Transmission:</b></li>
+      <ol>
+        <li>The sender sends a frame and waits for an acknowledgment from the
+          receiver</li>
+        <li>If the receiver successfully receives the frame without errors, it sends an
+          acknowledgment (ACK) back to the sender.</li>
+      </ol>
+      <li><b>Acknowledgment and retransmission:</b></li>
+      <ol>
+        <li>If the sender receives an ACK, it proceeds to send the next frame.</li>
+        <li>If no acknowledgment is received within a certain time frame (due to a frame
+          loss or error), the sender will retransmit the frame.</li>
+        <li>This prevents data loss in case of transmission errors.</li>
+      </ol>
+      <li><b>Error Handling with Timeout:</b></li>
+      <ol>
+        <li>A timer is used to monitor the time taken to receive an ACK. If the timer
+          expires, the sender retransmits the frame, assuming it was lost or corrupted
+          during transmission.</li>
+      </ol>
+    </ol>
+    <h4>Multiple Access Techniques</h4>
+    <p>Multiple Access techniques determine how multiple devices share the same
+      communication medium efficiently. They can be grouped into three main categories:</p>
+    <ol>
+      <li><b>Random Access:</b>
+        In Random Access, devices access the channel whenever they have data to send,
+        leading to possible collisions, which are then managed by various protocols:</li>
+      <ul>
+        <li>ALOHA:</li>
+        <ul>
+          <li>A simple protocol where devices transmit data whenever they are ready.</li>
+          <li>Collisions occur when two or more devices send data at the same time. After
+            a collision, devices wait a random time before retrying</li>
+          <li>Variants: Pure ALOHA and Slotted ALOHA, where Slotted ALOHA reduces
+            collisions by allowing transmissions only at specific time slots.</li>
+        </ul>
+        <li>CSMA(Carrier Sense Multiple Access):</li>
+        <ul>
+          <li>Devices sense the channel to check if it is idle before transmitting. If busy,
+            they wait until it is free.</li>
+            <li>CSMA/CD (Collision Detection): Used in wired networks, especially
+              Ethernet, where devices detect collisions and stop transmission, wait, and
+              then retry.</li>
+              <li>CSMA/CA (Collision Avoidance): Used in wireless networks, where
+                collision detection is challenging. Devices wait before transmitting and use
+                acknowledgment signals to minimize collisions.</li>
+        </ul>
+      </ul>
+      
+    </ol>
+
+
+
     <h5 style="color: rgb(107, 19, 19); text-align: center; border: black 1px; font-weight: 700;">M-III</h5>
     <p><b>Network Devices:</b>Network devices, also known as networking
       hardware, are physical devices that allow hardware on a
@@ -684,13 +890,14 @@
       between LANs (local area networks) and WANs (wide area
       networks). A LAN is a group of connected devices restricted to
       a specific geographic area. A LAN usually requires a single route.
-    <br>A WAN, by contrast, is a large network spread out over a vast
-    geographic area. Large organizations and companies that
-    operate in multiple locations across the country, for instance,
-    will need separate LANs for each location, which then
-    connect to the other LANs to form a WAN. Because a WAN
-    is distributed over a large area, it often necessitates multiple 
-    router and switches.</p>
+      <br>A WAN, by contrast, is a large network spread out over a vast
+      geographic area. Large organizations and companies that
+      operate in multiple locations across the country, for instance,
+      will need separate LANs for each location, which then
+      connect to the other LANs to form a WAN. Because a WAN
+      is distributed over a large area, it often necessitates multiple
+      router and switches.
+    </p>
     <h6>What is a Layer 3 switch?</h6>
     <p>Also called a multilayer switch, it is a specialized hardware
       device that has a lot in common with the traditional router—
@@ -700,25 +907,73 @@
       same way routers do. And they do these routing tasks in addition
       to performing switching duties. Like routers, Layer 3 switches
       can be configured to support such routing protocols as:</p>
-      <ul>
-        <li>Routing Information Protocol(RIP)</li>
-        <li>Open Shortest Path First(OSPF)</li>
-        <li>Enhanced Interior Gateway Routing Protocol(EIGRP)</li>
-      </ul>
-      <h5><b>What is the purpose of Layer 3 switches?</b></h5>
-      <p>These switches were designed to improve the network routing
-        performance on large local area networks (LANs) such as
-        corporate intranets.
-       <br> While Layer 2 switches can route data traffic dynamically
-        when there is low to medium traffic, their performance suffers
-        when it increases to a high level.
-        <br>The main difference between a router and a Layer 3 switch lies
-        inside the hardware itself. Layer 3 switch hardware combines
-        that of traditional switch and routers—replacing some of the
-        typical router software with integrated circuit hardware that
-        provides better LAN performance. In addition, a Layer 3
-        switch will not usually have wide area network (WAN) ports which are 
-      standards in routers.</p>
+    <ul>
+      <li>Routing Information Protocol(RIP)</li>
+      <li>Open Shortest Path First(OSPF)</li>
+      <li>Enhanced Interior Gateway Routing Protocol(EIGRP)</li>
+    </ul>
+    <h5><b>What is the purpose of Layer 3 switches?</b></h5>
+    <p>These switches were designed to improve the network routing
+      performance on large local area networks (LANs) such as
+      corporate intranets.
+      <br> While Layer 2 switches can route data traffic dynamically
+      when there is low to medium traffic, their performance suffers
+      when it increases to a high level.
+      <br>The main difference between a router and a Layer 3 switch lies
+      inside the hardware itself. Layer 3 switch hardware combines
+      that of traditional switch and routers—replacing some of the
+      typical router software with integrated circuit hardware that
+      provides better LAN performance. In addition, a Layer 3
+      switch will not usually have wide area network (WAN) ports which are
+      standards in routers.
+    </p>
+    <p><b>What are the main features of a layer 3 switch? </b>
+      <br>These switches feature the following:
+    </p>
+    <ul>
+      <li>Performance on two OSI Layer:Layer2 and Layer 3</li>
+      <li>usually come in 24 or 48 Ethernet</li>
+      <li>Uses a simple switching algorithm </li>
+      <li>Routing protocols are simple</li>
+    </ul>
+    <h5>Gateway</h5>
+    <p>A gateway is a network node or device that connects two
+      networks that use different transmission protocols. Gateways
+      play an important role in connecting two networks. It works as
+      the entry-exit point for a network because all traffic that
+      passes across the networks must pass through the gateway.
+      The gateway monitors and controls all the incoming and
+      outgoing <u>network traffic</u>.</p>
+    <h5>IPV4 AND IPV6</h5>
+    <h6>What is IP?</h6>
+    <p>An IP, or Internet Protocol address, is a unique set of numbers
+      assigned to each device connected to a network, like the
+      Internet. It’s like an address for your computer, phone, or any
+      other device, allowing them to communicate with each other.
+      When you visit a website, your device uses the IP address to
+      find and connect to the website’s server.</p>
+    <h6>Difference Between Ipv4 and Ipv6</h6>
+    <p>The address through which any computer communicates with
+      our computer is simply called an Internet Protocol Address or IP
+      address. For example, if we want to load a web page or
+      download something, we require the address to deliver that
+      particular file or webpage. That address is called an IP Address.
+      There are two versions of IP: IPv4 and IPv6. IPv4 is the older
+      version, while IPv6 is the newer one. both have their own features
+      and functions.</p>
+    <div>
+      <p>IP stands for Internet Protocol version v4 stands for Version
+        Four (IPv4), is the most widely used system for identifying
+        devices on a network. It uses a set of four numbers, separated
+        by periods (like 192.168.0.1), to give each device a unique
+        address. This address helps data find its way from one device to
+        another over the internet.<br>
+        <br>IPv4 was the primary version brought into action for production
+        within the ARPANET in 1983. IP version four addresses are 32-
+        bit integers which will be expressed in decimal
+        notation. Example- 192.0.2.126 could be an IPv4 address
+      </p>
+    </div>
 
 
 

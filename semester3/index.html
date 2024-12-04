@@ -1,50 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta meta name="viewport" content="width=device-width, user-scalable=no" />
-    <title>Helpdesk</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>Helpdesk</title>
 </head>
-   
-<script
-	src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-	integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-	crossorigin="anonymous"
-></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link
-	rel="stylesheet"
-	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
-/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
 <link rel="icon" href="assets/images/logo.png" type="image/png">
 <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
 <script src="../assets/js/script.js"></script>
 <style>
- 
-  </style>
+
+</style>
 
 <script>
   function memelogy() {
     const imageElement = document.getElementById("meme_img");
-      const randomNumber = Math.floor(Math.random() * 10000); // Generates a random number between 0 and 9999
-      imageElement.src = `https://arambhsoftech.com/Helpdesk/meme/meme.png?r=${randomNumber}`;
-  
+    const randomNumber = Math.floor(Math.random() * 10000); // Generates a random number between 0 and 9999
+    imageElement.src = `https://arambhsoftech.com/Helpdesk/meme/meme.png?r=${randomNumber}`;
+
   }
-  
+
   function removememe() {
-              document.getElementById('meme_box').style.display = 'none';
-              document.getElementById('blur_back').style.display = 'none';
-          }
-  </script>
-  <style>   #meme_box {
+    document.getElementById('meme_box').style.display = 'none';
+    document.getElementById('blur_back').style.display = 'none';
+  }
+</script>
+<style>
+  #meme_box {
     background-color: wheat;
     z-index: 1000;
     padding: 20px;
     text-align: center;
   }
+
   #blur_back {
     background-color: rgba(255, 255, 255, 0.7);
     position: fixed;
@@ -54,40 +52,45 @@
     width: 100%;
     z-index: 999;
   }
+
   @media (max-width: 768px) {
     #meme_img {
-        height: 100%;
-        width: auto;
+      height: 100%;
+      width: auto;
     }
   }
-    </style>
-  <body onload="memelogy();"> 
+</style>
+
+<body onload="memelogy();">
   <header class="navbar navbar-expand-md d-flex flex-wrap justify-content-center mt-2 p-2 mb-2 border-bottom">
-   <div id="top_bar">
-    <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-      <img src="../assets/images/logo.png" id="imglogo">
-      <span class="fs-4 mr-5 lo"><h2 class="bold-text">Helpdesk</h2></span>
-    </a>
-   </div>
+    <div id="top_bar">
+      <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img src="../assets/images/logo.png" id="imglogo">
+        <span class="fs-4 mr-5 lo">
+          <h2 class="bold-text">Helpdesk</h2>
+        </span>
+      </a>
+    </div>
     <div class="container-fluid" id="sec_nav">
       <button class="navbar-toggler" type="button" onclick="openLeftSidebar()">
-      <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
-     <div id="leftSidebar" class="sidebar-left">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeLeftSidebar()">&times;</a>
-      <h2>semester 3</h2>
-      <a href="../semester3/cn.html">Computer Network</a>
-      <a href="../semester3/math.html">Discrete Mathematics</a>
-      <a href="../semester3/index.html" class="active">DBMS</a>
-      <a href="../semester3/os.html">Operating System</a>
-      <h2>semester 4</h2>
-      <a href="#">Comming Soon....</a>
-  </div>
-  <div class="semester">semester-3</div>
+      <div id="leftSidebar" class="sidebar-left">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeLeftSidebar()">&times;</a>
+        <h2>semester 3</h2>
+        <a href="../semester3/cn.html">Computer Network</a>
+        <a href="../semester3/math.html">Discrete Mathematics</a>
+        <a href="../semester3/index.html" class="active">DBMS</a>
+        <a href="../semester3/os.html">Operating System</a>
+        <h2>semester 4</h2>
+        <a href="#">Comming Soon....</a>
+      </div>
+      <div class="semester">semester-3</div>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" id="upper_menu_btn" data-bs-target="#collapsibleNavbar">
- <i class="fa fa-arrow-down" aria-hidden="true"></i>      </button>
-      <div class="collapse navbar-collapse" id="collapsibleNavbar" >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" id="upper_menu_btn"
+        data-bs-target="#collapsibleNavbar">
+        <i class="fa fa-arrow-down" aria-hidden="true"></i> </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="nav nav-pills navbar-nav ms-auto" id="myNav">
           <!-- 1st Year -->
           <li class="nav-item">
@@ -102,417 +105,988 @@
           <li class="nav-item">
             <a class="nav-link" href="../semester7/index.html">4th Year</a>
           </li>
-          
+
         </ul>
       </div>
     </div>
   </header>
 
-  
-    <div id="body">
-      <div class="heading_name">DBMS</div>
-      <div id="watermark">@Debuggers</div>
 
-      <div id="up">
-        <a href="#" id="goToTopButton" class="go-to-top-button">
-          <span><i class="fa fa-arrow-up" aria-hidden="true" id="arrow"></i></span>
+  <div id="body">
+    <div class="heading_name">DBMS</div>
+    <div id="watermark">@Debuggers</div>
+
+    <div id="up">
+      <a href="#" id="goToTopButton" class="go-to-top-button">
+        <span><i class="fa fa-arrow-up" aria-hidden="true" id="arrow"></i></span>
       </a>
-      </div>  
-      <h4><center><b>DATABASE MANAGEMENT STYSTEM</center></h4></b>
-      <P>DBMS stands for Database management system. It is a software facilitating efficient data storage, retrieval and management in database
+    </div>
+    <h4>
+      <center><b><u>DATABASE MANAGEMENT STYSTEM</center>
+    </h4></b></u>
+    <P>DBMS stands for Database management system. It is a software facilitating efficient data storage, retrieval and
+      management in database
       <br>
-              Ensure data safety and integrity, while offering accessibility and concurrency control.</P>
-      <ul>
-      <li>data is  information. It  can take  various forms, such as number, text, image,audio and video and can be stored in different formats. there are three types structured, semi-structured and unstructured data.</li>
+      Ensure data safety and integrity, while offering accessibility and concurrency control.
+    </P>
+    <ul>
+      <li>data is information. It can take various forms, such as number, text, image,audio and video and can be stored
+        in different formats. there are three types structured, semi-structured and unstructured data.</li>
       <li>database is a container which can store data is called database</li>
-        <li>Management means how data are manage in database.</li>	
-      </ul>
-       <b>Advantage  and disadvantage of the dbms:-</b>
-        <br>
-       
-        <p>Advantages of DBMS (Short Notes):-</p>
-        <ol type="i">
-        <li><b>Data Integrity & Security:</b>- Ensures data accuracy and provides controlled access</li>
-         <li><b>Redundancy Control:</b>-Minimizes data duplication and inconsistency.</li>
-         <li><b>Data Sharing:</b>-Multiple users can access data simultaneously.</b></li>
-        <li><b>Data Independence:</b>- Structure changes don’t affect application functionality.</li>
-         <li><b>Backup & Recovery:</b>- Automated backups and data recovery systems.</li>
-         <li><b>Efficient Querying:-</b> Quick data retrieval and processing.</li>
-        <li><b>Better Decision Making:</b>-Facilitates accurate data analysis.</li>
-     </ol>  
-      <b>Disadvantages of DBMS (Short Notes):</b>
-      <ol type="i">
-       <li><b>Complexity:</b>-Requires specialized knowledge to manage.</li>
-       <li><b>Cost:</b>-High setup, maintenance, and training costs.</li>
-       <li><b>Performance:</b>-Slower for small databases due to system overhead.</li>
-       <li><b>Storage Needs:</b>-Requires large storage capacity.</li>
-       <li><b>Failure Impact:</b>-A DBMS failure can disrupt entire operations.
-       <li><b>Maintenance:</b>-Regular updates and optimizations needed.</li>
-       </ol>
-       <b>Application of dbms:-</b>
-      <p>Database Management Systems (DBMS) are widely applied in various sectors to handle data efficiently. Here are some key applications of DBMS:</p>
-<ol type="i">
-     <li><b>Banking:</b>-DBMS is used to manage customer information, accounts, transactions, loans, and online banking activities. It ensures secure data handling and real-time transaction processing.</li>
-
-    <li><b>Education:</b>-Universities and colleges use DBMS to store and manage student records, course registrations, schedules, grades, and library management systems.</li>
-
-    <li><b>E-Commerce:</b>-Online shopping platforms use DBMS to manage product catalogs, customer data, transactions, and payment details.</li>
-
-    <li><b>Government:</b>-Governments use DBMS for managing citizen information, voter databases, tax records, and other administrative processes.</li>
-
-     <li><b>Social Media:</b>-Platforms like Facebook, Instagram, and Twitter use DBMS to manage massive amounts of user data, messages, posts, and interact.
-     </ol>  
-       <b>Data independance</b>
-          <p>Data Independence is mainly defined as a property   of DBMS that helps you to change the database 
-           schema at one level of a system without requiring to change the schema at the next level. it helps to 
-           keep the data separated from all program that makes use of it.</p>
-           <b>We have namely two levels of data independence arising from these levels of abstracation:</b>
-           <ul>
-           <li><b>Physical level data independence</b></li>
-           <li><b>Logical level data independence</b></li>
-           </ul>
-      
-  <li><b>Physical Level Data Independence</b> :-
-             It refers to the characteristic of being able to modify the physical schema without any alterations to 
-             the conceptual or logical schema, done for optimization purposes, e.g.the Conceptual structure of 
-             the database would not be affected by any change in storage size of the database system server. 
-             Changing from sequenoal to random access files is one such example. These alterations or 
-             Modifications to the physical structure my include:</li></ul>
-           <ul types="circle">
-            <li>Utilizing new storage devices.</li>
-            <li>Modifying data structures used for storage.</li> 
-            <li>Altering indexes or using alternative file organization techniques etc.</li><br></ul>
-   <li><b>Logical Level Data Independence</b>:-
-       It refers characteristic of being able modify the logical schema without affecting. the external schema or application program. The user view of the data would not be affected by any changes to the conceptual view of the data. These changes may include insertion or deletion of attributes,altering table structures entities or relationships to the logical schema, etc.
-</ul></li>
-
-    <p>Database systems comprise complex data structures. In order to make the system efficient in terms 
-    of retrieval of data, and reduce complexity in terms of usability of users, developers use abstraction
-    i.e. hide irrelevant details from the users. This approach simplifies database design.</p>
+      <li>Management means how data are manage in database.</li>
+    </ul>
+    <b>Advantage and disadvantage of the dbms:-</b>
     <br>
-   <b>Level of Abstraction in a DBMS</b>
-  There are mainly 3 levels of data abstraction:
-<ul>
-    <li>Physical or Internal Level</li>
-    <li>Logical or Conceptual Level.</li>
-    <li>View or External Level</li>
-</ul><br>
+
+    <p>Advantages of DBMS (Short Notes):-</p>
+    <ol type="i">
+      <li><b>Data Integrity & Security:</b>- Ensures data accuracy and provides controlled access</li>
+      <li><b>Redundancy Control:</b>-Minimizes data duplication and inconsistency.</li>
+      <li><b>Data Sharing:</b>-Multiple users can access data simultaneously.</b></li>
+      <li><b>Data Independence:</b>- Structure changes don’t affect application functionality.</li>
+      <li><b>Backup & Recovery:</b>- Automated backups and data recovery systems.</li>
+      <li><b>Efficient Querying:-</b> Quick data retrieval and processing.</li>
+      <li><b>Better Decision Making:</b>-Facilitates accurate data analysis.</li>
+    </ol>
+    <b>Disadvantages of DBMS (Short Notes):</b>
+    <ol type="i">
+      <li><b>Complexity:</b>-Requires specialized knowledge to manage.</li>
+      <li><b>Cost:</b>-High setup, maintenance, and training costs.</li>
+      <li><b>Performance:</b>-Slower for small databases due to system overhead.</li>
+      <li><b>Storage Needs:</b>-Requires large storage capacity.</li>
+      <li><b>Failure Impact:</b>-A DBMS failure can disrupt entire operations.
+      <li><b>Maintenance:</b>-Regular updates and optimizations needed.</li>
+    </ol>
+    <b>Application of dbms:-</b>
+    <p>Database Management Systems (DBMS) are widely applied in various sectors to handle data efficiently. Here are
+      some key applications of DBMS:</p>
+    <ol type="i">
+      <li><b>Banking:</b>-DBMS is used to manage customer information, accounts, transactions, loans, and online banking
+        activities. It ensures secure data handling and real-time transaction processing.</li>
+
+      <li><b>Education:</b>-Universities and colleges use DBMS to store and manage student records, course
+        registrations, schedules, grades, and library management systems.</li>
+
+      <li><b>E-Commerce:</b>-Online shopping platforms use DBMS to manage product catalogs, customer data, transactions,
+        and payment details.</li>
+
+      <li><b>Government:</b>-Governments use DBMS for managing citizen information, voter databases, tax records, and
+        other administrative processes.</li>
+
+      <li><b>Social Media:</b>-Platforms like Facebook, Instagram, and Twitter use DBMS to manage massive amounts of
+        user data, messages, posts, and interact.
+    </ol>
+    <b>
+      <h4><u>Data independance
+    </b></u></h4>
+    <p>Data Independence is mainly defined as a property of DBMS that helps you to change the database
+      schema at one level of a system without requiring to change the schema at the next level. it helps to
+      keep the data separated from all program that makes use of it.</p>
+    <b>We have namely two levels of data independence arising from these levels of abstracation:</b>
+    <ul>
+      <li><b>Physical level data independence</b></li>
+      <li><b>Logical level data independence</b></li>
+    </ul>
+
+    <li><b>Physical Level Data Independence</b> :-
+      It refers to the characteristic of being able to modify the physical schema without any alterations to
+      the conceptual or logical schema, done for optimization purposes, e.g.the Conceptual structure of
+      the database would not be affected by any change in storage size of the database system server.
+      Changing from sequenoal to random access files is one such example. These alterations or
+      Modifications to the physical structure my include:</li>
+    </ul>
+    <ul types="circle">
+      <li>Utilizing new storage devices.</li>
+      <li>Modifying data structures used for storage.</li>
+      <li>Altering indexes or using alternative file organization techniques etc.</li><br>
+    </ul>
+    <li><b>Logical Level Data Independence</b>:-
+      It refers characteristic of being able modify the logical schema without affecting. the external schema or
+      application program. The user view of the data would not be affected by any changes to the conceptual view of the
+      data. These changes may include insertion or deletion of attributes,altering table structures entities or
+      relationships to the logical schema, etc.
+      </ul>
+    </li>
+
+    <p>Database systems comprise complex data structures. In order to make the system efficient in terms
+      of retrieval of data, and reduce complexity in terms of usability of users, developers use abstraction
+      i.e. hide irrelevant details from the users. This approach simplifies database design.</p>
+    <br>
+    <b>Level of Abstraction in a DBMS</b>
+    There are mainly 3 levels of data abstraction:
+    <ul>
+      <li>Physical or Internal Level</li>
+      <li>Logical or Conceptual Level.</li>
+      <li>View or External Level</li>
+    </ul><br>
     <b>Physical/(Internal Level)</b>
     <p>This is the lowest level of data abstraction. It tells us how the data is actually stored in memory.
-     Access methods like sequential or random access and file organizaƟon methods like B+ trees and
-     hashing are used for the same. Usability, size of memory, and the number of Ɵmes the records are
-     factors that we need to know while designing the database.</p>
-     <p>Suppose we need to store the details of an employee. Blocks of storage and the amount of memory
-     used for  these purposes are kept hidden from the user.</p>
-     <br>
+      Access methods like sequential or random access and file organizaƟon methods like B+ trees and
+      hashing are used for the same. Usability, size of memory, and the number of Ɵmes the records are
+      factors that we need to know while designing the database.</p>
+    <p>Suppose we need to store the details of an employee. Blocks of storage and the amount of memory
+      used for these purposes are kept hidden from the user.</p>
+    <br>
 
     <b>Logical or Conceptual Level</b>
-     <p>This level comprises the information that is actually stored in the database in the form of tables. It
-     also stores the relationship among the data entities in relatively simple structures. At this level, the
-     information available to the user at the view level is unknown.<br>
-     We can store the various aributes of an employee and relationships, e.g. with the manager can also
-     be stored.<br>
-     The logical level thus describes the entire database in terms of a small number of relatively simple
-     structures. Although implementation of the simple structures at the logical level may involve
-     complex physical-level structures, the user of the logical level does not need to be aware of this
-     complexity. This is referred to as physical data independence. Database administrators, who must
-     decide what information to keep in the database, use the logical level of abstraction.</p><br>
-   
+    <p>This level comprises the information that is actually stored in the database in the form of tables. It
+      also stores the relationship among the data entities in relatively simple structures. At this level, the
+      information available to the user at the view level is unknown.<br>
+      We can store the various aributes of an employee and relationships, e.g. with the manager can also
+      be stored.<br>
+      The logical level thus describes the entire database in terms of a small number of relatively simple
+      structures. Although implementation of the simple structures at the logical level may involve
+      complex physical-level structures, the user of the logical level does not need to be aware of this
+      complexity. This is referred to as physical data independence. Database administrators, who must
+      decide what information to keep in the database, use the logical level of abstraction.</p><br>
+
     <b>View or External Level</b>
-     <p>This is the highest level of abstraction. Only a part of the actual database is viewed by the users. This
-     level exists to ease the accessibility of the database by an individual user. Users view data in the form
-     of rows and columns. Tables and relations are used to store data. Multiple views of the same
-     database may exist. Users can just view the data and interact with the database, storage and
-     implementation details are hidden from them. Even though the logical level uses simpler structures,
-     complexity remains because of the variety of information stored in a large database. Many users of
-     the database system do not need all this information; instead, they need to access only a part of the
-     database. The view level of abstracƟon exists to simplify their interaction with the system</p><br>
-   
-     Example: In case of storing customer data,
-     <ul>
-     <li><b>Physical level</b>-it will contains block of storages (bytes,GB,TB,etc).</li>
-     <li><b>Logical level</b>-it will contain the fields and the atributes of data.</li>
-     <li><b>View level </b>-it works with CLI or GUI access of database.</li> 
-     </ul>
-      <img src="../assets/images/viewlevel.png" alt="viewlevel" id="img1">
-    <p><center><u>figure- view level</u></p></center>
+    <p>This is the highest level of abstraction. Only a part of the actual database is viewed by the users. This
+      level exists to ease the accessibility of the database by an individual user. Users view data in the form
+      of rows and columns. Tables and relations are used to store data. Multiple views of the same
+      database may exist. Users can just view the data and interact with the database, storage and
+      implementation details are hidden from them. Even though the logical level uses simpler structures,
+      complexity remains because of the variety of information stored in a large database. Many users of
+      the database system do not need all this information; instead, they need to access only a part of the
+      database. The view level of abstracƟon exists to simplify their interaction with the system</p><br>
 
-     <b>Instance of the Database:</b>
-     <p>The collection of information stored in the database at a specific moment is known as an 
-     instance of the database. It is a snapshot of the database that contains live data at that 
-     moment, showing the current state of all records and transactions.</p><br>
-     <b>Database Schema:</b>
-     <p>The database schema refers to the overall design  of the database, illustrating the logical 
-     structure and organization of data. It defines how data is organized and how relationships 
-     between data are handled, essentially serving as the blueprint for how the database is 
-     constructed.</p>
+    Example: In case of storing customer data,
+    <ul>
+      <li><b>Physical level</b>-it will contains block of storages (bytes,GB,TB,etc).</li>
+      <li><b>Logical level</b>-it will contain the fields and the atributes of data.</li>
+      <li><b>View level </b>-it works with CLI or GUI access of database.</li>
+    </ul>
+    <img src="../assets/images/viewlevel.png" alt="viewlevel" id="img1">
+    <p>
+      <center><u>figure- view level</u>
+    </p>
+    </center>
 
-     <h4><b>There are various types of database language statements</b></h4>
-     <p>In a Database Management System (DBMS), different types of database language statements are used to define, manipulate, and manage data. These are categorized into four main types:</p>
+    <b><u>Instance of the Database:</b></u>
+    <p>The collection of information stored in the database at a specific moment is known as an
+      instance of the database. It is a snapshot of the database that contains live data at that
+      moment, showing the current state of all records and transactions.</p><br>
+    <b><u>Database Schema:</b></u>
+    <p>The database schema refers to the overall design of the database, illustrating the logical
+      structure and organization of data. It defines how data is organized and how relationships
+      between data are handled, essentially serving as the blueprint for how the database is
+      constructed.</p>
+
+    <h4><b><u>There are various types of database language statements:-</b></h4></u>
+    <p>In a Database Management System (DBMS), different types of database language statements are used to define,
+      manipulate, and manage data. These are categorized into four main types:</p>
     <br>
-     <b>Data Definition Language (DDL)</b>:- object based command.
-     <p>DDL statements are used to define and modify the structure of database objects such as tables, indexes, and schemas. Examples include:</p>
-     <ul type="1">
-     <li>CREATE: To create new database objects like tables, indexes, views, etc.</li>
-     <li>ALTER: To modify the structure of an existing database object (e.g., adding/removing columns).</li>
-     <li>DROP: To delete a database object.</li>
-     <li>TRUNCATE: To delete all records from a table but retain the table structure.</li>
-     <li>RENAME: To rename a database object.</li>
-   </ul>  
-     
-    <b>Data Manipulation Language (DML)</b>:-records based commands.
-     <p>DML statements deal with the manipulation of data within database objects. These include:</p>
-     <li>SELECT: To retrieve data from the database.</li>
-     <li>INSERT: To add new records into a table.</li>
-     <li>UPDATE: To modify existing records.</li>
-     <li>DELETE: To remove existing records.</li><br>
-     
-     <b>Data Control Language (DCL)</b>
-     <p>DCL statements manage access permissions and user controls for the database:</p>
-     <li>GRANT: To give access privileges to users.</li>
-     <li>REVOKE: To remove access privileges.</li><br>
-     
-     <b>Transaction Control Language (TCL)</b>
-     <p>TCL statements manage transactions within a database to ensure data integrity:</p>
-     <li>COMMIT: To save changes made in a transaction.</li>
-     <li>ROLLBACK: To undo changes made in a transaction.</li>
-     <li>SAVEPOINT:To set a point within a transaction to which you can later roll back.</li>
-      <li>SET TRANSACTION: To specify properties for a transaction, such as isolation level.</li><br>
-    <h4><b>Data Model in the dbms:-</b></h4>  
-       <p> A Data Model in Database Management System (DBMS) is the concept of tools that are developed to summarize the description of the database. Data Models provide us with a transparent picture of data which helps us in creating an actual database. It shows us from the design of the data to its proper implementation of data.</p>
+    <b>Data Definition Language (DDL)</b>:- object based command.
+    <p>DDL statements are used to define and modify the structure of database objects such as tables, indexes, and
+      schemas. Examples include:</p>
+    <ul type="1">
+      <li>CREATE: To create new database objects like tables, indexes, views, etc.</li>
+      <li>ALTER: To modify the structure of an existing database object (e.g., adding/removing columns).</li>
+      <li>DROP: To delete a database object.</li>
+      <li>TRUNCATE: To delete all records from a table but retain the table structure.</li>
+      <li>RENAME: To rename a database object.</li>
+    </ul>
 
-       <b>Types of Relational Models</b>
-        <ul>
-        <li>Conceptual Data Model.</li>
-         <li>Representational Data Model.</li>
-         <li>Physical Data Model.</li>
-        </ul>
-      <p>It is basically classified into 3 types:-</p>
-        <img src="../assets/images/datamodel.jpg" alt="datamodel" id="img1">
+    <b>Data Manipulation Language (DML)</b>:-records based commands.
+    <p>DML statements deal with the manipulation of data within database objects. These include:</p>
+    <li>SELECT: To retrieve data from the database.</li>
+    <li>INSERT: To add new records into a table.</li>
+    <li>UPDATE: To modify existing records.</li>
+    <li>DELETE: To remove existing records.</li><br>
+
+    <b>Data Control Language (DCL)</b>
+    <p>DCL statements manage access permissions and user controls for the database:</p>
+    <li>GRANT: To give access privileges to users.</li>
+    <li>REVOKE: To remove access privileges.</li><br>
+
+    <b>Transaction Control Language (TCL)</b>
+    <p>TCL statements manage transactions within a database to ensure data integrity:</p>
+    <li>COMMIT: To save changes made in a transaction.</li>
+    <li>ROLLBACK: To undo changes made in a transaction.</li>
+    <li>SAVEPOINT:To set a point within a transaction to which you can later roll back.</li>
+    <li>SET TRANSACTION: To specify properties for a transaction, such as isolation level.</li><br>
+    <h4><b><u>Data Model in the dbms:-</u></b></h4>
+    <p> A Data Model in Database Management System (DBMS) is the concept of tools that are developed to summarize the
+      description of the database. Data Models provide us with a transparent picture of data which helps us in creating
+      an actual database. It shows us from the design of the data to its proper implementation of data.</p>
+
+    <b>Types of Relational Models</b>
+    <ul>
+      <li>Conceptual Data Model.</li>
+      <li>Representational Data Model.</li>
+      <li>Physical Data Model.</li>
+    </ul>
+    <p>It is basically classified into 3 types:-</p>
+    <img src="../assets/images/datamodel.jpg" alt="datamodel" id="img1">
     <ol type="1">
-      <li><b>Conceptual Data Model:-</b></li>
-       <p>The conceptual data model describes the database at a very high level and is useful to understand the needs or requirements of the database. It is this model, that is used in the requirement-gathering process ie. before the Database Designers start making a particular database. One such popular model is the entity/relationship model (ER model). The E/R model specializes in entities, relationships, and even attributes that are used by database designers. In terms of this concept, a discussion can be made even with non-computer science(non-technical) users and stakeholders, and their requirements can be understood.</p>
-      </ol>
-      <p><b>Entity-Relationship Model( ER Model):</b>-It is a high-level data model which is used to define the data and the relationships between them. It is basically a conceptual design of any database which is easy to design the view of data.</p>
-  
-       <b>Components of ER Model:</b>
-       <ul>
-       <li><b>Entity:</b>-An entity is referred to as a real-world object. It can be a name, place, object, class, etc. These are represented by a rectangle in an ER Diagram.</li>
-         <li><b>Attributes:</b>-An attribute can be defined as the description of the entity. These are represented by Ellipse in an ER Diagram. It can be Age, Roll Number, or Marks for a Student.</li>
-         <li><b>Relationship:</b>-Relationships are used to define relations among different entities. Diamonds and Rhombus are used to show Relationships.</li>
-      </ul>
-      
-      <b>Characteristics of a conceptual data model</b>
-    
-     <ul>
-     <li>Offers Organization-wide coverage of the business concepts.</li>
+      <li><b><u>Conceptual Data Model:-</b></li></u>
+      <p>The conceptual data model describes the database at a very high level and is useful to understand the needs or
+        requirements of the database. It is this model, that is used in the requirement-gathering process ie. before the
+        Database Designers start making a particular database. One such popular model is the entity/relationship model
+        (ER model). The E/R model specializes in entities, relationships, and even attributes that are used by database
+        designers. In terms of this concept, a discussion can be made even with non-computer science(non-technical)
+        users and stakeholders, and their requirements can be understood.</p>
+    </ol>
+    <p><b><u>Entity-Relationship Model( ER Model)</u></b>-It is a high-level data model which is used to define the data
+      and the relationships between them. It is basically a conceptual design of any database which is easy to design
+      the view of data.</p>
+
+    <b><u>Components of ER Model:</b></u>
+    <ul>
+      <li><b>Entity:</b>-An entity is referred to as a real-world object. It can be a name, place, object, class, etc.
+        These are represented by a rectangle in an ER Diagram.</li>
+      <li><b>Attributes:</b>-An attribute can be defined as the description of the entity. These are represented by
+        Ellipse in an ER Diagram. It can be Age, Roll Number, or Marks for a Student.</li>
+      <li><b>Relationship:</b>-Relationships are used to define relations among different entities. Diamonds and Rhombus
+        are used to show Relationships.</li>
+    </ul>
+
+    <b>Characteristics of a conceptual data model</b>
+
+    <ul>
+      <li>Offers Organization-wide coverage of the business concepts.</li>
       <li>This type of Data Models are designed and developed for a business audience.</li>
-      <li>The conceptual model is developed independently of hardware specifications like data storage capacity, location or software specifications like DBMS vendor and technology. The focus is to represent data as a user will see it in the "real world."</li><br>
-    </ul>  
-    <P>Conceptual data models known as Domain models create a common vocabulary for all stakeholders by establishing basic concepts and scope.</P><br>
+      <li>The conceptual model is developed independently of hardware specifications like data storage capacity,
+        location or software specifications like DBMS vendor and technology. The focus is to represent data as a user
+        will see it in the "real world."</li><br>
+    </ul>
+    <P>Conceptual data models known as Domain models create a common vocabulary for all stakeholders by establishing
+      basic concepts and scope.</P><br>
     <ol type="2">
-     <li><b>Representational Data Model.</li></b>
-      
-      <p>This type of data model is used to represent only the logical part of the database and does not represent the physical structure of the database. The representational data model allows us to focus primarily, on the design part of the database. A popular representational model is a Relational model. The relational Model consists of Relational Algebra and Relational Calculus. In the Relational Model, we basically use tables to represent our data and the relationships between them. It is a theoretical concept whose practical. implementation is done in Physical Data Model.<br>
-      
-      The advantage of using a Representational data model is to provide a foundation to form the base for the Physical model</p><br>
-      
+      <li><b>Representational Data Model.</li></b>
+
+      <p>This type of data model is used to represent only the logical part of the database and does not represent the
+        physical structure of the database. The representational data model allows us to focus primarily, on the design
+        part of the database. A popular representational model is a Relational model. The relational Model consists of
+        Relational Algebra and Relational Calculus. In the Relational Model, we basically use tables to represent our
+        data and the relationships between them. It is a theoretical concept whose practical. implementation is done in
+        Physical Data Model.<br>
+
+        The advantage of using a Representational data model is to provide a foundation to form the base for the
+        Physical model</p><br>
+
       <li><b>Physical Data Model.</li></b>
-    
-      <p>The physical Data Model is used to practically implement Relational Data Model. Ultimately, all data in a database is stored physically on a secondary storage device such as dises and tapes. This is stored in the form of files, records, and certain other data structures. It has all the information on the format in which the files are present and the structure of the databases, the presence of external data structures, and their relation to each other. Here, we basically save tables in memory so they can be accessed efficiently. In order to come up with a good physical model, we have to work on the relational model in a better way. Structured Query Language (SQL) is used to practically implement Relational Algebra.<br>
-      
-      This Data Model describes HOW the system will be implemented using a specific DBMS system. This model is typically created by DBA and developers. The purpose is actual implementation of the database.</p><br>  
-    </ol>  
-      <b>Characteristics of a physical data model:</b>
-      <ul>
+
+      <p>The physical Data Model is used to practically implement Relational Data Model. Ultimately, all data in a
+        database is stored physically on a secondary storage device such as dises and tapes. This is stored in the form
+        of files, records, and certain other data structures. It has all the information on the format in which the
+        files are present and the structure of the databases, the presence of external data structures, and their
+        relation to each other. Here, we basically save tables in memory so they can be accessed efficiently. In order
+        to come up with a good physical model, we have to work on the relational model in a better way. Structured Query
+        Language (SQL) is used to practically implement Relational Algebra.<br>
+
+        This Data Model describes HOW the system will be implemented using a specific DBMS system. This model is
+        typically created by DBA and developers. The purpose is actual implementation of the database.</p><br>
+    </ol>
+    <b>Characteristics of a physical data model:</b>
+    <ul>
       <li>The physical data model describes data need for a single project or application though it maybe.</li>
       <li>integrated with other physical data models based on project scope.</li>
-      <li>Data Model contains relationships between tables that which addresses cardinality and nullability of the relationships.</li>
-      <li>Developed for a specific version of a DBMS, location, data storage or technology to be used in the project.</li>
+      <li>Data Model contains relationships between tables that which addresses cardinality and nullability of the
+        relationships.</li>
+      <li>Developed for a specific version of a DBMS, location, data storage or technology to be used in the project.
+      </li>
       <li>Columns should have exact datatypes, lengths assigned and default values.</li>
       <li>Primary and Foreign keys, views, indexes, access profiles, and authorizations, etc. are defined</li>
-      </ul> 
-      <br> 
+    </ul>
+    <br>
     </ol>
-     <h5>Some Other Data Models</h5>
-    <ol type="1">  
-     <li><b>Hierarchical Model.</li></b>
+    <h5><u>Some Other Data Models</u></h5>
+    <ol type="1">
+      <li><b>Hierarchical Model.</li></b>
       <P>The hierarchical Model is one of the oldest models in the data model which was developed by IBM, in the
-      1950s. In a hierarchical model, data are viewed as a collection of tables, or we can say segments that form
-      a hierarchical relation. In this, the data is organized into a tree-like structure where each record consists of
-      one parent record and many children. Even if the segments are connected as a chain-like structure by
-      logical associations, then the instant structure can be a fan structure with multiple branches. We call the
-      illogical associations as directional associations.</P><br>
-      
+        1950s. In a hierarchical model, data are viewed as a collection of tables, or we can say segments that form
+        a hierarchical relation. In this, the data is organized into a tree-like structure where each record consists of
+        one parent record and many children. Even if the segments are connected as a chain-like structure by
+        logical associations, then the instant structure can be a fan structure with multiple branches. We call the
+        illogical associations as directional associations.</P><br>
+
       <li><b>Network Model</li></b>
       <p>The Network Model was formalized by the Database Task group in the 1960s. This model is the
-      generalization of the hierarchical model. This model can consist of multiple parent segments and these
-      segments are grouped as levels but there exists a logical association between the segments belonging to
-      any level. Mostly, there exists a many-to-many logical association between any of the two segments.</p><br>
+        generalization of the hierarchical model. This model can consist of multiple parent segments and these
+        segments are grouped as levels but there exists a logical association between the segments belonging to
+        any level. Mostly, there exists a many-to-many logical association between any of the two segments.</p><br>
 
       <li><b>Object-Oriented Data Model.</li></b>
-      <p>In the Object-Oriented Data Model, data and their relationships are contained in a single structure which is referred to as an object in this data model. In this, real-world problems are represented as objects with different attributes. All objects have multiple relationships between them. Basically, it is a combination of Object Oriented programming and a Relational Database Model.</p><br>
-      
+      <p>In the Object-Oriented Data Model, data and their relationships are contained in a single structure which is
+        referred to as an object in this data model. In this, real-world problems are represented as objects with
+        different attributes. All objects have multiple relationships between them. Basically, it is a combination of
+        Object Oriented programming and a Relational Database Model.</p><br>
+
       <li><b>Float Data Model</b></li>
-      <p>The float data model basically consists of a two-dimensional array of data models that do not contain any duplicate elements in the array. This data model has one drawback it cannot store a large amount of data that is the tables can not be of large size.</p>
+      <p>The float data model basically consists of a two-dimensional array of data models that do not contain any
+        duplicate elements in the array. This data model has one drawback it cannot store a large amount of data that is
+        the tables can not be of large size.</p>
 
       <li><b>Context Data Model.</b></li>
-       <p>The Context data model is simply a data model which consists of more than one data model. For example, the Context data model consists of ER Model, Object-Oriented Data Model, etc. This model allows users to do more than one thing which each individual data model can do.</p>
+      <p>The Context data model is simply a data model which consists of more than one data model. For example, the
+        Context data model consists of ER Model, Object-Oriented Data Model, etc. This model allows users to do more
+        than one thing which each individual data model can do.</p>
 
-       <li><b>Semi-Structured Data Model</li></b>
-      <p>Semi-Structured data models deal with the data in a flexible way. Some entities may have extra attributes and some entities may have some missing attributes. Basically, you can represent data here in a flexible way.</p>
+      <li><b>Semi-Structured Data Model</li></b>
+      <p>Semi-Structured data models deal with the data in a flexible way. Some entities may have extra attributes and
+        some entities may have some missing attributes. Basically, you can represent data here in a flexible way.</p>
     </ol>
-       <b>Advantages of Data Models</b>
+    <b>Advantages of Data Models</b>
     <ul>
-     <li>Data Models help us in representing data accurately.
-     it helps us in finding the missing data and also in minimizing Data Redundancy.</li>
-     <li>Data Model provides data security in a better way.
-     The data model should be detailed enough to be used for building the physical database.</li>
-    <li>The information in the data model can be used for defining the relationship between tables, primary and foreign keys, and stored procedures.</li><br>
+      <li>Data Models help us in representing data accurately.
+        it helps us in finding the missing data and also in minimizing Data Redundancy.</li>
+      <li>Data Model provides data security in a better way.
+        The data model should be detailed enough to be used for building the physical database.</li>
+      <li>The information in the data model can be used for defining the relationship between tables, primary and
+        foreign keys, and stored procedures.</li><br>
 
-   <b>Disadvantages of Data Models</b>
-    <li>In the case of a vast database, sometimes it becomes difficult to understand the data model.</li>
-    <li>You must have the proper knowledge of SQL to use physical models.</li>
-    <li>Even smaller change made in structure require modification in the entire application.</li>
-    <li>There is no set data manipulation language in DBMS.
-    To develop Data model one should know physical data stored characteristics.</li>
+      <b>Disadvantages of Data Models</b>
+      <li>In the case of a vast database, sometimes it becomes difficult to understand the data model.</li>
+      <li>You must have the proper knowledge of SQL to use physical models.</li>
+      <li>Even smaller change made in structure require modification in the entire application.</li>
+      <li>There is no set data manipulation language in DBMS.
+        To develop Data model one should know physical data stored characteristics.</li>
     </ul>
 
     <h4><b>ER (Entity Relationship) Diagram in DBMS</b></h4>
-      <p>ER model stands for an Entity-Relationship model. It is a high-level data model. This model is used to define the data elements and relationship for a specified system.<br></p>
-      <p>It develops a conceptual design for the database. It also develops a very simple and   easy to design view of data.<br></p>
-      <p>In ER modeling, the database structure is portrayed as a diagram called an entity-relationship diagram.<br></p>
-      <P>For example, Suppose we design a school database. In this database, the student will be an entity with attributes like address, name, id, age, etc. The address can be another entity with attributes like city, street name, pin code, etc and there will be a relationship between them.</P>
-        <img src="../assets/images/ERdigarm.png.png" alt="ERdigram" id="img1">
-       <br>
-       
-        <img src="../assets/images/CompERdiagram.png" alt="compERdigeam" id="img1"><br>
+    <p>ER model stands for an Entity-Relationship model. It is a high-level data model. This model is used to define the
+      data elements and relationship for a specified system.<br></p>
+    <p>It develops a conceptual design for the database. It also develops a very simple and easy to design view of
+      data.<br></p>
+    <p>In ER modeling, the database structure is portrayed as a diagram called an entity-relationship diagram.<br></p>
+    <P>For example, Suppose we design a school database. In this database, the student will be an entity with attributes
+      like address, name, id, age, etc. The address can be another entity with attributes like city, street name, pin
+      code, etc and there will be a relationship between them.</P>
+    <img src="../assets/images/ERdigarm.png.png" alt="ERdigram" id="img1">
+    <br>
 
-        <b><h5>1.Entity:</b></h5>
-      <P>An entity may be any object, class, person or place. In the ER diagram, an entity can be represented as rectangles.<br>
+    <img src="../assets/images/CompERdiagram.png" alt="compERdigeam" id="img1"><br>
 
-        Consider an organization as an example- manager, product, employee, department etc. can be taken as an entity.</P>
-       <img src="../assets/images/Entity.png.png" alt="entity" id="img1"><br>
+    <b>
+      <h5><u>1.Entity:
+    </b></h5></u>
+    <P>An entity may be any object, class, person or place. In the ER diagram, an entity can be represented as
+      rectangles.<br>
 
-      <b>a.Weak Entity</b>
-       <p>An entity that depends on another entity called a weak entity. The weak entity doesn't contain any key attribute of its own. The weak entity is represented by a double rectangle.</p>
-       <img src="../assets/images/weak.png.png" alt="weak" id="img1"><br>
+      Consider an organization as an example- manager, product, employee, department etc. can be taken as an entity.</P>
+    <img src="../assets/images/Entity.png.png" alt="entity" id="img1"><br>
 
-       <b><h5>2.Attribute</b></h5>
-        <p>The attribute is used to describe the property of an entity. Eclipse is used to represent an attribute.<br>
-                   
-       For example, id, age, contact number, name, etc. can be attributes of a student.</p>
-       <img src="../assets/images/attributes.png.png" alt="attribute" id="img1"><br>
-        
-        <b>a.Key Attribute</b>
-        <p>The key attribute is used to represent the main characteristics of an entity. It represents a primary key. The key attribute is represented by an ellipse with the text underlined.</p>
-        <img src="../assets/images/keyattributes.png.png" alt="keyattributes" id="img1"><br>
+    <b>a.Weak Entity</b>
+    <p>An entity that depends on another entity called a weak entity. The weak entity doesn't contain any key attribute
+      of its own. The weak entity is represented by a double rectangle.</p>
+    <img src="../assets/images/weak.png.png" alt="weak" id="img1"><br>
 
-      <b>b.Composite Attribute</b>
-       <p>An attribute that composed of many other attributes is known as a composite attribute. The composite attribute is represented by an ellipse, and those ellipses are connected with an ellipse.</p>
-       <img src="../assets/images/compostive.png.png" alt="compostive" id="img1"><br>
+    <b>
+      <h5><u>2.Attribute</u>
+    </b></h5>
+    <p>The attribute is used to describe the property of an entity. Eclipse is used to represent an attribute.<br>
 
-      
-       <b>c.Multivalued Attribute</b>
-        <p>An attribute can have more than one value. These attributes are known as a multivalued attribute. The double oval is used to represent multivalued attribute.<br>
+      For example, id, age, contact number, name, etc. can be attributes of a student.</p>
+    <img src="../assets/images/attributes.png.png" alt="attribute" id="img1"><br>
 
-     For example, a student can have more than one phone number.</p>
-      <img src="../assets/images/multivalued.png" alt="multivalued" id="img1"><br>
-      <br>
-  
+    <b>a.Key Attribute</b>
+    <p>The key attribute is used to represent the main characteristics of an entity. It represents a primary key. The
+      key attribute is represented by an ellipse with the text underlined.</p>
+    <img src="../assets/images/keyattributes.png.png" alt="keyattributes" id="img1"><br>
 
-      <b>d.Derived Attribute</b>
-      <P>An attribute that can be derived from other attribute is known as a derived attribute. It can be represented by a dashed ellipse.<br>
+    <b>b.Composite Attribute</b>
+    <p>An attribute that composed of many other attributes is known as a composite attribute. The composite attribute is
+      represented by an ellipse, and those ellipses are connected with an ellipse.</p>
+    <img src="../assets/images/compostive.png.png" alt="compostive" id="img1"><br>
+
+
+    <b>c.Multivalued Attribute</b>
+    <p>An attribute can have more than one value. These attributes are known as a multivalued attribute. The double oval
+      is used to represent multivalued attribute.<br>
+
+      For example, a student can have more than one phone number.</p>
+    <img src="../assets/images/multivalued.png" alt="multivalued" id="img1"><br>
+    <br>
+
+
+    <b>d.Derived Attribute</b>
+    <P>An attribute that can be derived from other attribute is known as a derived attribute. It can be represented by a
+      dashed ellipse.<br>
 
       For example, A person's age changes over time and can be derived from another attribute like Date of birth.</P>
-      <img src="../assets/images/derived.png.png" alt="drived" id="img1"><br>
-      
+    <img src="../assets/images/derived.png.png" alt="drived" id="img1"><br>
+
+    <br>
+    <b>
+      <h5><u>3.Relationship
+    </b></h5></u>
+    <p>A relationship is used to describe the relation between entities. Diamond or rhombus is used to represent the
+      relationship.</p>
+    <img src="../assets/images/realational.png.png" alt="realtionalship" id="img1"><br>
+
+    <b>
+      <p>Types of relationship are as follows:
+    </b></p>
+
+    <b>a.One-to-One Relationship</b>
+    <p>When only one instance of an entity is associated with the relationship, then it is known as one to one
+      relationship.
       <br>
-      <b><h5>3.Relationship</b></h5>
-       <p>A relationship is used to describe the relation between entities. Diamond or rhombus is used to represent the relationship.</p>
-       <img src="../assets/images/realational.png.png" alt="realtionalship" id="img1"><br>
+      For example, A female can marry to one male, and a male can marry to one female.
+    </p>
+    <img src="../assets/images/one-onepng.png" alt="one-one" id="img1"><br>
 
-       <b><p>Types of relationship are as follows:</b></p>
+    <b>b.One-to-many relationship</b>
+    <p>When only one instance of the entity on the left, and more than one instance of an entity on the right associates
+      with the relationship then this is known as a one-to-many relationship.<br>
 
-        <b>a.One-to-One Relationship</b>
-        <p>When only one instance of an entity is associated with the relationship, then it is known as one to one relationship.
-         <br>
-         For example, A female can marry to one male, and a male can marry to one female.</p>
-        <img src="../assets/images/one-onepng.png" alt="one-one" id="img1"><br>
+      For example, Scientist can invent many inventions, but the invention is done by the only specific scientist.</p>
+    <img src="../assets/images/one-many.png.png" alt="one-many" id="img1"><br>
 
-      <b>b.One-to-many relationship</b>
-       <p>When only one instance of the entity on the left, and more than one instance of an entity on the right associates with the relationship then this is known as a one-to-many relationship.<br>
+    <b>c.Many-to-one relationship</b>
+    <p>When more than one instance of the entity on the left, and only one instance of an entity on the right associates
+      with the relationship then it is known as a many-to-one relationship.<br>
 
-        For example, Scientist can invent many inventions, but the invention is done by the only specific scientist.</p>
-        <img src="../assets/images/one-many.png.png" alt="one-many" id="img1"><br>
+      For example, Student enrolls for only one course, but a course can have many students.</p>
+    <img src="../assets/images/many-one.png (2).png" alt="many-one" id="img1"><br>
 
-      <b>c.Many-to-one relationship</b>
-         <p>When more than one instance of the entity on the left, and only one instance of an entity on the right associates with the relationship then it is known as a many-to-one relationship.<br>
-
-        For example, Student enrolls for only one course, but a course can have many students.</p>
-        <img src="../assets/images/many-one.png (2).png" alt="many-one" id="img1"><br>
-
-      <b>d.Many-to-many relationship</b>
-       <p>When more than one instance of the entity on the left, and more than one instance of an entity on the right associates with the relationship then it is known as a many-to-many relationship.<br>
+    <b>d.Many-to-many relationship</b>
+    <p>When more than one instance of the entity on the left, and more than one instance of an entity on the right
+      associates with the relationship then it is known as a many-to-many relationship.<br>
 
       For example, Employee can assign by many projects and project can have many employees.</p>
-      <img src="../assets/images/many-many.png.png" alt="many-many" id="img1"><br>
-      
+    <img src="../assets/images/many-many.png.png" alt="many-many" id="img1"><br>
+
+    <br>
+    <h4><b><u>Superclass subclass and inheritance</b></h4></u>
+    The Enhanced Entity Relationship Model contains all the features of the Entity Relationship model. In addition to
+    all that, it also contains features of Subclasses, Superclasses and Inheritance.
+
+    All of these in detail are as follow-
+    <br>
+    <b>Subclasses:-</b>
+    <p>A subclass is a class derived from the superclass. It inherits the properties of the superclass and also contains
+      attributes of its own. An example is:</p>
+    <img src="../assets/images/superclas.png.png" alt="super" id="img1">
+
+    <p>Car, Truck and Motorcycle are all subclasses of the superclass Vehicle. They all inherit common attributes from
+      vehicle such as speed, colour etc. while they have different attributes also i.e Number of wheels in Car is 4
+      while in Motorcycle is 2.</p>
+
+    <b>Superclasses:-</b>
+    <p>A superclass is the class from which many subclasses can be created. The subclasses inherit the characteristics
+      of a superclass. The superclass is also known as the parent class or base class.
       <br>
-      <h4><b>Superclass subclass and inheritance</b></h4>
-      <P>The Enhanced Entity Relationship Model contains all the features of the Entity Relationship model. In addition to all that, it also contains features of Subclasses, Superclasses and Inheritance.</P>
 
-     All of these in detail are as follow-
-       <br>
-      <b>Subclasses</b>
-       <p>A subclass is a class derived from the superclass. It inherits the properties of the superclass and also contains attributes of its own. An example is:</p>
-       <img src="../assets/images/superclas.png.png" alt="super" id="img1">
+      In the above example, Vehicle is the Superclass and its subclasses are Car, Truck and Motorcycle.
+    </p>
 
-       <p>Car, Truck and Motorcycle are all subclasses of the superclass Vehicle. They all inherit common attributes from vehicle such as speed, colour etc. while they have different attributes also i.e Number of wheels in Car is 4 while in Motorcycle is 2.</p>
+    <b>Inheritance</b>
+    <p>Inheritance is basically the process of basing a class on another class i.e to build a class on a existing class.
+      The new class contains all the features and functionalities of the old class in addition to its own.<br>
+      The class which is newly created is known as the subclass or child class and the original class is the parent
+      class or the superclass.</p>
 
-       <b>Superclasses</b>
-        <p>A superclass is the class from which many subclasses can be created. The subclasses inherit the characteristics of a superclass. The superclass is also known as the parent class or base class.
-        <br>
+    <h4><b><u>Generalization</u></h4></b>
+    <p>Generalization is like a bottom-up approach in which two or more entities of lower level combine to form a higher
+      level entity if they have some attributes in common.</p>
+    <p>In generalization, an entity of a higher level can also combine with the entities of the lower level to form a
+      further higher level entity.</p>
+    <p>Generalization is more like subclass and superclass system, but the only difference is the approach.
+      Generalization uses the bottom-up approach.</p>
+    <p>In generalization, entities are combined to form a more generalized entity, i.e., subclasses are combined to make
+      a superclass.</p>
+    <b>For example,</b> Faculty and Student entities can be generalized and create a higher level entity Person.
+    <img src="../assets/images/generaliziatio.png.png" alt="generalization" id="img1">
+    <br>
 
-       In the above example, Vehicle is the Superclass and its subclasses are Car, Truck and Motorcycle.</p>
-      
-      <b>Inheritance</b>
-      <p>Inheritance is basically the process of basing a class on another class i.e to build a class on a existing  class. The new class contains all the features and functionalities of the old class in addition to its own.<br>
-       The class which is newly created is known as the subclass or child class and the original class is the parent class or the superclass.</p>
+    <h4><b><u>Specialization</h4></b></u>
+    Specialization is a top-down approach, and it is opposite to Generalization. In specialization, one higher level
+    entity can be broken down into two lower level entities.<br>
+    Specialization is used to identify the subset of an entity set that shares some distinguishing characteristics.<br>
+    Normally, the superclass is defined first, the subclass and its related attributes are defined next, and
+    relationship set are then added.<br>
+    For example: In an Employee management system, EMPLOYEE entity can be specialized as TESTER or DEVELOPER based on
+    what role they play in the company.</p>
 
-       <h4><b>Generalization</h4></b>
-       <p>Generalization is like a bottom-up approach in which two or more entities of lower level combine to form a higher level entity if they have some attributes in common.</p>
-       <p>In generalization, an entity of a higher level can also combine with the entities of the lower level to form a further higher level entity.</p>
-       <p>Generalization is more like subclass and superclass system, but the only difference is the approach. Generalization uses the bottom-up approach.</p>
-       <p>In generalization, entities are combined to form a more generalized entity, i.e., subclasses are combined to make a superclass.</p>
-       <b>For example,</b> Faculty and Student entities can be generalized and create a higher level entity Person.
-         <img src="../assets/images/generaliziatio.png.png" alt="generalization" id="img1">
-         <br>
-   
-        <br>
-      <h4><b>Normalization</b></h4>
-         
+
+    <h4><u><b>Relational data model</h4></u></b>
+    The Relational Data Model is one of the foundational models for structuring data in Database Management Systems
+    (DBMS). Proposed by E. F. Codd in 1970, it organizes data into tables, or relations, which makes it intuitive and
+    easy to manage. Here's a breakdown of its components, structure, and key concepts:
+    <br>
+
+    <b>Key Components:</b>
+    <ol type="1">
+      <li><b>Relation (Table)</b>: A table with rows and columns, where each table represents an entity or object (e.g.,
+        students, employees).</li>
+      <li><b>Tuple (Row):</b> Each row in the table represents a single data item or record.</li>
+
+      <li><b>Attribute (Column):</b>Each column represents a characteristic or property of the data stored in the table
+        (e.g., name, age, ID).</li>
+
+      <li><b>Domain:</b> The set of possible values that each attribute can take. For example, an "age" attribute may
+        have a domain of positive integers.</li>
+    </ol>
+
+
+    <b>Properties of the Relational Model</b>
+    <ol type="1">
+      <li>Data is stored in tables and can be easily queried and manipulated.</li>
+
+      <li>Data Integrity is maintained through primary keys and foreign keys.</li>
+
+      <li>Relationships between tables are established using keys, allowing data in one table to be linked with data in
+        another.</li>
+      <li>Normalization helps in organizing data to reduce redundancy and dependency.</li>
+    </ol>
+    <b>Keys in Relational Model:-</b>
+    <ol type="1">
+      <li><b>Primary Key:</b> A unique identifier for each record in a table (e.g., StudentID in a Students table).</li>
+
+      <li><b>Foreign Key:</b> An attribute that creates a link between two tables. It refers to the primary key in
+        another table.</li>
+
+      <li><b>Candidate Key:</b> An attribute or combination of attributes that can uniquely identify a record, but only
+        one is selected as the primary key.</li>
+
+      <li><b>Composite Key:</b> A key made up of two or more attributes.</li>
+      <br>
+    </ol>
+
+    <b>Integrity Constraints</b>
+    <ol type="1">
+      <li><b>Entity Integrity:</b> Ensures that primary keys cannot be null.</li>
+
+      <li><b>Referential Integrity:</b> Ensures that a foreign key must either be null or match an existing primary key
+        in another table.</li>
+    </ol>
+    <b>Advantages of the Relational Model:-</b>
+    <ol type="1">
+      <li><b>Simplicity:</b> Tables with rows and columns make it easy to understand and manage.</li>
+
+      <li><b>Data Independence:</b>Changes in database schema do not impact application programs significantly.</li>
+
+      <li><b>Flexibility:</b> Easily accommodates changes in requirements.</li>
+
+      <li><b>Data Integrity and Accuracy:</b> Maintained through constraints and keys.</li>
+      <br>
+    </ol>
+
+    <b><u>Relational Algebra</b></u><br>
+    The relational model includes Relational Algebra, a set of operations to manipulate data, such as:
+    <ol type="1">
+      <li><b>Selection (σ):</b> Filters rows based on conditions.</li>
+
+      <li><b>Projection (π):</b> Selects specific columns.</li>
+
+      <li><b>Union (∪):</b> Combines data from two tables.</li>
+      <li><b>Set Difference (-):</b> Finds rows in one table but not in another.</li>
+
+      <li><b>Cartesian Product (×):</b> Combines all rows from two tables.</li>
+
+      <li><b>Join (⋈):</b> Combines rows from two tables based on a related column.</li>
+
+      <p>This model's simplicity, robust mathematical foundation, and compatibility with SQL (Structured Query Language)
+        make it one of the most widely used data models for databases.</p>
+    </ol>
+
+
+
+    <br>
+    <h4><b>Assume Normalization</b></h4>
     <b>Functional Dependency</b>
-     <p>The functional dependency is a relationship that exists between two attributes. It typically exists between the primary key and non-key attribute within a table.</p>
-         
-         X   →   Y  
-      <p>The left side of FD is known as a determinant, the right side of the production is known as a dependent.</p>
-      <b>For example:</b>
-         <p>Assume we have an employee table with attributes: Emp_Id, Emp_Name, Emp_Address.</p>
+    <span>The functional dependency is a relationship that exists between two attributes. It typically exists between
+      the primary key and non-key attribute within a table.</span>
 
-      <b>types of function dependency</b>
-      <ul>
-        <li>Trivial functional Dependency</li>
-         <li>Non-Trivial functional Dependency</li>
-      </ul>
+    X → Y
+    <p>The left side of FD is known as a determinant, the right side of the production is known as a dependent.</p>
+    <b>For example:</b>
+    we have an employee table with attributes: Emp_Id, Emp_Name, Emp_Address.</p>
 
-      <h5><b>What is Normalization?</b></h5>
-      <p>Normalization is the process of organizing the data in the database.</p>
-      <p>Normalization is used to minimize the redundancy from a relation or set of relations. It is also used to eliminate undesirable characteristics like Insertion, Update, and Deletion Anomalies.</p>
-     <p>Normalization divides the larger table into smaller and links them using relationships.</p>
+    <b>types of function dependency</b>
+    <ul>
+      <li>Trivial functional Dependency</li>
+      <li>Non-Trivial functional Dependency</li>
+    </ul>
+
+    <h5><b>What is Normalization?</b></h5>
+    <p>Normalization is the process of organizing the data in the database.</p>
+    <p>Normalization is used to minimize the redundancy from a relation or set of relations. It is also used to
+      eliminate undesirable characteristics like Insertion, Update, and Deletion Anomalies.</p>
+    <p>Normalization divides the larger table into smaller and links them using relationships.</p>
     <p>The normal form is used to reduce redundancy from the database table.</p><br>
-    
-   <b>Why do we need Normalization?</b>
-    <p>The main reason for normalizing the relations is removing these anomalies. Failure to eliminate anomalies leads to data redundancy and can cause data integrity and other problems as the database grows. Normalization consists of a series of guidelines that helps to guide you in creating a good database structure.</p>
+
+    <b>Why do we need Normalization?</b>
+    <p>The main reason for normalizing the relations is removing these anomalies. Failure to eliminate anomalies leads
+      to data redundancy and can cause data integrity and other problems as the database grows. Normalization consists
+      of a series of guidelines that helps to guide you in creating a good database structure.</p>
+
+    <b>Types of normal forms:</b>
+    Normalization works through a series of stages called Normal forms. The normal forms apply to individual relations.
+    The relation is said to be in particular normal form if it satisfies constraints.
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Noraml form</th>
+          <th>description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <td>1NF</td>
+        <td>A relation is in 1NF if it contains an atomic value.</td>
+      <tbody>
+        <td>2NF</td>
+        <td>A relation will be in 2NF if it is in 1NF and all non-key attributes are fully functional dependent on the
+          primary key.
+        </td>
+      <tbody>
+        <td>3NF</td>
+        <td>A relation will be in 3NF if it is in 2NF and no trival dependency exists.
+        </td>
+      <tbody>
+        <td>BCNF</td>
+        <td>A stronger definition of 3NF is known as Boyce Codd's normal form.
+        </td>
+      <tbody>
+        <td>4NF</td>
+        <td>A relation will be in 4NF if it is in Boyce Codd's normal form and has no multi-valued dependency.</td>
+      </tbody>
+      <tbody>
+        <td>5NF</td>
+        <td>A relation is in 5NF. If it is in 4NF and does not contain any join dependency, joining should be lossless.
+        </td>
+      </tbody>
+    </table>
+
+    <b>Advantages of Normalization</b>
+    <ul>
+      <li>normalization helps to minimize data redundancy.
+      <li>Greater overall database organization.</li>
+      <li>Data consistency within the database.</li>
+      <li>Much more flexible database design.</li>
+      <li>Enforces the concept of relational integrity.</li>
+    </ul>
+    <br>
+    <b>Disadvantages of Normalization</b>
+    </ul>
+    <li>You cannot start building the database before knowing what the user needs.</li>
+    <li>The performance degrades when normalizing the relations to higher normal forms, i.e., 4NF, 5NF.</li>
+    <li>It is very time-consuming and difficult to normalize relations of a higher degree.</li>
+    <li>Careless decomposition may lead to a bad database design, leading to serious problems.</li>
+    </ul><br>
+
+    <br>
+    <b>
+      <h3><u>Transaction:-
+    </b></u></h3>
+    <p>The transaction is a set of logically related operation. It contains a group of tasks.<br>
+      A transaction is an action or series of actions. It is performed by a single user to perform
+      operations for accessing the contents of the database.<br>
+      <b>Example:</b>Suppose an employee of bank transfers Rs 800 from X's account to Y's account. This
+      small transaction contains several low-level tasks:
+    </p><br>
+    <b>X's Account</b><br>
+    1. Open_Account(X)<br>
+    2. Old_Balance = X.balance<br>
+    3. New_Balance = Old_Balance - 800<br>
+    4. X.balance = New_Balance<br>
+    5. Close_Account(X)<br>
+
+    <b>Y's Account</b><br>
+    1. Open_Account(Y)<br>
+    2. Old_Balance = Y.balance<br>
+    3. New_Balance = Old_Balance + 800<br>
+    4. Y.balance = New_Balance<br>
+    5. Close_Account(Y)<br>
+
+    Operations of Transaction:
+    Following are the main operations of transaction:
+
+    <p><b>Read(X):</b> Read operation is used to read the value of X from the database and stores it in a
+      buffer in main memory.<br>
+      <b>Write(X):</b> Write operation is used to write the value back to the database from the buffer.
+      Let's take an example to debit transaction from an account which consists of following
+      operations:
+    </p>
+    1. R(X);<br>
+    2. X = X - 500;<br>
+    3. W(X);<br>
+    <ol type="1"></ol>
+    <p>Let's assume the value of X before starting of the transaction is 4000.</p>
+    <li>The first operation reads X's value from database and stores it in a buffer.</li>
+    <li>The second operation will decrease the value of X by 500. So buffer will contain 3500.</li>
+    <li>The third operation will write the buffer's value to the database. So X's final value will be
+      3500.</li>
+    <p>But it may be possible that because of the failure of hardware, software or power, etc. that
+      transaction may fail before finished all the operations in the set.<br>
+      <b>For example:</b> If in the above transaction, the debit transaction fails after executing operation 2
+      then X's value will remain 4000 in the database which is not acceptable by the bank.
+      Advertisement<br>
+
+      <i>
+        <p>To solve this problem, we have two important operations:</p>
+      </i>
+      <b>Commit:</b> It is used to save the work done permanently.<br>
+      <b>Rollback:</b> It is used to undo the work done.<br>
+    </p>
+    States of Transaction
+    In a database, the transaction can be in one of the following states -
+    <img src="../assets/images/transtion1.jpg" alt="">
+    <br>
+    <i>
+      <h5>Active state
+    </i></h5>
+    <li>The active state is the first state of every transaction. In this state, the transaction is being
+      executed.</li>
+    <li>For example: Insertion or deletion or updating a record is done here. But all the records are
+      still not saved to the database.</li><br>
+    <i>
+      <h5>Partially committed
+    </i></h5>
+    <li>In the partially committed state, a transaction executes its final operation, but the data is
+      still not saved to the database.</li>
+    <li>In the total mark calculation example, a final display of the total marks step is executed in
+      this state.</li><br>
+
+    <i>
+      <h5>Committed</h5>
+    </i>
+    <li>A transaction is said to be in a committed state if it executes all its operations successfully. In
+      this state, all the effects are now permanently saved on the database system.
+      Failed state</li>
+    <li>If any of the checks made by the database recovery system fails, then the transaction is said
+      to be in the failed state.</li>
+
+    <li>In the example of total mark calculation, if the database is not able to fire a query to fetch
+      the marks, then the transaction will fail to execute.</li><br>
+    </li><br>
+    </ul>
+    <i>
+      <h5>Aborted</h5>
+    </i>
+    <li>If any of the checks fail and the transaction has reached a failed state then the database
+      recovery system will make sure that the database is in its previous consistent state. If not
+      then it will abort or roll back the transaction to bring the database into a consistent state.</li>
+    <li>If the transaction fails in the middle of the transaction then before executing the transaction,
+      all the executed transactions are rolled back to its consistent state.</li>
+    <li>After aborting the transaction, the database recovery module will select one of the two
+      operations:</li>
+    <li>Re-start the transaction</li>
+    <li>Kill the transaction</li>
+    </ul>
+
+    <br>
+    <h5><u>Concurrency in DBMS</h5></u>
+    <p>Concurrency in a Database Management System (DBMS) refers to the ability of the system to handle multiple
+      transactions simultaneously without compromising data integrity or consistency. This capability is essential in
+      multi-user environments where multiple users or processes access and modify the database concurrently.</p>
+
+    <h5>Key Concepts in Concurrency</h5>
+
+    <h5>1. Transactions</h5>
+    <p>A transaction is a sequence of database operations (read, write, etc.) that form a single logical unit of work.
+      Transactions must follow the ACID properties:</p>
+    <ul>
+      <li><strong>Atomicity</strong>: All operations within a transaction are completed, or none are.</li>
+      <li><strong>Consistency</strong>: Transactions bring the database from one valid state to another.</li>
+      <li><strong>Isolation</strong>: Transactions are isolated from one another to prevent interference.</li>
+      <li><strong>Durability</strong>: Once a transaction is committed, its changes persist even in the event of a
+        failure.</li>
+    </ul>
+
+    <h5>2. Concurrency Issues</h5>
+    <ul>
+      <li><strong>Lost Update</strong>: Two transactions overwrite each other’s updates.</li>
+      <li><strong>Dirty Read</strong>: A transaction reads uncommitted data from another transaction.</li>
+      <li><strong>Non-Repeatable Read</strong>: A transaction reads the same data twice and gets different results due
+        to changes made by another transaction.</li>
+      <li><strong>Phantom Read</strong>: A transaction reads a set of rows that satisfy a condition, but another
+        transaction inserts or deletes rows, changing the result of the query.</li>
+    </ul>
+
+    <h5>3. Concurrency Control</h5>
+    <p>To ensure that multiple transactions can execute concurrently without issues, DBMS implements concurrency control
+      mechanisms. These include:</p>
+    <ul>
+      <li><strong>Locking Mechanisms</strong>:
+        <ul>
+          <li><strong>Shared Lock (S-lock)</strong>: Allows multiple transactions to read a resource but prevents
+            writing.</li>
+          <li><strong>Exclusive Lock (X-lock)</strong>: Prevents other transactions from accessing the resource for
+            reading or writing.</li>
+        </ul>
+      </li>
+      <li><strong>Timestamp Ordering</strong>: Transactions are ordered based on their timestamps to ensure
+        serializability.</li>
+      <li><strong>Multiversion Concurrency Control (MVCC)</strong>: Maintains multiple versions of data to allow read
+        and write operations to occur simultaneously.</li>
+      <li><strong>Optimistic Concurrency Control</strong>: Assumes conflicts are rare and validates changes only during
+        commit.</li>
+    </ul>
+
+    <h5>4. Isolation Levels</h5>
+    <p>DBMS provides different isolation levels to balance concurrency and consistency:</p>
+    <ul>
+      <li><strong>Read Uncommitted</strong>: Transactions can read uncommitted changes, leading to possible
+        inconsistencies.</li>
+      <li><strong>Read Committed</strong>: Transactions read only committed changes.</li>
+      <li><strong>Repeatable Read</strong>: Ensures that data read during a transaction remains consistent.</li>
+      <li><strong>Serializable</strong>: Ensures full isolation by making transactions appear to execute sequentially.
+      </li>
+    </ul>
+
+    <h5>5. Deadlock</h5>
+    <p>Deadlocks occur when two or more transactions are waiting for each other to release resources, leading to a cycle
+      of dependencies. DBMS detects and resolves deadlocks using techniques like:</p>
+    <ul>
+      <li>Deadlock prevention (e.g., ordering resource acquisition).</li>
+      <li>Deadlock detection and recovery (e.g., aborting one of the transactions).</li>
+    </ul>
+
+    <h4>Importance of Concurrency</h4>
+    <ul>
+      <li><strong>Maximizes System Throughput</strong>: By allowing multiple transactions to execute simultaneously,
+        DBMS optimizes resource utilization.</li>
+      <li><strong>Reduces Waiting Time</strong>: Concurrent execution reduces transaction wait times.</li>
+      <li><strong>Enhances User Experience</strong>: Provides faster responses in multi-user environments.</li>
+    </ul>
+
+    <p>Concurrency in DBMS ensures efficient and reliable data access while maintaining database integrity and
+      consistency, which is critical for real-world applications such as banking, e-commerce, and enterprise systems.
+    </p>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+    <h2><b><u>important Notes for examination</h2></u></b>
+    <b>1.what do you mean by normalization. Explain it benifits in dbms</b>
+    <h5>Normalization in DBMS</h5>
+    <p>Normalization in a database management system (DBMS) is the process of organizing data to minimize redundancy and
+      improve data integrity. It involves dividing a database into smaller, related tables and defining relationships
+      between them according to specific rules called <em>normal forms</em>.</p>
+
+    <h5>Key Objectives of Normalization</h5>
+    <ul>
+      <li><strong>Reduce Redundancy:</strong> Eliminate duplicate data to save storage space and ensure consistency.
+      </li>
+      <li><strong>Improve Data Integrity:</strong> Ensure the accuracy and reliability of the data by reducing anomalies
+        during operations such as insertions, updates, or deletions.</li>
+      <li><strong>Optimize Queries:</strong> Simplify complex queries by structuring data logically.</li>
+      <li><strong>Facilitate Maintenance:</strong> Make databases easier to maintain and scale over time.</li>
+    </ul>
+
+    <h5>Benefits of Normalization</h5>
+    <ol>
+      <li><strong>Elimination of Data Anomalies:</strong>
+        <ul>
+          <li><strong>Insert Anomaly:</strong> Prevents issues where inserting new data requires unnecessary
+            information.</li>
+          <li><strong>Update Anomaly:</strong> Ensures changes to data in one place are automatically reflected
+            everywhere.</li>
+          <li><strong>Delete Anomaly:</strong> Prevents accidental loss of critical data when deleting redundant data.
+          </li>
+        </ul>
+      </li>
+      <li><strong>Efficient Data Storage:</strong> Reduces duplication, saving storage space and improving performance.
+      </li>
+      <li><strong>Improved Data Consistency:</strong> Normalized data ensures consistency across tables and
+        relationships, reducing errors.</li>
+      <li><strong>Better Scalability:</strong> Logical division of data enables easier modifications and additions to
+        the database structure.</li>
+      <li><strong>Simpler Data Maintenance:</strong> Clear relationships and structured tables simplify tasks such as
+        backup, recovery, and migration.</li>
+      <li><strong>Improved Query Performance:</strong> Well-structured tables improve the efficiency of data retrieval,
+        especially in complex queries.</li>
+    </ol>
+
+    <h5>Example</h5>
+    <p>Consider a table with student and course information:</p>
+    <table border="1">
+      <tr>
+        <th>StudentID</th>
+        <th>StudentName</th>
+        <th>CourseID</th>
+        <th>CourseName</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Alice</td>
+        <td>101</td>
+        <td>Math</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Bob</td>
+        <td>102</td>
+        <td>Science</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Alice</td>
+        <td>102</td>
+        <td>Science</td>
+      </tr>
+    </table>
+    <p>This table has redundancy (e.g., Alice's name appears multiple times). By normalizing, we can divide it into two
+      tables:</p>
+
+    <h3>Students Table:</h3>
+    <table border="1">
+      <tr>
+        <th>StudentID</th>
+        <th>StudentName</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Alice</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Bob</td>
+      </tr>
+    </table>
+
+    <h3>Courses Table:</h3>
+    <table border="1">
+      <tr>
+        <th>CourseID</th>
+        <th>CourseName</th>
+      </tr>
+      <tr>
+        <td>101</td>
+        <td>Math</td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Science</td>
+      </tr>
+    </table>
+
+    <h3>Enrollments Table:</h3>
+    <table border="1">
+      <tr>
+        <th>StudentID</th>
+        <th>CourseID</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>101</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>102</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>102</td>
+      </tr>
+    </table>
+    <p>This structure removes redundancy and makes the database more manageable and efficient.</p>
 </body>
+
+</html>
+</body>
+
 </html>
