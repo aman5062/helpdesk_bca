@@ -80,7 +80,6 @@
             Email: userEmail
         };
         console.log("Sending data to API:", data);
-
         try {
             const response = await fetch('https://arambhsoftech.com/Helpdesk_bca/Helpdesk_login.php', {
                 method: 'POST',
@@ -112,14 +111,12 @@
         window.location = "login.html";
     }
 }
-
     function redirectToPage(userYear) {
         const routes = {
             '1': "semester1/index.html",
             '2': "semester3/index.html",
             '3': "semester5/index.html"
         };
-
         if (routes[userYear]) {
             console.log(`Redirecting to ${routes[userYear]}`);
             window.location = routes[userYear];
@@ -127,7 +124,6 @@
             console.error('Invalid user year:', userYear);
         }
     }
-
     function getCookie(name) {
         const nameEQ = `${name}=`;
         const cookies = document.cookie.split(';');
