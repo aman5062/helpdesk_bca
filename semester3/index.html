@@ -48,7 +48,10 @@
     }
     return "nothing";
 }
-document.getElementById("names").innerHTML = getCookie("user_name");
+function nn(){
+  document.getElementById("watermark").innerHTML = getCookie("user_name");
+
+}
 </script>
 <style>
   #meme_box {
@@ -76,7 +79,7 @@ document.getElementById("names").innerHTML = getCookie("user_name");
   }
 </style>
 
-<body onload="memelogy();">
+<body onload="nn();">
   <header class="navbar navbar-expand-md d-flex flex-wrap justify-content-center mt-2 p-2 mb-2 border-bottom">
     <div id="top_bar">
       <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
