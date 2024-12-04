@@ -34,6 +34,21 @@
     document.getElementById('meme_box').style.display = 'none';
     document.getElementById('blur_back').style.display = 'none';
   }
+
+  function getCookie(name) {
+    const nameEQ = name + "=";
+    const cookies = document.cookie.split(';');
+    for (let cookie of cookies) {
+        while (cookie.charAt(0) === ' ') {
+            cookie = cookie.substring(1);
+        }
+        if (cookie.indexOf(nameEQ) === 0) {
+            return cookie.substring(nameEQ.length);
+        }
+    }
+    return null;
+}
+document.getElementById("names").innerHTML = getCookie("user_name");
 </script>
 <style>
   #meme_box {
@@ -69,6 +84,9 @@
         <span class="fs-4 mr-5 lo">
           <h2 class="bold-text">Helpdesk</h2>
         </span>
+        <hr>
+        <div id="names"></div>
+        <hr>
       </a>
     </div>
     <div class="container-fluid" id="sec_nav">
