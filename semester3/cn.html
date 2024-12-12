@@ -812,20 +812,111 @@
         <ul>
           <li>Devices sense the channel to check if it is idle before transmitting. If busy,
             they wait until it is free.</li>
-            <li>CSMA/CD (Collision Detection): Used in wired networks, especially
-              Ethernet, where devices detect collisions and stop transmission, wait, and
-              then retry.</li>
-              <li>CSMA/CA (Collision Avoidance): Used in wireless networks, where
-                collision detection is challenging. Devices wait before transmitting and use
-                acknowledgment signals to minimize collisions.</li>
+          <li>CSMA/CD (Collision Detection): Used in wired networks, especially
+            Ethernet, where devices detect collisions and stop transmission, wait, and
+            then retry.</li>
+          <li>CSMA/CA (Collision Avoidance): Used in wireless networks, where
+            collision detection is challenging. Devices wait before transmitting and use
+            acknowledgment signals to minimize collisions.</li>
         </ul>
       </ul>
-      
     </ol>
-
-
-
+    <h5>Controlled Access</h5>
+    In controlled Access, a centralized contol mechanism or protocol determine
+    which device can access the medium at any time,which help avoid collisions:
+    <ul>
+      <li>Polling:</li>
+      <ul>
+        <li>A controller (like a primary device or access point) polls each device in turn,
+          asking if it has data to transmit.</li>
+        <li>A controller (like a primary device or access point) polls each device in turn,
+          asking if it has data to transmit.</li>
+      </ul>
+      <li>Reservation:</li>
+      <ul>
+        <li>Devices reserve the channel for specific time slots or channels, typically in
+          advance, reducing the likelihood of collision.</li>
+        <li>Often used in time-sensitive applications where reliable access is required,
+          like satellite and cellular networks.</li>
+      </ul>
+      <li>Token Passing:</li>
+      <ul>
+        <li>A "token" (a control frame) circulates among devices, and only the device
+          holding the token can transmit data.</li>
+        <li>Token Ring and Token Bus networks use this method, effectively eliminating
+          collisions but requiring coordination.</li>
+      </ul>
+    </ul>
+    <h5><b>Channelization</b></h5>
+    <p>Channelization divides the channel into distinct sections that multiple user can
+      access simultaneously,usually by frequency, time or code:
+    </p>
+    <ul>
+      <li>FDMA(Frequency Division Multiple Access):</li>
+      <ul>
+        <li>The available bandwidth is divided into frequency bands, with each device
+          assigned its own band</li>
+        <li>Used in radio and satelite communications.</li>
+      </ul>
+      <li>TDMA(Time Division Multiple Access):</li>
+      <ul>
+        <li>Devices take turns transmitting data in designated time slots.</li>
+        <li>Widely used in cellular networks, allowing multiple users on the same
+          frequency.</li>
+      </ul>
+      <li>CDMA(Code Division Multiple Access):</li>
+      <ul>
+        <li>Devices use unique codes to encode their transmissions, allowing multiple
+          transmissions on the same frequency.</li>
+        <li>Commonly used in cellular networks, where multiple users can share the
+          same spectrum without interfering with each other.</li>
+      </ul>
+    </ul>
+    <h6><b>Wired LANs(Ethernet)</b></h6>
+    <p>Ethernet is the dominant standard for wired LANs, known for its simplicity,
+      scalability, and cost-effectiveness. It has evolved over the years, resulting in different
+      types of Ethernet standards:</p>
+    <ol>
+      <li><b>Traditional Ethernet(10 Mbps)</b></li>
+      <ul>
+        <li>Original Ethernet, based on the IEEE 802.3 standard, operates at 10 Mbps over
+          coaxial cable or twisted-pair cables.</li>
+        <li>Uses CSMA/CD for medium access control in half-duplex mode (where only one
+          device can transmit at a time).</li>
+      </ul>
+      <li><b>Fast Ethernet(100 Mbps)</b></li>
+      <ul>
+        <li>Fast Ethernet (IEEE 802.3u) increased the speed to 100 Mbps</li>
+        <li>Uses twisted-pair (Category 5) or fiber-optic cables.</li>
+        <li>Supports both half-duplex (CSMA/CD) and full-duplex modes, allowing
+          simultaneous sending and receiving without collisions.</li>
+        <li>Common variations: 100BASE-TX (twisted-pair) and 100BASE-FX (fiber-optic).</li>
+      </ul>
+      <li><b>Gigabit Ethernet(1 Gbps)</b></li>
+      <ul>
+        <li>Gigabit Ethernet (IEEE 802.3z for fiber and IEEE 802.3ab for twisted pair) offers
+          data rates of 1 Gbps.</li>
+        <li>Uses Category 5e or higher for twisted-pair or fiber-optic cables.</li>
+        <li>Typically operates in full-duplex mode, eliminating the need for CSMA/CD due to
+          dedicated send/receive channels.</li>
+        <li>Common variations include 1000BASE-T (twisted-pair) and 1000BASE-LX (fiberoptic).</li>
+      </ul>
+      <li><b>Gigabit Ethernet(10 Gbps and Beyond)</b></li>
+      <ul>
+        <li>Newer standards like 10 Gigabit Ethernet (IEEE 802.3ae) and beyond (40 Gbps, 100
+          Gbps) have been introduced for very high-speed networks.</li>
+        <li>Primarily used in data centers and high-performance applications.</li>
+        <li>Operates exclusively in full-duplex mode, typically using fiber-optic cables, though
+          there are copper-based variants (like 10GBASE-T).</li>
+      </ul>
+    </ol>
+    <caption><u>Summary of Ethernet standards</u></caption>
+    <img height="180" src="mbps.png" alt="mbps" id="img1">
     <h5 style="color: rgb(107, 19, 19); text-align: center; border: black 1px; font-weight: 700;">M-III</h5>
+
+
+
+
     <p><b>Network Devices:</b>Network devices, also known as networking
       hardware, are physical devices that allow hardware on a
       computer network to communicate and interact with one
@@ -974,8 +1065,305 @@
         notation. Example- 192.0.2.126 could be an IPv4 address
       </p>
     </div>
+    <h5><b>IPv4 Address Format</b></h5>
+    <p>IPv4 Address Format is a 32-bit Address that comprises binary
+      digits separated by a dot (.).</p>
+    <img src="ipv4.png" alt="ipv4" id="img1">
+    <h5><b>What is IPv6</b></h5>
+    <p>IPv6 is based on IPv4 and stands for Internet Protocol version
+      6. It was first introduced in December 1995 by Internet
+      Engineering Task Force. IP version 6 is the new version of
+      Internet Protocol, which is way better than IP version 4 in
+      terms of complexity and efficiency. IPv6 is written as a group
+      of 8 hexadecimal numbers separated by colon (:). It can be
+      written as 128 bits of 0s and 1s.
+    </p>
+    <h6><b>IPv6 Address Format</b></h6>
+    <p>IPv6 Address Format is a 128-bit IP Address, which is written
+      in a group of 8 hexadecimal numbers separated by colon (:).</p>
+    <img src="ipv6.png" alt="ipv6" id="img1">
+    <p>IP stands for Internet Protocol and v4 stands for Version
+      Four (IPv4). IPv4 was the primary version brought into action
+      for production within the ARPANET in 1983. IP version four
+      addresses are 32-bit integers which will be expressed in decimal
+      notation. In this article, we will discuss about IPv4 datagram
+      header.</p>
+    <h5><b>What is IPv4?</b></h5>
+    <p>IPv4 is a connectionless protocol used for packet-switched
+      networks. Internet Protocol Version 4 (IPv4) is the fourth
+      revision of the Internet Protocol and a widely used protocol in
+      data communication over different kinds of networks. IPv4 is a
+      connectionless protocol used in packet-switched layer networks,
+      such as Ethernet. It provides a logical connection between
+      network devices by providing identification for each device.
+      <br>There are many ways to configure IPv4 with all kinds of
+      devices – including manual and automatic configurations –
+      depending on the network type. IPv4 uses 32-bit addresses for
+      Ethernet communication in five classes: A, B, C, D and E.
+      Classes A, B, and C have a different bit length for addressing
+      the network host. Class D addresses are reserved
+      for multicasting, while class E addresses are reserved for
+      military purposes.
+    </p>
+    <h7><b>IPv4 Datagram Header</b></h7>
+    <ul>
+      <li><b>VERSION:</b>Version of the IP protocol (4 bits), which is 4 for IPv4.</li>
+      <li><b>HLEN:</b>IP header length (4 bits), which is the number of 32 bit words in the header.
+        The minimum value for this field is 5 and the maximum is 15.</li>
+      <li><b>Type of service:</b>Low Delay, High Throughput, Reliability (8 bits)</li>
+      <li><b>Total Length:</b>Length of header + Data (16 bits), which has a minimum value 20
+        bytes and the maximum is 65,535 bytes.</li>
+      <li><b>Identification:</b>Unique Packet Id for identifying the group of fragments of a single
+        IP datagram (16 bits)</li>
+      <li><b>FLAGS:</b>3 flags of 1 bit each : reserved bit (must be zero), do not fragment flag, more
+        fragments flag (same order).</li>
+      <li><b>Fragment Offset:</b>Represents the number of Data Bytes ahead of the particular
+        fragment in the particular Datagram. Specified in terms of number of 8 bytes, which
+        has the maximum value of 65,528 bytes</li>
+      <li><b>Time to Live:</b>Datagram’s lifetime (8 bits), It prevents the datagram to loop through
+        the network by restricting the number of Hops taken by a Packet before delivering to
+        the Destination.</li>
+      <li><b>Protocol:</b>Name of the protocol to which the data is to be passed (8 bits).</li>
+      <li><b>Header Checksum:</b>16 bits header checksum for checking errors in the datagram
+        header</li>
+      <li><b>Source IP address:</b>32 bits IP address of the sender</li>
+      <li><b>Destination IP Address:</b>32 bits IP address of the receiver</li>
+    </ul>
+    <p><b>IPv6 packet format has several advantages, including:</b></p>
+    <ul>
+      <li><b>Larger address Space</b></li>
+      <ul>
+        <li>IPv6 packets have a 128-bit address, which is much larger
+          than IPv4's 32-bit address. This means there are almost an
+          unlimited number of unique IP addresses, which is important
+          for the internet's growth.</li>
+      </ul>
+      <li><b>Streamlined header</b></li>
+      <ul>
+        <li>IPv6 packets have a fixed-length header of 40 bytes, which is
+          faster to process than IPv4's header.</li>
+      </ul>
+      <li><b>Flow labeling</b></li>
+      <ul>
+        <li>IPv6 packets can be labeled to indicate special handling, such
+          as real-time or non-default quality of service.</li>
+      </ul>
+      <li><b>Jumbograms</b></li>
+      <ul>
+        <li>IPv6 packets can handle payloads larger than 2^32, which
+          improves performance on high maximum transmission unit
+          (MTU) links..</li>
+      </ul>
+      <li><b>Fragmentation and reassembly</b></li>
+      <ul>
+        <li>IPv6 packets are fragmented and reassembled by the sender
+          and receiver, not routers, which makes routing more efficient.</li>
+      </ul>
+      <li><b>Multicast</b></li>
+      <ul>
+        <li>IPv6 uses multicast to send a single packet to multiple
+          destinations at once, which saves bandwidth and node
+          processing resources.</li>
+      </ul>
+      <li><b>IPsec integration</b></li>
+      <ul>
+        <li>IPv6 uses multicast to send a single packet to multiple
+          destinations at once, which saves bandwidth and node
+          processing resources.</li>
+      </ul>
+      <li><b>Automatic address Configuration</b></li>
+      <ul>
+        <li>IPv6 includes features like link-local addressing to simplify
+          the process of assigning IP addresses to devices.</li>
+        <li>No network address translation (NAT).</li>
+        <li>IPv6 eliminates the need for NAT, which reduces complexity
+          and processing overhead.</li>
+      </ul>
+    </ul>
+    <h4><b>Network Layer Protocols</b></h4>
+    <p>Network Layer is responsible for the transmission of data or
+      communication from one host to another host connected in a
+      network. Rather than describing how data is transferred, it
+      implements the technique for efficient transmission. In order to
+      provide efficient communication protocols are used at the
+      network layer. The data is being grouped into packets or in the
+      case of extremely large data it is divided into smaller sub
+      packets. Each protocol used has specific features and
+      advantages. The below article covers in detail the protocols used
+      at the network layer.</p>
+    <h6><b>ARP(Address Resolution Protocol)</b></h6>
+    <p>ARP stands for Address Resolution Protocol. ARP is used to
+      convert the logical address ie. IP address into physical address
+      ie. MAC address. While communicating with other nodes, it
+      is necessary to know the MAC address or physical address of
+      the destination node. If any of the node in a network wants to
+      know the physical address of another node in the same
+      network, the host then sends an ARP query packet. This ARP
+      query packet consists of IP address and MAC address of
+      source host and only the IP address of destination host. This
+      ARP packet is then received to every node present in the
+      network. The node with its own IP address recognises it and
+      sends it MAC address to the requesting node. But sending and
+      receiving such packets to know the MAC address of
+      destination node it increases the traffic load. Therefore in
+      order to reduce this traffic and improve the performance, the
+      systems that makes use of ARP maintain a cache of recently
+      acquired IP into MAC address bindings.</p>
+    Types of ARP Entries
+    <ul>
+      <li><b>Static Entry:</b>This type of entry is created when a user uses the ARP
+        command utility to manually enter the IP to MAC address association.</li>
+      <li><b>Dynamic Entry:</b>A dynamic entry is one that is automatically formed when a
+        sender broadcasts their message to the whole network. Dynamic entries are
+        periodically removed and are not permanent.</li>
+    </ul>
+    <h5><b>RARP(Reverse Address Resolution Protocol)</b></h5>
+    <p>RARP stands for Reverse Address Resolution Protocol. RARP works opposite of
+      ARP. Reverse Address Resolution Protocol is used to convert MAC address ie.
+      physical address into IP address ie. logical address. RARP provides with a feature for
+      the systems and applications to get their own IP address from a DNS( Domain Name
+      System) or router. This type of resolution is required for various tasks such as
+      executing reverse DNS lookup. As Reverse Address Resolution Protocol works at low
+      level it requires direct network addresses. The reply from the server mostly carries a
+      small information but the 32 bit internet address is used and it does not exploit the full
+      potential of a network such as ethernet</p>
+    <h5><b>How dows RARP work?</b></h5>
+    <ul>
+      <li>Data is sent between two places in a network using the RARP, which is on the
+        Network Access Layer.</li>
+      <li>Every user on the network has two distinct addresses: their MAC (physical) address
+        and their IP (logical) address.</li>
+      <li>Software assigns the IP address, and the hardware then builds the MAC address into
+        the device.</li>
+      <li>Any regular computer connected to the network can function as the RARP server,
+        answering to RARP queries. It must, however, store all of the MAC addresses’
+        associated IP addresses. Only these RARP servers are able to respond to RARP
+        requests that are received by the network. The information package must be
+        transmitted over the network’s lowest tiers</li>
+      <li>Using both its physical address and Ethernet broadcast address, the client transmits
+        a RARP request. In response, the server gives the client its IP address.</li>
 
-
+    </ul>
+    <img src="rarp.png" alt="rarp" id="img1">
+    <h5><b>ICMP</b></h5>
+    <p>ICMP stands for Internet Control Message Protocol. ICMP is a part of IP protocol
+      suite. ICMP is an error reporting and network diagnostic protocol. Feedback in the
+      network is reported to the designated host. Meanwhile, if any kind of error occur it
+      is then reported to ICMP. ICMP protocol consists of many error reporting and
+      diagnostic messages. ICMP protocol handles various kinds of errors such as time
+      exceeded, redirection, source quench, destination unreachable, parameter
+      problems etc. The messages in ICMP are divided into two types. They are given below:</p>
+    <ul>
+      <li><b>Error Message:</b>Error message states about the issues or problems that are faced
+        by the host or routers during processing of IP packet</li>
+      <li><b>Query Message:</b>Query messages are used by the host in order to get information
+        from a router or another host.</li>
+    </ul>
+    <h5><b>How Does ICMP Work/</b></h5>
+    <ul>
+      <li>The main and most significant protocol in the IP suite is called ICMP. However,
+        unlike TCP and UDP, ICMP is a connectionless protocol, meaning it doesn’t
+        require a connection to be established with the target device in order to transmit a
+        message.</li>
+      <li>TCP and ICMP operate differently from one another; TCP is a connection-oriented
+        protocol, while ICMP operates without a connection. Every time a connection is
+        made prior to a message being sent, a TCP Handshake is required of both devices.</li>
+      <li>Datagrams including an IP header containing ICMP data are used to transmit
+        ICMP packets. An independent data item like a packet is comparable to an ICMP
+        datagram.</li>
+    </ul>
+    <img src="img1.png" alt="img" id="img1">
+    <h5><b><u>IGMP(Internet Group Message Protocol)</u></b></h5>
+    <p>IGMP stands for Internet Group Message Protocol. IGMP is a
+      multicasting communication protocol. It utilizes the resources
+      efficiently while broadcasting the messages and data packets.
+      IGMP is also a protocol used by TCP/IP. Other hosts connected
+      in the network and routers makes use of IGMP for multicasting
+      communication that have IP networks. In many networks
+      multicast routers are used in order to transmit the messages to
+      all the nodes. Multicast routers therefore receives large number
+      of packets that needs to be sent. But to broadcast this packets is
+      difficult as it would increase the overall network load.
+      Therefore IGMP helps the multicast routers by addressing them
+      while broadcasting. As multicast communication consists of
+      more than one senders and receivers the Internet Group
+      Message Protocol is majorly used in various applications such
+      as streaming media, web conference tools, games, etc.
+    <br>Routing protocols are the set of rules and algorithms that
+    routers use to communicate with each other to find the most
+    efficient path to transmit data packets from a sender to a
+    receiver.</p>
+    <h5><b><u>Unicast Routing Protocols</u></b></h5>
+    <p>Unicast is a type of information transfer and it is used when
+      there is a participation of single sender and single recipient.
+      So, in short, you can term it as a one-to-one mapping. For
+      example, a device having IP address 10.1.4.0 in a network
+      wants to send the traffic stream (data packets) to the device
+      with IP address 20.14.4.2 in the other network, then unicast
+      comes into the picture. It is the most common form of data
+      transfer over the networks.</p>
+      <h6><b>Advantage of Unicast</b></h6>
+      <ul>
+        <li><b>Simplicity:</b>Unicast is very simple to implement as well as to
+          manage since the data is transferred to a particular and explicit
+          recipient.</li>
+        <li><b>Reliable Communication:</b>As the data is sent to one receiver
+          it provides the assurance of delivery and the acknowledgment
+          from the receiver end which makes it ideal for reliable methods
+          of communication such as TCP.</li>
+        <li><b>Security:</b>Since these are one-to-one communications, it is
+          safer than the broadcast or multicast and can be used for
+          transferring data.</li>
+      </ul>
+      <h5><b>Disadvantage of Unicast</b></h5>
+      <ul>
+        <li><b>Inefficiency for Group communication:</b>For that reason,
+          with the same data that needs to be sent to multiple receivers,
+          Unicast may prove highly inefficient because each requires a
+          separate transmission.</li>
+        <li><b>Increased bandwidth usage:</b>When data is sent to many
+          receivers individually in large networks it leads to the wastage
+          of bandwidth.</li>
+      </ul>
+      <img src="im.png" alt="im" id="img1">
+      <h5><b>Multicast Routing Protocol</b></h5>
+      <p>Multicasting has one/more senders and multiple recipients
+        participate in data transfer traffic. In multicasting traffic recline
+        between the boundaries of unicast and broadcast. It server’s
+        direct single copies of data streams and that are then simulated
+        and routed to hosts that request it. IP multicast requires support
+        of some other protocols such as Internet Group Management
+        Protocol (IGMP), Multicast routing for its working. And also in
+        Classful IP addressing Class D is reserved for multicast groups.</p>
+        <h5><b>Advantage of Multicast</b></h5>
+        <ul>
+          <li><b>Efficiency:</b>Compared with unicast communication, multicast
+            helps in cutting down the number of data that is transmitted
+            across the network since the data transmitted can be received
+            by several persons; this is otherwise known as ‘Broadcast’.</li>
+          <li><b>Scalability:</b>Multicast is suitable for application that requires
+            distribution of information or sharing resource to many users
+            that can elicit the flood the network principle to narrow scale
+            thus making it opportune for scalable applications</li>
+          <li><b>Cost-Effective:</b>Being a method that reduces the number of
+            data set transmitted across the network, multicast helps in
+            cutting down the overall expenditure on networks especially
+            for the large scale broadcasts</li>
+        </ul>
+        <h5><b>Disadvantage of Multicast</b></h5>
+        <ul>
+        <li><b>Less reliable:</b>Multicast unfortunately can use connectionless
+          protocols such as UDP unlike unicast thus making it incur in
+          reliability as far as delivery is concerned.</li>
+        <li><b>security Challenges:</b>Multicast communication is less secure
+          as compared to unicast as the data is sent to multiple recipients
+          thus posing a high risk of interception by unauthorized persons.</li>
+        <li><b>Complex Implementation:</b>Whereas in multicast setting, up
+          and managing a multicast network is a little bit more
+          complicated than unicast since an appropriate routing protocols
+          and settings are necessary.</li>
+        </ul>
+        
 
 
 
